@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.6)
+The top-level auxiliary file: plasma_antenna_paper1.aux
+The style file: agu04.bst
+Database file #1: ../../Bibliography/MyBib2.bib
+You're missing a field name---line 793 of file ../../Bibliography/MyBib2.bib
+ :   
+ :   %volume = {78},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--missing publisher in panchenko10
+You've used 10 entries,
+            3098 wiz_defined-function locations,
+            1118 strings with 10730 characters,
+and the built_in function-call counts, 6818 in all, are:
+= -- 606
+> -- 321
+< -- 8
++ -- 156
+- -- 78
+* -- 451
+:= -- 733
+add.period$ -- 10
+call.type$ -- 10
+change.case$ -- 51
+chr.to.int$ -- 10
+cite$ -- 31
+duplicate$ -- 648
+empty$ -- 456
+format.name$ -- 94
+if$ -- 1384
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 98
+newline$ -- 37
+num.names$ -- 40
+pop$ -- 370
+preamble$ -- 1
+purify$ -- 46
+quote$ -- 0
+skip$ -- 350
+stack$ -- 0
+substring$ -- 168
+swap$ -- 436
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 75
+warning$ -- 1
+while$ -- 36
+width$ -- 0
+write$ -- 110
+(There was 1 error message)

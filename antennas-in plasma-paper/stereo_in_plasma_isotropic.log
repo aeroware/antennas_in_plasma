@@ -1,0 +1,694 @@
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2010.9.22)  21 APR 2011 22:03
+entering extended mode
+ %&-line parsing enabled.
+**stereo_in_plasma_isotropic.tex
+(./stereo_in_plasma_isotropic.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(./agutex.cls
+
+
+ AGUTeX Journal Style, American Geophysical Union 
+ This version is dated Feb 9, 2008
+
+
+Document Class: agutex 02/09/2008
+\c@chapter=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@figure=\count83
+\c@table=\count84
+\mathindent=\dimen102
+\abovefigcaptionskip=\skip41
+\abovetabcaptionskip=\skip42
+\abovetableskip=\skip43
+\belowtabcaptionskip=\dimen103
+\landscapebox=\box26
+\c@plate=\count85
+\savecurrtable=\box27
+\abovetabularskip=\skip44
+\belowtabularskip=\skip45
+\timing=\count86
+\hourcount=\count87
+\oldtime=\count88
+\totpages=\count89
+\belowtitleskip=\dimen104
+\abovesubtitleskip=\dimen105
+\belowsubtitleskip=\dimen106
+\aboveauthorskip=\dimen107
+\belowauthorskip=\dimen108
+\thanksnum=\count90
+\dothanks=\count91
+\thankscounter=\count92
+\titlethanksnum=\count93
+\dotitlethanks=\count94
+\titlethankscounter=\count95
+\thanksnum=\count96
+\dothanks=\count97
+\thankscounter=\count98
+\authorwidth=\dimen109
+\authorbaselineskip=\dimen110
+\aboveaffilskip=\dimen111
+\belowaffilskip=\dimen112
+\affilwidth=\dimen113
+\aboveabstractskip=\dimen114
+\belowabstractskip=\dimen115
+\belowabstractnameskip=\dimen116
+\abstractmargin=\dimen117
+\abovereceivedskip=\skip46
+\aboverevisedskip=\skip47
+\aboveacceptedskip=\skip48
+\abovepublishededskip=\skip49
+\barticle=\box28
+\thanksbox=\box29
+\titlethanksbox=\box30
+\c@appendnum=\count99
+\footnum=\count100
+\savefootnum=\count101
+\ackskip=\skip50
+\saveparskip=\dimen118
+\captionskip=\dimen119
+\PushOneColTopFig=\dimen120
+\PushOneColBotFig=\dimen121
+\PushOneColTopTab=\dimen122
+\PushOneColBotTab=\dimen123
+\PushTwoColTopFig=\dimen124
+\PushTwoColBotFig=\dimen125
+\PushTwoColTopTab=\dimen126
+\PushTwoColBotTab=\dimen127
+\intextfloatskip=\skip51
+\c@appfigure=\count102
+\c@apptable=\count103
+\c@appplate=\count104
+\checkforspace=\dimen128
+\savetopinsert=\box31
+\savebotinsert=\box32
+\secondsavetopinsert=\box33
+\secondsavebotinsert=\box34
+\firstcolbox=\box35
+\secondcolbox=\box36
+\thefirstbox=\box37
+\thesecondbox=\box38
+\firstcol=\dimen129
+\secondcol=\dimen130
+\checkheight=\dimen131
+\loopnum=\count105
+\firstcolsavefignum=\count106
+\footnotebox=\box39
+\ColUsed=\dimen132
+\FigSpace=\dimen133
+\testdblbotins=\box40
+\pageloopnum=\count107
+\endcolsavetopinsert=\box41
+\endcolsavebotinsert=\box42
+\testpagesize=\box43
+\savelastskip=\dimen134
+\partialpage=\box44
+\figandtabnumber=\count108
+\figandtabbox=\box45
+\pagefloatnumber=\count109
+\sizeoffloat=\box46
+\bogus=\count110
+\figinsert=\insert233
+\herebox=\box47
+\endfigbox=\box48
+\spanbox=\box49
+\dbltopins=\box50
+\dblbotins=\box51
+\dblbotskip=\skip52
+\dblfigandtabnumber=\count111
+\dblfigandtabbox=\box52
+\dblloopnum=\count112
+\savedblfigandtabnumber=\count113
+\dblspanherebox=\box53
+\bigpagenum=\count114
+\littlepagenum=\count115
+\wholepagenum=\count116
+\@cprtype=\count117
+\@slugcmmntwidth=\dimen135
+\affilnum=\count118
+\totalaffils=\count119
+\figcount=\count120
+\saveequation=\count121
+\c@currlett=\count122
+\notationwidth=\dimen136
+\betweennotationskip=\skip53
+\WidestEntry=\dimen137
+\premulticols=\dimen138
+\page@free=\dimen139
+\partial@page=\box54
+\multicoltolerance=\count123
+\doublecol@number=\count124
+\multicolbaselineskip=\skip54
+\c@collectmore=\count125
+\loopcount=\count126
+\fixdimen=\dimen140
+\c@unbalance=\count127
+\savedimen=\dimen141
+\savehsize=\dimen142
+\mycolumnwidth=\dimen143
+\saveparindent=\dimen144
+\saveparskip=\dimen145
+\abstractwidth=\dimen146
+\currlastnumber=\count128
+\altaffilbox=\box55
+\sectskip=\skip55
+\belowsectionskip=\skip56
+\subsectskip=\skip57
+\belowsubsectskip=\skip58
+\subsubsectskip=\skip59
+\belowsubsubsectskip=\skip60
+\c@subsubsubsection=\count129
+\captionwidth=\dimen147
+\widecaptionwidth=\dimen148
+\landscapecaptionwidth=\dimen149
+\@temptokenb=\toks14
+\beforeendskip=\skip61
+
+
+ RAS class option, October 1, 2001,
+ \documentclass[ras]{AGUTeX}
+ ``RADIO SCIENCE'', 
+ Published by American Geophysical Union
+
+
+\titlesize=\dimen150
+LaTeX Info: Redefining \cite on input line 7417.
+\c@NAT@ctr=\count130
+) (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: dvips.def on input line 90.
+
+(/usr/share/texmf-texlive/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen151
+\Gin@req@width=\dimen152
+)
+
+LaTeX Warning: Unused global option(s):
+    [two-coloumn].
+
+(./stereo_in_plasma_isotropic.aux)
+\openout1 = `stereo_in_plasma_isotropic.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 219.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 219.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 219.
+\figandtabbox0=\box56
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 220.
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
+
+ []
+
+
+Underfull \hbox (badness 6691) in paragraph at lines 223--224
+[]\foliofootfont Here we fo-cus on multi-monopole sys-tems
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
+
+ []
+
+[1
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 242--243
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 255--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--299
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 301--302
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--307
+
+ []
+
+
+Overfull \vbox (1.0pt too high) has occurred while \output is active []
+
+ [3]
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
+
+ []
+
+\dblfigandtabbox1=\box57
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 317.
+\dblfigandtabbox2=\box58
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--358
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 359--360
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 365--366
+
+ []
+
+\figandtabbox1=\box59
+File: ff_10mhz.eps Graphic file (type eps)
+<ff_10mhz.eps>
+Overfull \hbox (12.0pt too wide) in paragraph at lines 368--371
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 368--371
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--374
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 384--385
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 386--387
+
+ []
+
+\figandtabbox2=\box60
+\figandtabbox3=\box61
+
+Underfull \hbox (badness 10000) in paragraph at lines 417--418
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--420
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 421--422
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--424
+
+ []
+
+
+Overfull \vbox (1.0pt too high) has occurred while \output is active []
+
+ [5]
+\figandtabbox4=\box62
+File: heff_shortening_dipole.eps Graphic file (type eps)
+
+<heff_shortening_dipole.eps>
+Overfull \hbox (12.0pt too wide) in paragraph at lines 426--429
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--429
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 432--433
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 434--435
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 436--437
+
+ []
+
+\figandtabbox5=\box63
+File: imps_dipole_solver2_real.eps Graphic file (type eps)
+<imps_dipole_solver2_real.eps>
+Overfull \hbox (12.0pt too wide) in paragraph at lines 440--443
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 440--443
+
+ []
+
+\figandtabbox6=\box64
+File: imps_dipole_solver2_imag.eps Graphic file (type eps)
+<imps_dipole_solver2_imag.eps>
+Overfull \hbox (12.0pt too wide) in paragraph at lines 446--449
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 446--449
+
+ []
+
+\figandtabbox7=\box65
+File: imps_dipole_solver2_real2.eps Graphic file (type eps)
+<imps_dipole_solver2_real2.eps>
+Overfull \hbox (12.0pt too wide) in paragraph at lines 454--457
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 454--457
+
+ []
+
+\figandtabbox8=\box66
+File: imps_dipole_solver2_imag2.eps Graphic file (type eps)
+<imps_dipole_solver2_imag2.eps>
+Overfull \hbox (12.0pt too wide) in paragraph at lines 460--463
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--463
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 466--467
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--469
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 471--472
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 473--474
+
+ []
+
+\dblfigandtabbox3=\box67
+File: stereo.eps Graphic file (type eps)
+<stereo.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 476--478
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 480--482
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 483--485
+
+ []
+
+\figandtabbox9=\box68
+File: impedance_stereo_vac.eps Graphic file (type eps)
+<impedance_stereo_vac.eps>
+Overfull \hbox (12.0pt too wide) in paragraph at lines 488--490
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 488--490
+
+ []
+
+\figandtabbox10=\box69
+File: impedance_stereo_pl.eps Graphic file (type eps)
+<impedance_stereo_pl.eps>
+Overfull \hbox (12.0pt too wide) in paragraph at lines 493--495
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 493--495
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 497--498
+
+ []
+
+\figandtabbox11=\box70
+File: impedance_stereo_pl_fix.eps Graphic file (type eps)
+<impedance_stereo_pl_fix.eps>
+Overfull \hbox (12.0pt too wide) in paragraph at lines 500--502
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 500--502
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 504--505
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 506--507
+
+ []
+
+\figandtabbox12=\box71
+File: impedance_stereo_pl_100khz.eps Graphic file (type eps)
+<impedance_stereo_pl_100khz.eps>
+Overfull \hbox (12.0pt too wide) in paragraph at lines 518--520
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 518--520
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 523--524
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 527--528
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 529--530
+
+ []
+
+\figandtabbox13=\box72
+\figandtabbox14=\box73
+\figandtabbox15=\box74
+\figandtabbox16=\box75
+File: heff_shortening_stereo.eps Graphic file (type eps)
+<heff_shortening_stereo.eps>
+Overfull \hbox (12.0pt too wide) in paragraph at lines 574--577
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 574--577
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 579--580
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 582--583
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 584--585
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 586--587
+
+ []
+
+[10]
+Underfull \hbox (badness 6675) in paragraph at lines 710--714
+\OT1/cmr/m/n/9 U. Tauben-schuss, J. Bougeret, A. Lecacheux,
+ []
+
+
+Underfull \hbox (badness 5022) in paragraph at lines 731--731
+| \OT1/cmr/m/n/9 M. Sampl, Space Re-search In-sti-tute, Aus-trian
+ []
+
+[11]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+(./stereo_in_plasma_isotropic.aux) ) 
+Here is how much of TeX's memory you used:
+ 1646 strings out of 95087
+ 20160 string characters out of 1183278
+ 90554 words of memory out of 1500000
+ 4856 multiletter control sequences out of 10000+50000
+ 14135 words of font info for 48 fonts, out of 1200000 for 2000
+ 28 hyphenation exceptions out of 8191
+ 25i,9n,24p,1212b,335s stack positions out of 5000i,500n,6000p,200000b,5000s
+
+Output written on stereo_in_plasma_isotropic.dvi (11 pages, 59632 bytes).

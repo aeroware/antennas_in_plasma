@@ -1,0 +1,57 @@
+\begin{thebibliography}{10}
+\providecommand{\natexlab}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{\textit{Davidson}(2005)}]{davidson}
+Davidson, B. (2005), \textit{Computational Electromagnetics for RF and
+  Mictrowave Engineering}, Cambridge University Press.
+
+\bibitem[{\textit{Ginzburg}(1970)}]{ginzburg}
+Ginzburg, V. (1970), \textit{The propagation of electromagnetic waves in
+  plasma, Second Edition}, Pergamon Press.
+
+\bibitem[{\textit{Harrington}(1968)}]{harrington}
+Harrington, R. (1968), \textit{Field Computation by Moment Methods}, Robert E.
+  Krieger Publishing Company.
+
+\bibitem[{\textit{Macher et~al.}(2007)\textit{Macher, Oswald, Fischer, and
+  Rucker}}]{macher07}
+Macher, W., T.~Oswald, G.~Fischer, and H.~Rucker (2007), Rheometry of
+  multi-port spaceborn antennas including mutual antenna capacitances and
+  application to stereo/waves., \textit{Meas. Sci. Technol.}, \textit{18},
+  3731--3742.
+
+\bibitem[{\textit{Melrose}(1980)}]{melrose1}
+Melrose, D. (1980), \textit{Plasma Astrophysics: Nonthermal Processes in
+  Diffuse Magnetized Plasma}, Gordon and Beach Science Publishers.
+
+\bibitem[{\textit{Oswald et~al.}(2009)\textit{Oswald, Macher, Rucker, Fischer,
+  Taubenschuss, Bougeret, Lecacheux, Kaiser, and Goetz}}]{ossi09}
+Oswald, T., W.~Macher, H.~Rucker, G.~Fischer, U.~Taubenschuss, J.~Bougeret,
+  A.~Lecacheux, M.~Kaiser, and K.~Goetz (2009), Various methods of calibration
+  of the stereo/waves antennas, \textit{Adv. Space Res.}, \textit{43},
+  355--364.
+
+\bibitem[{\textit{Panchenko et~al.}(2010)\textit{Panchenko, Rucker, Macher,
+  Cecconi, Oswald, and Fischer}}]{panchenko10}
+Panchenko, M., H.~Rucker, W.~Macher, B.~Cecconi, T.~Oswald, and G.~Fischer
+  (2010), Stereo/waves antennas calibrated by akr, in \textit{European
+  Planetary Science Congress 2010}, vol.~5.
+
+\bibitem[{\textit{Richmond}(1966)}]{richmond66}
+Richmond, J. (1966), A wire-grid model for scattering by conducting bodies,
+  \textit{IEEE Transactions on Antennes and Propagation}, \textit{14},
+  782--786.
+
+\bibitem[{\textit{Stix}(1992)}]{stix}
+Stix, T. (1992), \textit{Waves in Plasmas}, American Institute of Physics.
+
+\bibitem[{\textit{Weiglhofer}(1986)}]{weiglhofer}
+Weiglhofer, W. (1986), The representation of electromagnetic fields in
+  anisotropic media in terms of dyadic green's functions, Ph.D. thesis,
+  Technical University of Graz.
+
+\end{thebibliography}

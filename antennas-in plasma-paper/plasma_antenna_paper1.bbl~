@@ -1,0 +1,56 @@
+\begin{thebibliography}{12}
+\providecommand{\natexlab}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{\textit{Baumjohann and Treumann}(1999)}]{baumjohann1}
+Baumjohann, W., and R.~Treumann (1999), \textit{Basic Space Plasma Physics},
+  Imperial College Press.
+
+\bibitem[{\textit{Bellan}(2006)}]{bellan}
+Bellan, P. (2006), \textit{Fundamentals of Plasma Physics}, Cambridge
+  University Press.
+
+\bibitem[{\textit{Brambilla}(1998)}]{brambilla}
+Brambilla, M. (1998), \textit{Kinetic Theory of Plasma Waves}, Oxford Science
+  Publications.
+
+\bibitem[{\textit{Ginzburg}(1970)}]{ginzburg}
+Ginzburg, V. (1970), \textit{The propagation of electromagnetic waves in
+  plasma, Second Edition}, Pergamon Press.
+
+\bibitem[{\textit{Harrington}(1968)}]{harrington}
+Harrington, R. (1968), \textit{Field Computation by Moment Methods}, Robert E.
+  Krieger Publishing Company.
+
+\bibitem[{\textit{Kippenhahn and Moellenhoff}(1973)}]{kippenhahn}
+Kippenhahn, R., and C.~Moellenhoff (1973), \textit{Elementare Plasmaphysik},
+  B.I.-Wissenschaftsverlag.
+
+\bibitem[{\textit{Melrose}(1980)}]{melrose1}
+Melrose, D. (1980), \textit{Plasma Astrophysics: Nonthermal Processes in
+  Diffuse Magnetized Plasma}, Gordon and Beach Science Publishers.
+
+\bibitem[{\textit{Oswald}(2005)}]{my_masterthesis}
+Oswald, T. (2005), Electromagnetic waves in space and the stereo/waves
+  experiment, Master's thesis, University of Graz.
+
+\bibitem[{\textit{Oswald et~al.}(2008)\textit{Oswald, Macher, Rucker, Fischer,
+  Taubenschuss, Bougeret, Lecacheux, Kaiser, and Goetz}}]{ossi08}
+Oswald, T., W.~Macher, H.~Rucker, G.~Fischer, U.~Taubenschuss, J.~Bougeret,
+  A.~Lecacheux, M.~Kaiser, and K.~Goetz (2008), Various methods of calibration
+  of the stereo/waves antennas, \textit{J. Adv. Space Res.},
+  \doi{10.1016/j.asr.2008.07.017}.
+
+\bibitem[{\textit{Stix}(1992)}]{stix}
+Stix, T. (1992), \textit{Waves in Plasmas}, American Institute of Physics.
+
+\bibitem[{\textit{Swanson}(1989)}]{swanson}
+Swanson, D. (1989), \textit{Plasma Waves}, Academic Press, inc.
+
+\bibitem[{\textit{Walker}(1993)}]{walker}
+Walker, A. (1993), \textit{Plasma Waves in the Magnetsphere}, Springer Verlag.
+
+\end{thebibliography}
