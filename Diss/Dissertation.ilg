@@ -1,0 +1,9 @@
+This is makeindex, version 2.14 [02-Oct-2002] (kpathsea + Thai support).
+Scanning input file Dissertation.idx...
+!! Input index error (file = Dissertation.idx, line = 1):
+   -- No closing delimiter for second argument (illegal character `').
+!! Input index error (file = Dissertation.idx, line = 2):
+   -- No closing delimiter for second argument (illegal character `').
+done (0 entries accepted, 2 rejected).
+Nothing written in Dissertation.ind.
+Transcript written in Dissertation.ilg.

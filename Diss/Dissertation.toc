@@ -1,0 +1,65 @@
+\contentsline {chapter}{\textbf {Acknowledgments}}{i}
+\contentsline {chapter}{\numberline {1.}Introduction and Objectives}{1}
+\contentsline {chapter}{\numberline {2.}Electromagnetics: Basics and formalism}{5}
+\contentsline {section}{\numberline {2.1}Electromagnetics in free space}{5}
+\contentsline {subsection}{\numberline {2.1.1}Maxwell's equations}{5}
+\contentsline {subsection}{\numberline {2.1.2}The potential fields}{9}
+\contentsline {section}{\numberline {2.2}Electromagnetics conducting media}{11}
+\contentsline {subsection}{\numberline {2.2.1}The Permittivity}{11}
+\contentsline {subsection}{\numberline {2.2.2}The wave equations and dispersion relations}{14}
+\contentsline {section}{\numberline {2.3}Electromagnetics in plasma}{16}
+\contentsline {subsection}{\numberline {2.3.1}The equations governing the behavior of plasma}{16}
+\contentsline {subsubsection}{The exact distribution function}{16}
+\contentsline {subsubsection}{The average Distribution function}{17}
+\contentsline {subsubsection}{The Liouville theorem}{19}
+\contentsline {subsubsection}{The macroscopic observables}{19}
+\contentsline {subsubsection}{Maxwell equations}{21}
+\contentsline {subsubsection}{Multi- fluid theory and Magnetohydrodynamics}{21}
+\contentsline {subsubsection}{Plasma as a dielectric medium}{26}
+\contentsline {subsubsection}{Applicability of a classical plasma model}{26}
+\contentsline {subsubsection}{Valid frequency range}{27}
+\contentsline {subsection}{\numberline {2.3.2}The general dispersion relation}{27}
+\contentsline {subsection}{\numberline {2.3.3}Electrostatic approximation}{30}
+\contentsline {subsection}{\numberline {2.3.4}The dielectric tensor}{30}
+\contentsline {subsubsection}{Unmagnetized cold plasma}{33}
+\contentsline {subsubsection}{Magnetized cold plasma}{35}
+\contentsline {subsubsection}{Isotropic warm plasma}{39}
+\contentsline {subsubsection}{Magnetized warm plasma}{42}
+\contentsline {subsubsection}{Isotropic kinetic plasma}{45}
+\contentsline {subsubsection}{Magnetized kinetic plasma}{50}
+\contentsline {subsubsection}{The relativistic dielectric tensor}{50}
+\contentsline {subsubsection}{The quantum mechanical dielectric tensor}{50}
+\contentsline {chapter}{\numberline {3.}Antenna theory}{51}
+\contentsline {section}{\numberline {3.1}The solution for radiation of a point source}{52}
+\contentsline {subsection}{\numberline {3.1.1}The electric field equation}{52}
+\contentsline {subsection}{\numberline {3.1.2}The general Green's function}{54}
+\contentsline {section}{\numberline {3.2}Cold isotropic plasma}{56}
+\contentsline {subsection}{\numberline {3.2.1}The cold isotropic Green's function}{56}
+\contentsline {subsection}{\numberline {3.2.2}The cold isotropic electric field equation}{58}
+\contentsline {subsection}{\numberline {3.2.3}The electric field integral equation (EFIE) for cold isotropic media}{59}
+\contentsline {section}{\numberline {3.3}Cold anisotropic plasma}{62}
+\contentsline {section}{\numberline {3.4}A kinetic plasma model}{63}
+\contentsline {chapter}{\numberline {4.}The numerical solution of the EFIE}{64}
+\contentsline {section}{\numberline {4.1}The Method of Moment (MoM)}{64}
+\contentsline {chapter}{\numberline {5.}The effect of plasma on the antenna properties of a dipole}{68}
+\contentsline {section}{\numberline {5.1}A dipole in isotropic cold plasma}{68}
+\contentsline {subsection}{\numberline {5.1.1}Computing the electric field pattern}{68}
+\contentsline {subsection}{\numberline {5.1.2}The effect of plasma on the current distribution}{78}
+\contentsline {subsection}{\numberline {5.1.3}The dipole in cold isotropic plasma}{91}
+\contentsline {chapter}{\numberline {6.}Calculation of the Stereo spacecraft antenna properties}{93}
+\contentsline {section}{\numberline {6.1}Cold isotropic plasma}{93}
+\contentsline {subsection}{\numberline {6.1.1}The effect on the antenna impedances}{94}
+\contentsline {subsection}{\numberline {6.1.2}The effect on the effective length vectors}{94}
+\contentsline {chapter}{\numberline {7.}The physics of the plasma sheath}{100}
+\contentsline {section}{\numberline {7.1}Antenna-plasma coupling on a negatively charged spacecraft}{101}
+\contentsline {section}{\numberline {7.2}Antenna-plasma coupling on a positively charged spacecraft}{109}
+\contentsline {section}{\numberline {7.3}Implementation of the sheath in numerical calibration of spacecraft antennas}{116}
+\contentsline {chapter}{\numberline {8.}Conclusion and outlook}{120}
+\contentsline {chapter}{\numberline {9.}\textbf {Appendix A}}{123}
+\contentsline {chapter}{\numberline {10.}\textbf {Appendix B}}{126}
+\contentsline {chapter}{\numberline {11.}\textbf {Appendix C}}{129}
+\contentsline {section}{\numberline {11.1}mcCreateDipole}{129}
+\contentsline {section}{\numberline {11.2}mcPlotImpedance}{131}
+\contentsline {section}{\numberline {11.3}mcNearFieldPlasma}{132}
+\contentsline {section}{\numberline {11.4}fmcGetCurrent}{146}
+\contentsline {section}{\numberline {11.5}mcfGetCurrent}{156}

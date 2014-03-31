@@ -1,0 +1,382 @@
+\begin{thebibliography}{79}
+\providecommand{\natexlab}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{\textit{Adachi et~al.}(1970)\textit{Adachi, Kasahara, and
+  Mushiake}}]{adachi70}
+Adachi, S., T.~Kasahara, and Y.~Mushiake (1970), Receiving antennas in a
+  compressible plasma, \textit{IEEE Transactions on Antennes and Propagation},
+  pp. 439--441.
+
+\bibitem[{\textit{Aksun}(1996)}]{aksun96}
+Aksun, M. (1996), A robust approach for the derivation of closed-form green's
+  function, \textit{IEEE Transactions on Microwave Theory and Techniques},
+  \textit{44}, 651--658.
+
+\bibitem[{\textit{Al'pert}(1983{\natexlab{a}})}]{alpert1}
+Al'pert, Y. (1983{\natexlab{a}}), \textit{Space Plasma: Theory and main
+  properties}, Cambridge University Press.
+
+\bibitem[{\textit{Al'pert}(1983{\natexlab{b}})}]{alpert2}
+Al'pert, Y. (1983{\natexlab{b}}), \textit{Space Plasma: Flow, waves and
+  oscillations}, Cambridge University Press.
+
+\bibitem[{\textit{Balanis}(1989)}]{balanis}
+Balanis, C. (1989), \textit{Advanced Engineering Electromagnetics}, John Wiley
+  \& Sons.
+
+\bibitem[{\textit{Balmain}(1964)}]{balmain64}
+Balmain, K. (1964), Impedance of a short dipole antenna in magnetoplasma,
+  \textit{IEEE Transactions on Antennes and Propagation}.
+
+\bibitem[{\textit{Barkeshli and Pathak}(1991)}]{barkeshli91}
+Barkeshli, S., and P.~Pathak (1991), On the dyadic green's function for a
+  planar multilayered dielectric/magnetic media, \textit{IEEE Transactions on
+  Microwave Theory and Techniques}, \textit{40}, 128--142.
+
+\bibitem[{\textit{Baumjohann and Treumann}(1999)}]{baumjohann1}
+Baumjohann, W., and R.~Treumann (1999), \textit{Basic Space Plasma Physics},
+  Imperial College Press.
+
+\bibitem[{\textit{Beghin}(1995)}]{beghin95}
+Beghin, C. (1995), Series expansion of electrostatic potential radiated by a
+  point source in isotropic maxwellian plasma, \textit{Radio Science},
+  \textit{30}, 307--322.
+
+\bibitem[{\textit{Beghin and Kolesnikova}(1998)}]{beghin98}
+Beghin, C., and E.~Kolesnikova (1998), Surface charge distribution approach for
+  modeling of quasi-static electric antennas in isotropic thermal plasma,
+  \textit{Radio Science}, \textit{33}, 503--516.
+
+\bibitem[{\textit{Beghin et~al.}(2005)\textit{Beghin, Decreau, Pickett,
+  Sundkvist, and Lefebvre}}]{beghin05}
+Beghin, C., P.~Decreau, J.~Pickett, D.~Sundkvist, and B.~Lefebvre (2005),
+  Modeling of cluster's electric antennas in space: Applications to plasma
+  diagnostics, \textit{Radio Science}, \textit{40}, \doi{10.1029/2005RS003264}.
+
+\bibitem[{\textit{Blomberg et~al.}(2005)}]{blomberg}
+Blomberg, L., et~al. (2005), Mefisto-an electric field instrument for
+  bepicolombo/mmo, \textit{Advances in Space Research}.
+
+\bibitem[{\textit{Bucci}(2005)}]{bucci05}
+Bucci, O. (2005), Computational complexity in the solution of large antenna and
+  scattering problems, \textit{Radio Science}, \textit{40},
+  \doi{10.1029/2004RS003196}.
+
+\bibitem[{\textit{Burden and Faires}(1999)}]{burdenfaires}
+Burden, R., and D.~Faires (1999), \textit{Numerical Analysis}, Brooks/Cole
+  Publishing Company.
+
+\bibitem[{\textit{Castellanos}(1964)}]{castellanos}
+Castellanos, D. (1964), On a class of integral equations and its applications
+  to the theory of linear antennas, Ph.D. thesis, University of Michigan.
+
+\bibitem[{\textit{Cheng}(1996)}]{cheng96}
+Cheng, D. (1996), Green dyadic and dipole radiation in triaxial omega medium,
+  \textit{Electronic Letters}, \textit{32}, 529--530.
+
+\bibitem[{\textit{Chugonov and Mareev}(2003)}]{chugonov03}
+Chugonov, Y., and E.~Mareev (2003), Transmission of waves near the lower
+  oblique resonance using dipoles in the ionosphere, \textit{Radio Sci.},
+  \textit{38}, \doi{10.1029/2001RS002531}.
+
+\bibitem[{\textit{Chugonov et~al.}(2005 In press)\textit{Chugonov, Fiala,
+  Soucek, and Santolik}}]{chugonov05}
+Chugonov, Y., V.~Fiala, J.~Soucek, and O.~Santolik (2005 In press), Noise
+  induced on an electric antenna and its effective length in solar wind:
+  Application to cluster observations, \textit{Advances in Space Research}.
+
+\bibitem[{\textit{Dong}(2002)}]{dong02}
+Dong, B. (2002), Three-dimensional electromagnetic wave polarizations in a
+  plasma, \textit{Radio Science}, \textit{37}, \doi{10.1029/2001RS002496}.
+
+\bibitem[{\textit{Eroglu and Lee}(2003)}]{eroglu03}
+Eroglu, A., and J.~Lee (2003), Dyadic green's function for a gyro-electric
+  medium, \textit{IEEE Transactions on Antennes and Propagation}.
+
+\bibitem[{\textit{Geng}(2003)}]{geng03}
+Geng, Y. (2003), Analysis of electromagnetic scattering by a plasma anisotropic
+  sphere, \textit{Radio Science}, \textit{38}, \doi{10.1029/2003RS002913}.
+
+\bibitem[{\textit{Harrington}(1968)}]{harrington}
+Harrington, R. (1968), \textit{Field Computation by Moment Methods}, Robert E.
+  Krieger Publishing Company.
+
+\bibitem[{\textit{Hwu et~al.}(1992)\textit{Hwu, Chen, and Arndt}}]{hwu92}
+Hwu, S., Q.~Chen, and G.~Arndt (1992), Near field predictions for the high
+  power dipole antenna of the space shuttle wisp payload, \textit{IEEE
+  Transactions on Antennes and Propagation}.
+
+\bibitem[{\textit{Ishizone et~al.}(1974)\textit{Ishizone, Sawaya, Adachi, and
+  Mushiake}}]{ishizone74}
+Ishizone, T., K.~Sawaya, S.~Adachi, and Y.~Mushiake (1974), Measurements of the
+  transmitting and the receiving patterns of a dipole antenna for an electron
+  plasma wave, \textit{IEEE Transactions on Antennes and Propagation},
+  \textit{22}, 662--666.
+
+\bibitem[{\textit{Jackson}(1981)}]{jackson}
+Jackson, J. (1981), \textit{Klassische Elektrodynamik}, de Gruyter.
+
+\bibitem[{\textit{Kellogg and Bale}(2001)}]{kellogg01}
+Kellogg, P., and S.~Bale (2001), Antenna-plasma and antenna-spacecraft
+  resistance on the wind spacecraft, \textit{J. Geophys. Res.}, \textit{106},
+  18,721--18,727.
+
+\bibitem[{\textit{Kim et~al.}(2004)\textit{Kim, Meinecke, and
+  Breinbjerg}}]{kim04}
+Kim, O., P.~Meinecke, and O.~Breinbjerg (2004), Method of moments solution of
+  volume integral equations using higher-order hierarchical legendre basis
+  functions, \textit{Radio Science}, \textit{39}, \doi{10.1029/2004RS003041}.
+
+\bibitem[{\textit{Kippenhahn and Moellenhoff}(1973)}]{kippenhahn}
+Kippenhahn, R., and C.~Moellenhoff (1973), \textit{Elementare Plasmaphysik},
+  B.I.-Wissenschaftsverlag.
+
+\bibitem[{\textit{Klimontovich}(1983)}]{kinetictheoryofemprocesses}
+Klimontovich, Y. (1983), \textit{The Kinetic Theory of Electromagnetic
+  Processes}, Springer Verlag.
+
+\bibitem[{\textit{Kolesnikova and Beghin}(1998)}]{kolesnikova98}
+Kolesnikova, E., and C.~Beghin (1998), Application of the surface-charge
+  distribution method to the interpretation of impedance measurements of a
+  rocket-borne dipole antenna, \textit{Radio Science}, \textit{33}, 491--502.
+
+\bibitem[{\textit{Kraus and Marhefka}(2002)}]{kraus}
+Kraus, J., and R.~Marhefka (2002), \textit{Antennas for all applications/ 3rd
+  edition}, Mc Graw Hill.
+
+\bibitem[{\textit{Krill et~al.}(1982)\textit{Krill, Andreo, and
+  Farrell}}]{krill82}
+Krill, J., R.~Andreo, and R.~Farrell (1982), A computational alternative for
+  variational expressions that involve dyadic green functions, \textit{IEEE
+  Transactions on Antennes and Propagation}, \textit{30}, 1003--1005.
+
+\bibitem[{\textit{Lai}(1998)}]{lai98}
+Lai, S. (1998), A critical overview of measurement techniques of spacecraft
+  charging in space plasma, \textit{Measurement Techniques in Space Plasmas:
+  Fields, Geophyical Monograph 119}.
+
+\bibitem[{\textit{Landau and Lifschitz}(1967)}]{landau_lifschitz_8}
+Landau, L., and E.~Lifschitz (1967), \textit{Elektrodynamik der Kontinua/
+  Lehrbuch der theoretischen Physik VIII}, Akademie Verlag Berlin.
+
+\bibitem[{\textit{Langenberg}(2003)}]{langenberg03}
+Langenberg, K. (2003), A thorough look at the nonuniqueness of the
+  electromagnetic scattering integral equation solutions as compared to the
+  scalar acoustic ones, \textit{Radio Science}, \textit{38},
+  \doi{10.1029/2001RS002558}.
+
+\bibitem[{\textit{Li et~al.}(2001)\textit{Li, Leong, and Huang}}]{li01}
+Li, L., M.~Leong, and Y.~Huang (2001), Electromagnetic padiation of antennas in
+  the presence of an arbitrarily shaped dielectric object: Green dyadics and
+  their applications, \textit{IEEE Transactions on Antennes and Propagation},
+  \textit{49}.
+
+\bibitem[{\textit{Lin and Mei}(1968)}]{lin68}
+Lin, S., and K.~Mei (1968), Numerical solution of dipole radiation in a
+  compressible plasma, \textit{IEEE Transactions on Antennes and Propagation},
+  \textit{16}, 235--241.
+
+\bibitem[{\textit{Linh and Nachman}(1990)}]{linh90}
+Linh, N., and M.~Nachman (1990), Excitation of the half-frequency of the input
+  signal in the response of an antenna immersed in a plasma, \textit{IEEE
+  Transactions on Plasma Science}, \textit{18}, 717--724.
+
+\bibitem[{\textit{Lonngren and Savov}(2005)}]{lonngren}
+Lonngren, K., and V.~Savov (2005), \textit{Fundamentals of Electromagnetics
+  with Matlab}, Scitech Publishing, Inc.
+
+\bibitem[{\textit{Manning}(2000)}]{manning}
+Manning, R. (2000), Instrumentation for space-based low frequency radio
+  astronomy, \textit{AGU Geophysical Monograph}, \textit{Nr. 119}.
+
+\bibitem[{\textit{Marin}(1992)}]{marin92}
+Marin, M. (1992), An asymptotic closed-form representation for the grounded
+  double-layer surface green's function, \textit{IEEE Transactions on Antennes
+  and Propagation}, \textit{40}, 1357--1366.
+
+\bibitem[{\textit{Mathews and Walker}(1970)}]{mathewswalker}
+Mathews, J., and R.~Walker (1970), \textit{Mathematical Methods of Physics},
+  The Benjamin/Cummings Publishing Company.
+
+\bibitem[{\textit{Matin et~al.}(1982)\textit{Matin, Mushiake, Ishizone, and
+  Sawaya}}]{matin82}
+Matin, A., Y.~Mushiake, T.~Ishizone, and K.~Sawaya (1982), Radiation from a
+  small monopole in a uniaxially anisotropic plasma, \textit{IEEE Transactions
+  on Antennes and Propagation}, \textit{30}.
+
+\bibitem[{\textit{Mehanee and Zhdanov}(2005)}]{mehanee04}
+Mehanee, S., and M.~Zhdanov (2005), A quasi-analytical boundary condition for
+  three-dimensional finite difference electromagnetic modeling, \textit{Radio
+  Science}, \textit{39}, \doi{10.1029/2004RS003029}.
+
+\bibitem[{\textit{Meyer}(1973)}]{meyer73}
+Meyer, P. (1973), Current distribution on a cylindrical antenna in a plasma,
+  \textit{IEEE Transactions on Antennes and Propagation}, pp. 102--104.
+
+\bibitem[{\textit{Meyer-Vernet et~al.}(1998)\textit{Meyer-Vernet, Hoang,
+  Issautier, Maksimovic, Manning, and Moncuquet}}]{meiervernet1}
+Meyer-Vernet, N., S.~Hoang, K.~Issautier, M.~Maksimovic, R.~Manning, and
+  M.~Moncuquet (1998), Measuring plasma parameters with thermal noise
+  spectroscopy, \textit{AGU Geophysical Monograph}, \textit{Nr. 103}.
+
+\bibitem[{\textit{Michielsen and Flachetti}(2005)}]{michielsen05}
+Michielsen, B., and C.~Flachetti (2005), Covariance operators, green functions,
+  and canonical stochastric electromagnetic fields, \textit{Radio Science},
+  \textit{40}, \doi{10.1029/2004RS003086}.
+
+\bibitem[{\textit{Moncuquet et~al.}(2000)}]{moncuquet}
+Moncuquet, H., et~al. (2000), The radio waves \& thermal electrostatic noise
+  spectroscopy (sorbet) experiment on bepi-colombo/mmo/pwi: Scientific
+  objectives and performance, \textit{Advances in Space Research}.
+
+\bibitem[{\textit{Moore and Pizer}(1986)}]{momentmethods}
+Moore, J., and R.~Pizer (1986), \textit{Moment Methods in Electromagnetics},
+  Research Studies Press.
+
+\bibitem[{\textit{Nevels}(2004)}]{nevels03}
+Nevels, R. (2004), The time domain green's function and propagator for
+  maxwell's equation, \textit{IEEE Transactions on Antennes and Propagation},
+  \textit{52}.
+
+\bibitem[{\textit{Nikitin and Swenson}(2001)}]{nikitin01}
+Nikitin, P., and C.~Swenson (2001), Impedance of a short dipole antenna in a
+  cold plasma, \textit{IEEE Transactions on Antennes and Propagation},
+  \textit{49}.
+
+\bibitem[{\textit{Ohnuma}(1994)}]{radiationphenomena}
+Ohnuma, T. (1994), \textit{Radiation Phenomena in Plasma}, World Scientific
+  Publishing Co. Pte. Ldt.
+
+\bibitem[{\textit{Olyslager and Derudder}(2003)}]{olyslager03}
+Olyslager, F., and H.~Derudder (2003), Series representation of green dyadics
+  for layered media using pmls, \textit{IEEE Transactions on Antennes and
+  Propagation}, \textit{51}, 2319--2326.
+
+\bibitem[{\textit{Oswald}(2005)}]{my_masterthesis}
+Oswald, T. (2005), Electromagnetic waves in space and the stereo/waves
+  experiment, Master's thesis, Universitaet Graz, Technische Universitaet Graz.
+
+\bibitem[{\textit{Oswald et~al.}(2006)\textit{Oswald, Macher, Fischer, Rucker,
+  Bougeret, Kaiser, and Goetz}}]{pre6}
+Oswald, T., W.~Macher, G.~Fischer, H.~Rucker, J.~Bougeret, M.~Kaiser, and
+  K.~Goetz (2006), Numerical analysis of the stereo waves antennas: first
+  results, in \textit{Proc. Planetary Radio Emissions VI, Graz}, edited by
+  H.~Rucker, W.~Kurth, and G.~Mann, pp. 475--482, Austrian Academy of Sciences
+  Press, Vienna.
+
+\bibitem[{\textit{Pathak}(1983)}]{pathak83}
+Pathak, P. (1983), On the eigenfunction expansion of electromagnetic dyadic
+  green's functions, \textit{IEEE Transactions on Antennes and Propagation},
+  \textit{31}.
+
+\bibitem[{\textit{Pathak}(1999)}]{pathak99}
+Pathak, P. (1999), New techniques for analysis/synthesis of electrically large
+  satellite antennas, in \textit{Proceedings of the IEEE}, pp. 475--477, IEEE.
+
+\bibitem[{\textit{Richie and Gangl}(1995)}]{richie95}
+Richie, J., and R.~Gangl (1995), Efei-mfie hybrid simulation using nec: Vswr
+  for the wisp experiment, \textit{IEEE Transactions on Antennes and
+  Propagation}, \textit{37}.
+
+\bibitem[{\textit{Richmond}(1966)}]{richmond66}
+Richmond, J. (1966), A wire-grid model for scattering by conducting bodies,
+  \textit{IEEE Transactions on Antennes and Propagation}, \textit{14},
+  782--786.
+
+\bibitem[{\textit{Rucker et~al.}(2005)\textit{Rucker, Macher, Fischer, Oswald,
+  Bougeret, Kaiser, and Goetz}}]{ruckerundi05}
+Rucker, H., W.~Macher, G.~Fischer, T.~Oswald, J.-L. Bougeret, M.~Kaiser, and
+  K.~Goetz (2005), Analysis of spacecraft antenna systems: Implications for
+  stereo/waves, \textit{Adv. Space Res.}, \textit{36}, 1530--1533,
+  \doi{10.1016/j.asr.2005.07.060}.
+
+\bibitem[{\textit{Rucker}(2003)}]{ruck_magnetosphaeren1}
+Rucker, H.~O. (2003), Physik der magnetosphäre i, lehrskriptum des Institutes
+  fuer Geophysik, Astrophysik und Meteorologie, Universitaet Graz.
+
+\bibitem[{\textit{Schmidt}(1979)}]{hightempplasma}
+Schmidt, G. (1979), \textit{Physics of High Temperature Plasmas}, Academic
+  Press, inc.
+
+\bibitem[{\textit{Sharkawy et~al.}(2005)\textit{Sharkawy, Demir, and
+  Elsherbeni}}]{sharkawy05}
+Sharkawy, M., V.~Demir, and A.~Elsherbeni (2005), Iterative multiregion
+  technique for large-scale electromagnetic scattering problems:
+  Two-dimensional case, \textit{Radio Science}, \textit{40},
+  \doi{10.1029/2004RS003175}.
+
+\bibitem[{\textit{Singh}(1974)}]{singh74}
+Singh, N. (1974), Fields of an electric dipole perpendicular to a magnetostatic
+  field in a hot plasma, \textit{IEEE Transactions on Antennes and
+  Propagation}, pp. 505--507.
+
+\bibitem[{\textit{Sitenko}(1967)}]{emfluctuations}
+Sitenko, A. (1967), \textit{Electromagnetic fluctuations in plasma}, Academic
+  Press, inc.
+
+\bibitem[{\textit{Staelin et~al.}(1994)\textit{Staelin, Morgenthaler, and
+  J.Kong}}]{emwaves}
+Staelin, D., A.~Morgenthaler, and J.Kong (1994), \textit{Electromagnetic
+  Waves}, Prentice Hall.
+
+\bibitem[{\textit{Stakgold}(1979)}]{stakgold}
+Stakgold, I. (1979), \textit{Green's Functions and Boundary Value Problems},
+  John Wiley \& Sons.
+
+\bibitem[{\textit{Staras}(1964)}]{staras}
+Staras, H. (1964), The impedance of an electric dipole in a magneto-ionic
+  medium, \textit{IEEE Transactions}.
+
+\bibitem[{\textit{Stix}(1992)}]{stix}
+Stix, T. (1992), \textit{Waves in Plasmas}, American Institute of Physics.
+
+\bibitem[{\textit{Swanson}(1989)}]{swanson}
+Swanson, D. (1989), \textit{Plasma Waves}, Academic Press, inc.
+
+\bibitem[{\textit{Tai}(1964)}]{tai64}
+Tai, C. (1964), A study of electrodynamics of moving media, in
+  \textit{Proceedings of the IEEE}, pp. 685--689, IEEE.
+
+\bibitem[{\textit{Tai}(1981)}]{tai80}
+Tai, C. (1981), Comments on '' electric dyadic green's functions in the source
+  region '', in \textit{Proceedings of the IEEE}, vol.~69, pp. 282--285, IEEE.
+
+\bibitem[{\textit{Tai}(1994)}]{tai94}
+Tai, C. (1994), Vector green functions versus dyadic green functions,
+  \textit{Technical Report of the Department of Electrical Engineering and
+  Computer Science/University of Michigan}, \textit{RL 910}.
+
+\bibitem[{\textit{Walker}(1993)}]{walker}
+Walker, A. (1993), \textit{Plasma Waves in the Magnetsphere}, Springer Verlag.
+
+\bibitem[{\textit{Wang and Wang}(1972)}]{wang72}
+Wang, T., and T.~Wang (1972), Radiation resistance of small electric and
+  magnetic antennas in cold uniaxial plasma, \textit{IEEE Transactions on
+  Antennes and Propagation}.
+
+\bibitem[{\textit{Ward et~al.}(2005)\textit{Ward, Swenson, and Furse}}]{ward05}
+Ward, J., C.~Swenson, and C.~Furse (2005), The impedance of a short dipole
+  antenna in a magnetized plasma via a finite difference time domain model,
+  \textit{IEEE Transactions on Antennes and Propagation}, \textit{53}.
+
+\bibitem[{\textit{Weiglhofer}(1986)}]{weiglhofer}
+Weiglhofer, W. (1986), The representation of electromagnetic fields in
+  anisotropic media in terms of dyadic green's functions, Ph.D. thesis,
+  Technical University of Graz.
+
+\bibitem[{\textit{Wu}(2003)}]{wu63}
+Wu, C. (2003), Radiation from dipoles in a magneto-ionic medium, \textit{IEEE
+  Transactions on Antennes and Propagation}.
+
+\bibitem[{\textit{Zhian et~al.}(2004)\textit{Zhian, Yan, Bo, and
+  Deyuan}}]{zhian04}
+Zhian, Q., C.~Yan, W.~Bo, and S.~Deyuan (2004), A new approach to dyadic
+  green's function problem of a field vector, in \textit{4th International
+  Conference on Microwave and Millimeter Wave Technology Proceedings}, pp.
+  347--356.
+
+\end{thebibliography}

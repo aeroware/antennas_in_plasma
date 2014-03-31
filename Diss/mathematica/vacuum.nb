@@ -1,0 +1,1181 @@
+(************** Content-type: application/mathematica **************
+                     CreatedBy='Mathematica 5.2'
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[     32166,        873]*)
+(*NotebookOutlinePosition[     32849,        896]*)
+(*  CellTagsIndexPosition[     32805,        892]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+    \(k = {{0, \(-kz\), ky}, {kz, 0, \(-kx\)}, {\(-ky\), kx, 0}}\)], "Input"],
+
+Cell[BoxData[
+    \({{0, \(-kz\), ky}, {kz, 0, \(-kx\)}, {\(-ky\), kx, 0}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(k . k\)], "Input"],
+
+Cell[BoxData[
+    \({{\(-ky\^2\) - kz\^2, kx\ ky, kx\ kz}, {kx\ ky, \(-kx\^2\) - kz\^2, 
+        ky\ kz}, {kx\ kz, ky\ kz, \(-kx\^2\) - ky\^2}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(U = {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}\)], "Input"],
+
+Cell[BoxData[
+    \({{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(T = \(-k . k\) - U*k0^2\)], "Input"],
+
+Cell[BoxData[
+    \({{\(-k0\^2\) + ky\^2 + 
+          kz\^2, \(-kx\)\ ky, \(-kx\)\ kz}, {\(-kx\)\ ky, \(-k0\^2\) + 
+          kx\^2 + kz\^2, \(-ky\)\ kz}, {\(-kx\)\ kz, \(-ky\)\ kz, \(-k0\^2\) \
++ kx\^2 + ky\^2}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Inverse[T]\)], "Input"],
+
+Cell[BoxData[
+    \({{\((k0\^4 - 2\ k0\^2\ kx\^2 + kx\^4 - k0\^2\ ky\^2 + kx\^2\ ky\^2 - 
+              k0\^2\ kz\^2 + kx\^2\ kz\^2)\)/\((\(-k0\^6\) + 
+              2\ k0\^4\ kx\^2 - k0\^2\ kx\^4 + 2\ k0\^4\ ky\^2 - 
+              2\ k0\^2\ kx\^2\ ky\^2 - k0\^2\ ky\^4 + 2\ k0\^4\ kz\^2 - 
+              2\ k0\^2\ kx\^2\ kz\^2 - 2\ k0\^2\ ky\^2\ kz\^2 - 
+              k0\^2\ kz\^4)\), \((\(-k0\^2\)\ kx\ ky + kx\^3\ ky + 
+              kx\ ky\^3 + kx\ ky\ kz\^2)\)/\((\(-k0\^6\) + 2\ k0\^4\ kx\^2 - 
+              k0\^2\ kx\^4 + 2\ k0\^4\ ky\^2 - 2\ k0\^2\ kx\^2\ ky\^2 - 
+              k0\^2\ ky\^4 + 2\ k0\^4\ kz\^2 - 2\ k0\^2\ kx\^2\ kz\^2 - 
+              2\ k0\^2\ ky\^2\ kz\^2 - 
+              k0\^2\ kz\^4)\), \((\(-k0\^2\)\ kx\ kz + kx\^3\ kz + 
+              kx\ ky\^2\ kz + kx\ kz\^3)\)/\((\(-k0\^6\) + 2\ k0\^4\ kx\^2 - 
+              k0\^2\ kx\^4 + 2\ k0\^4\ ky\^2 - 2\ k0\^2\ kx\^2\ ky\^2 - 
+              k0\^2\ ky\^4 + 2\ k0\^4\ kz\^2 - 2\ k0\^2\ kx\^2\ kz\^2 - 
+              2\ k0\^2\ ky\^2\ kz\^2 - 
+              k0\^2\ kz\^4)\)}, {\((\(-k0\^2\)\ kx\ ky + kx\^3\ ky + 
+              kx\ ky\^3 + kx\ ky\ kz\^2)\)/\((\(-k0\^6\) + 2\ k0\^4\ kx\^2 - 
+              k0\^2\ kx\^4 + 2\ k0\^4\ ky\^2 - 2\ k0\^2\ kx\^2\ ky\^2 - 
+              k0\^2\ ky\^4 + 2\ k0\^4\ kz\^2 - 2\ k0\^2\ kx\^2\ kz\^2 - 
+              2\ k0\^2\ ky\^2\ kz\^2 - k0\^2\ kz\^4)\), \((k0\^4 - 
+              k0\^2\ kx\^2 - 2\ k0\^2\ ky\^2 + kx\^2\ ky\^2 + ky\^4 - 
+              k0\^2\ kz\^2 + ky\^2\ kz\^2)\)/\((\(-k0\^6\) + 
+              2\ k0\^4\ kx\^2 - k0\^2\ kx\^4 + 2\ k0\^4\ ky\^2 - 
+              2\ k0\^2\ kx\^2\ ky\^2 - k0\^2\ ky\^4 + 2\ k0\^4\ kz\^2 - 
+              2\ k0\^2\ kx\^2\ kz\^2 - 2\ k0\^2\ ky\^2\ kz\^2 - 
+              k0\^2\ kz\^4)\), \((\(-k0\^2\)\ ky\ kz + kx\^2\ ky\ kz + 
+              ky\^3\ kz + ky\ kz\^3)\)/\((\(-k0\^6\) + 2\ k0\^4\ kx\^2 - 
+              k0\^2\ kx\^4 + 2\ k0\^4\ ky\^2 - 2\ k0\^2\ kx\^2\ ky\^2 - 
+              k0\^2\ ky\^4 + 2\ k0\^4\ kz\^2 - 2\ k0\^2\ kx\^2\ kz\^2 - 
+              2\ k0\^2\ ky\^2\ kz\^2 - 
+              k0\^2\ kz\^4)\)}, {\((\(-k0\^2\)\ kx\ kz + kx\^3\ kz + 
+              kx\ ky\^2\ kz + kx\ kz\^3)\)/\((\(-k0\^6\) + 2\ k0\^4\ kx\^2 - 
+              k0\^2\ kx\^4 + 2\ k0\^4\ ky\^2 - 2\ k0\^2\ kx\^2\ ky\^2 - 
+              k0\^2\ ky\^4 + 2\ k0\^4\ kz\^2 - 2\ k0\^2\ kx\^2\ kz\^2 - 
+              2\ k0\^2\ ky\^2\ kz\^2 - 
+              k0\^2\ kz\^4)\), \((\(-k0\^2\)\ ky\ kz + kx\^2\ ky\ kz + 
+              ky\^3\ kz + ky\ kz\^3)\)/\((\(-k0\^6\) + 2\ k0\^4\ kx\^2 - 
+              k0\^2\ kx\^4 + 2\ k0\^4\ ky\^2 - 2\ k0\^2\ kx\^2\ ky\^2 - 
+              k0\^2\ ky\^4 + 2\ k0\^4\ kz\^2 - 2\ k0\^2\ kx\^2\ kz\^2 - 
+              2\ k0\^2\ ky\^2\ kz\^2 - k0\^2\ kz\^4)\), \((k0\^4 - 
+              k0\^2\ kx\^2 - k0\^2\ ky\^2 - 2\ k0\^2\ kz\^2 + kx\^2\ kz\^2 + 
+              ky\^2\ kz\^2 + kz\^4)\)/\((\(-k0\^6\) + 2\ k0\^4\ kx\^2 - 
+              k0\^2\ kx\^4 + 2\ k0\^4\ ky\^2 - 2\ k0\^2\ kx\^2\ ky\^2 - 
+              k0\^2\ ky\^4 + 2\ k0\^4\ kz\^2 - 2\ k0\^2\ kx\^2\ kz\^2 - 
+              2\ k0\^2\ ky\^2\ kz\^2 - k0\^2\ kz\^4)\)}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(FullSimplify[%]\)], "Input"],
+
+Cell[BoxData[
+    \({{\(\((k0 - kx)\)\ \((k0 + kx)\)\)\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\
+\^2 + kz\^2)\)\), \(-\(\(kx\ ky\)\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\^2 + 
+                    kz\^2)\)\)\)\), \(-\(\(kx\ kz\)\/\(k0\^2\ \((\(-k0\^2\) + 
+                    kx\^2 + ky\^2 + 
+                    kz\^2)\)\)\)\)}, {\(-\(\(kx\ ky\)\/\(k0\^2\ \((\(-k0\^2\) \
++ kx\^2 + ky\^2 + 
+                    kz\^2)\)\)\)\), \(\((k0 - ky)\)\ \((k0 + ky)\)\)\/\(k0\^2\
+\ \((\(-k0\^2\) + kx\^2 + ky\^2 + kz\^2)\)\), \(-\(\(ky\ kz\)\/\(k0\^2\ \
+\((\(-k0\^2\) + kx\^2 + ky\^2 + 
+                    kz\^2)\)\)\)\)}, {\(-\(\(kx\ kz\)\/\(k0\^2\ \((\(-k0\^2\) \
++ kx\^2 + ky\^2 + kz\^2)\)\)\)\), \(-\(\(ky\ kz\)\/\(k0\^2\ \((\(-k0\^2\) + 
+                    kx\^2 + ky\^2 + kz\^2)\)\)\)\), \(-\(\(\(-k0\^2\) + 
+                kz\^2\)\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\^2 + 
+                    kz\^2)\)\)\)\)}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(\(\[IndentingNewLine]\)\(fourint = %*\[ExponentialE]^\((I*kz*
+              rz)\)\)\)\)], "Input"],
+
+Cell[BoxData[
+    \({{\(\[ExponentialE]\^\(\[ImaginaryI]\ kz\ rz\)\ \((k0 - kx)\)\ \((k0 + \
+kx)\)\)\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\^2 + kz\^2)\)\), \(-\(\(\
+\[ExponentialE]\^\(\[ImaginaryI]\ kz\ rz\)\ kx\ ky\)\/\(k0\^2\ \((\(-k0\^2\) \
++ kx\^2 + ky\^2 + 
+                    kz\^2)\)\)\)\), \(-\(\(\[ExponentialE]\^\(\[ImaginaryI]\ \
+kz\ rz\)\ kx\ kz\)\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\^2 + 
+                    kz\^2)\)\)\)\)}, {\(-\(\(\[ExponentialE]\^\(\[ImaginaryI]\
+\ kz\ rz\)\ kx\ ky\)\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\^2 + 
+                    kz\^2)\)\)\)\), \(\[ExponentialE]\^\(\[ImaginaryI]\ kz\ \
+rz\)\ \((k0 - ky)\)\ \((k0 + ky)\)\)\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\^2 \
++ kz\^2)\)\), \(-\(\(\[ExponentialE]\^\(\[ImaginaryI]\ kz\ rz\)\ ky\ \
+kz\)\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\^2 + 
+                    kz\^2)\)\)\)\)}, {\(-\(\(\[ExponentialE]\^\(\[ImaginaryI]\
+\ kz\ rz\)\ kx\ kz\)\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\^2 + 
+                    kz\^2)\)\)\)\), \(-\(\(\[ExponentialE]\^\(\[ImaginaryI]\ \
+kz\ rz\)\ ky\ kz\)\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\^2 + 
+                    kz\^2)\)\)\)\), \(-\(\(\[ExponentialE]\^\(\[ImaginaryI]\ \
+kz\ rz\)\ \((\(-k0\^2\) + kz\^2)\)\)\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + 
+                    ky\^2 + kz\^2)\)\)\)\)}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Det[Out[11]]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-\(1\/\((\(-k0\^2\) + kx\^2 + ky\^2 + kz\^2)\)\^3\)\) + 
+      kx\^2\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\^2 + kz\^2)\)\^3\) + 
+      ky\^2\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\^2 + kz\^2)\)\^3\) + 
+      kz\^2\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\^2 + kz\^2)\)\^3\)\)], \
+"Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(FullSimplify[%]\)], "Input"],
+
+Cell[BoxData[
+    \(1\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\^2 + kz\^2)\)\^2\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Out[11]/%\)], "Input"],
+
+Cell[BoxData[
+    \({{\(-\((k0 - kx)\)\)\ \((k0 + kx)\)\ \((\(-k0\^2\) + kx\^2 + ky\^2 + 
+              kz\^2)\), kx\ ky\ \((\(-k0\^2\) + kx\^2 + ky\^2 + kz\^2)\), 
+        kx\ kz\ \((\(-k0\^2\) + kx\^2 + ky\^2 + 
+              kz\^2)\)}, {kx\ ky\ \((\(-k0\^2\) + kx\^2 + ky\^2 + 
+              kz\^2)\), \(-\((k0 - ky)\)\)\ \((k0 + ky)\)\ \((\(-k0\^2\) + 
+              kx\^2 + ky\^2 + kz\^2)\), 
+        ky\ kz\ \((\(-k0\^2\) + kx\^2 + ky\^2 + 
+              kz\^2)\)}, {kx\ kz\ \((\(-k0\^2\) + kx\^2 + ky\^2 + kz\^2)\), 
+        ky\ kz\ \((\(-k0\^2\) + kx\^2 + ky\^2 + 
+              kz\^2)\), \(-\((k0 - kz)\)\)\ \((k0 + kz)\)\ \((\(-k0\^2\) + 
+              kx\^2 + ky\^2 + kz\^2)\)}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(adjinvT = {{kx^2, kx\ ky, kx\ kz}, {kx\ ky, ky^2, ky\ kz}, {kx\ kz, 
+          ky\ kz, kz^2}}\)], "Input"],
+
+Cell[BoxData[
+    \({{kx\^2, kx\ ky, kx\ kz}, {kx\ ky, ky\^2, ky\ kz}, {kx\ kz, ky\ kz, 
+        kz\^2}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Eigenvectors[adjinvT]\)], "Input"],
+
+Cell[BoxData[
+    \({{\(-\(kz\/kx\)\), 0, 1}, {\(-\(ky\/kx\)\), 1, 0}, {kx\/kz, ky\/kz, 
+        1}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Eigenvalues[adjinvT]\)], "Input"],
+
+Cell[BoxData[
+    \({0, 0, kx\^2 + ky\^2 + kz\^2}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(adjinvT2 = {{\(-\((k0 - kx)\)\)\ \((k0 + kx)\), kx\ ky, 
+          kx\ kz}, {kx\ ky, \(-\((k0 - ky)\)\)\ \((k0 + ky)\), 
+          ky\ kz}, {kx\ kz, 
+          ky\ kz, \(-\((k0 - kz)\)\)\ \((k0 + kz)\)}}\)], "Input"],
+
+Cell[BoxData[
+    \({{\((\(-k0\) + kx)\)\ \((k0 + kx)\), kx\ ky, 
+        kx\ kz}, {kx\ ky, \((\(-k0\) + ky)\)\ \((k0 + ky)\), 
+        ky\ kz}, {kx\ kz, 
+        ky\ kz, \((\(-k0\) + kz)\)\ \((k0 + kz)\)}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Eigenvectors[adjinvT2]\)], "Input"],
+
+Cell[BoxData[
+    \({{\(-\(kz\/kx\)\), 0, 1}, {\(-\(ky\/kx\)\), 1, 0}, {kx\/kz, ky\/kz, 
+        1}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Eigenvalues[adjinvT2]\)], "Input"],
+
+Cell[BoxData[
+    \({\(-k0\^2\), \(-k0\^2\), \(-k0\^2\) + kx\^2 + ky\^2 + 
+        kz\^2}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Dot[{\(-\(kz\/kx\)\), 0, 1}, {\(-\(ky\/kx\)\), 1, 0}]\)], "Input"],
+
+Cell[BoxData[
+    \(\(ky\ kz\)\/kx\^2\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \({\(-\(kz\/kx\)\), 0, 1} . {kx\/kz, ky\/kz, 1}\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \({\(-\(ky\/kx\)\), 1, 0} . {kx\/kz, ky\/kz, 1}\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(inte1 = \((kx^2 - 
+            k0\^2)\)/\((k0^2*\((kx^2 + ky^2 + kz^2 - k0^2)\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(\(\(-k0\^2\) + kx\^2\)\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\^2 + kz\^2)\
+\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(InverseFourierTransform[1, k, r]\)], "Input"],
+
+Cell[BoxData[
+    \(InverseFourierTransform[
+      1, {{0, \(-kz\), ky}, {kz, 0, \(-kx\)}, {\(-ky\), kx, 0}}, 
+      r]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Integrate[%, {\[Alpha], 0, \[Pi]}]\)], "Input"],
+
+Cell[BoxData[
+    \(\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ r\)\ \((K\^2 - 4\ k0\^2)\)\ \
+\[Pi]\^2\)\/\(2\ k0\^2\ \((K\^2 - k0\^2)\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(k\)], "Input"],
+
+Cell[BoxData[
+    \({{0, \(-kz\), ky}, {kz, 0, \(-kx\)}, {\(-ky\), kx, 0}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(kk = {kx, ky, kz}\)], "Input"],
+
+Cell[BoxData[
+    \({kx, ky, kz}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(kdy = Outer[Times, kk, kk]\)], "Input"],
+
+Cell[BoxData[
+    \({{kx\^2, kx\ ky, kx\ kz}, {kx\ ky, ky\^2, ky\ kz}, {kx\ kz, ky\ kz, 
+        kz\^2}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(kdy . {0, 1, 0}\)], "Input"],
+
+Cell[BoxData[
+    \({kx\ ky, ky\^2, ky\ kz}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(% /. kz \[Rule] K*Cos[\[Alpha]]\)], "Input"],
+
+Cell[BoxData[
+    \({{\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ \((k0 - \
+kx)\)\ \((k0 + kx)\)\)\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\^2 + K\^2\ Cos[\
+\[Alpha]]\^2)\)\), \(-\(\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\
+\[Alpha]]\)\ kx\ ky\)\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\^2 + 
+                    K\^2\ Cos[\[Alpha]]\^2)\)\)\)\), \(-\(\(\[ExponentialE]\^\
+\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ K\ kx\ Cos[\[Alpha]]\)\/\(k0\^2\ \((\
+\(-k0\^2\) + kx\^2 + ky\^2 + 
+                    K\^2\ Cos[\[Alpha]]\^2)\)\)\)\)}, {\(-\(\(\[ExponentialE]\
+\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ kx\ ky\)\/\(k0\^2\ \((\(-k0\^2\) + 
+                    kx\^2 + ky\^2 + 
+                    K\^2\ Cos[\[Alpha]]\^2)\)\)\)\), \(\[ExponentialE]\^\(\
+\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ \((k0 - ky)\)\ \((k0 + \
+ky)\)\)\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\^2 + K\^2\ \
+Cos[\[Alpha]]\^2)\)\), \(-\(\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\
+\[Alpha]]\)\ K\ ky\ Cos[\[Alpha]]\)\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\^2 + 
+                    K\^2\ Cos[\[Alpha]]\^2)\)\)\)\)}, {\(-\(\(\[ExponentialE]\
+\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ K\ kx\ Cos[\[Alpha]]\)\/\(k0\^2\ \
+\((\(-k0\^2\) + kx\^2 + ky\^2 + 
+                    K\^2\ Cos[\[Alpha]]\^2)\)\)\)\), \(-\(\(\[ExponentialE]\^\
+\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ K\ ky\ Cos[\[Alpha]]\)\/\(k0\^2\ \((\
+\(-k0\^2\) + kx\^2 + ky\^2 + 
+                    K\^2\ Cos[\[Alpha]]\^2)\)\)\)\), \(-\(\(\[ExponentialE]\^\
+\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ \((\(-k0\^2\) + 
+                    K\^2\ Cos[\[Alpha]]\^2)\)\)\/\(k0\^2\ \((\(-k0\^2\) + 
+                    kx\^2 + ky\^2 + 
+                    K\^2\ Cos[\[Alpha]]\^2)\)\)\)\)}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(% /. kx \[Rule] K*Sin[\[Alpha]]*Cos[\[Gamma]]\)], "Input"],
+
+Cell[BoxData[
+    \({{\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ \((k0 - K\
+\ Cos[\[Gamma]]\ Sin[\[Alpha]])\)\ \((k0 + K\ Cos[\[Gamma]]\ Sin[\[Alpha]])\)\
+\)\/\(k0\^2\ \((\(-k0\^2\) + ky\^2 + K\^2\ Cos[\[Alpha]]\^2 + K\^2\ Cos[\
+\[Gamma]]\^2\ Sin[\[Alpha]]\^2)\)\), \(-\(\(\[ExponentialE]\^\(\[ImaginaryI]\ \
+K\ rz\ Cos[\[Alpha]]\)\ K\ ky\ Cos[\[Gamma]]\ Sin[\[Alpha]]\)\/\(k0\^2\ \
+\((\(-k0\^2\) + ky\^2 + K\^2\ Cos[\[Alpha]]\^2 + 
+                    K\^2\ Cos[\[Gamma]]\^2\ Sin[\[Alpha]]\^2)\)\)\)\), \
+\(-\(\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ K\^2\ Cos[\
+\[Alpha]]\ Cos[\[Gamma]]\ Sin[\[Alpha]]\)\/\(k0\^2\ \((\(-k0\^2\) + ky\^2 + 
+                    K\^2\ Cos[\[Alpha]]\^2 + 
+                    K\^2\ Cos[\[Gamma]]\^2\ Sin[\[Alpha]]\^2)\)\)\)\)}, \
+{\(-\(\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ K\ ky\ Cos[\
+\[Gamma]]\ Sin[\[Alpha]]\)\/\(k0\^2\ \((\(-k0\^2\) + ky\^2 + 
+                    K\^2\ Cos[\[Alpha]]\^2 + 
+                    K\^2\ Cos[\[Gamma]]\^2\ Sin[\[Alpha]]\^2)\)\)\)\), \(\
+\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ \((k0 - ky)\)\ \
+\((k0 + ky)\)\)\/\(k0\^2\ \((\(-k0\^2\) + ky\^2 + K\^2\ Cos[\[Alpha]]\^2 + \
+K\^2\ Cos[\[Gamma]]\^2\ Sin[\[Alpha]]\^2)\)\), \(-\(\(\[ExponentialE]\^\(\
+\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ K\ ky\ Cos[\[Alpha]]\)\/\(k0\^2\ \
+\((\(-k0\^2\) + ky\^2 + K\^2\ Cos[\[Alpha]]\^2 + 
+                    K\^2\ Cos[\[Gamma]]\^2\ Sin[\[Alpha]]\^2)\)\)\)\)}, \
+{\(-\(\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ K\^2\ Cos[\
+\[Alpha]]\ Cos[\[Gamma]]\ Sin[\[Alpha]]\)\/\(k0\^2\ \((\(-k0\^2\) + ky\^2 + 
+                    K\^2\ Cos[\[Alpha]]\^2 + 
+                    K\^2\ Cos[\[Gamma]]\^2\ Sin[\[Alpha]]\^2)\)\)\)\), \
+\(-\(\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ K\ ky\ Cos[\
+\[Alpha]]\)\/\(k0\^2\ \((\(-k0\^2\) + ky\^2 + K\^2\ Cos[\[Alpha]]\^2 + 
+                    K\^2\ Cos[\[Gamma]]\^2\ Sin[\[Alpha]]\^2)\)\)\)\), \
+\(-\(\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ \
+\((\(-k0\^2\) + K\^2\ Cos[\[Alpha]]\^2)\)\)\/\(k0\^2\ \((\(-k0\^2\) + ky\^2 + 
+                    K\^2\ Cos[\[Alpha]]\^2 + 
+                    K\^2\ Cos[\[Gamma]]\^2\ Sin[\[Alpha]]\^2)\)\)\)\)}}\)], \
+"Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(% /. ky \[Rule] K*Sin[\[Alpha]]*Sin[\[Gamma]]\)], "Input"],
+
+Cell[BoxData[
+    \({{\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ \((k0 - K\
+\ Cos[\[Gamma]]\ Sin[\[Alpha]])\)\ \((k0 + K\ Cos[\[Gamma]]\ Sin[\[Alpha]])\)\
+\)\/\(k0\^2\ \((\(-k0\^2\) + K\^2\ Cos[\[Alpha]]\^2 + K\^2\ Cos[\[Gamma]]\^2\ \
+Sin[\[Alpha]]\^2 + K\^2\ Sin[\[Alpha]]\^2\ Sin[\[Gamma]]\^2)\)\), \(-\(\((\
+\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ K\^2\ Cos[\[Gamma]]\
+\ Sin[\[Alpha]]\^2\ Sin[\[Gamma]])\)/\((k0\^2\ \((\(-k0\^2\) + 
+                    K\^2\ Cos[\[Alpha]]\^2 + 
+                    K\^2\ Cos[\[Gamma]]\^2\ Sin[\[Alpha]]\^2 + 
+                    K\^2\ Sin[\[Alpha]]\^2\ Sin[\[Gamma]]\^2)\))\)\)\), \(-\(\
+\((\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ K\^2\ Cos[\
+\[Alpha]]\ Cos[\[Gamma]]\ Sin[\[Alpha]])\)/\((k0\^2\ \((\(-k0\^2\) + 
+                    K\^2\ Cos[\[Alpha]]\^2 + 
+                    K\^2\ Cos[\[Gamma]]\^2\ Sin[\[Alpha]]\^2 + 
+                    K\^2\ Sin[\[Alpha]]\^2\ Sin[\[Gamma]]\^2)\))\)\)\)}, {\(-\
+\(\((\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ K\^2\ Cos[\
+\[Gamma]]\ Sin[\[Alpha]]\^2\ Sin[\[Gamma]])\)/\((k0\^2\ \((\(-k0\^2\) + 
+                    K\^2\ Cos[\[Alpha]]\^2 + 
+                    K\^2\ Cos[\[Gamma]]\^2\ Sin[\[Alpha]]\^2 + 
+                    K\^2\ Sin[\[Alpha]]\^2\ Sin[\[Gamma]]\^2)\))\)\)\), \(\
+\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ \((k0 - K\ Sin[\
+\[Alpha]]\ Sin[\[Gamma]])\)\ \((k0 + K\ Sin[\[Alpha]]\ \
+Sin[\[Gamma]])\)\)\/\(k0\^2\ \((\(-k0\^2\) + K\^2\ Cos[\[Alpha]]\^2 + K\^2\ \
+Cos[\[Gamma]]\^2\ Sin[\[Alpha]]\^2 + K\^2\ Sin[\[Alpha]]\^2\ \
+Sin[\[Gamma]]\^2)\)\), \(-\(\((\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\
+\[Alpha]]\)\ K\^2\ Cos[\[Alpha]]\ Sin[\[Alpha]]\ Sin[\[Gamma]])\)/\((k0\^2\ \
+\((\(-k0\^2\) + K\^2\ Cos[\[Alpha]]\^2 + 
+                    K\^2\ Cos[\[Gamma]]\^2\ Sin[\[Alpha]]\^2 + 
+                    K\^2\ Sin[\[Alpha]]\^2\ Sin[\[Gamma]]\^2)\))\)\)\)}, {\(-\
+\(\((\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ K\^2\ Cos[\
+\[Alpha]]\ Cos[\[Gamma]]\ Sin[\[Alpha]])\)/\((k0\^2\ \((\(-k0\^2\) + 
+                    K\^2\ Cos[\[Alpha]]\^2 + 
+                    K\^2\ Cos[\[Gamma]]\^2\ Sin[\[Alpha]]\^2 + 
+                    
+                    K\^2\ Sin[\[Alpha]]\^2\ Sin[\[Gamma]]\^2)\))\)\)\), \(-\(\
+\((\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ K\^2\ Cos[\
+\[Alpha]]\ Sin[\[Alpha]]\ Sin[\[Gamma]])\)/\((k0\^2\ \((\(-k0\^2\) + 
+                    K\^2\ Cos[\[Alpha]]\^2 + 
+                    K\^2\ Cos[\[Gamma]]\^2\ Sin[\[Alpha]]\^2 + 
+                    K\^2\ Sin[\[Alpha]]\^2\ Sin[\[Gamma]]\^2)\))\)\)\), \(-\(\
+\((\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ \((\(-k0\^2\) + 
+                    K\^2\ Cos[\[Alpha]]\^2)\))\)/\((k0\^2\ \((\(-k0\^2\) + 
+                    K\^2\ Cos[\[Alpha]]\^2 + 
+                    K\^2\ Cos[\[Gamma]]\^2\ Sin[\[Alpha]]\^2 + 
+                    K\^2\ Sin[\[Alpha]]\^2\ Sin[\[Gamma]]\^2)\))\)\)\)}}\)], \
+"Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(FullSimplify[%]\)], "Input"],
+
+Cell[BoxData[
+    \(If[Im[rz] \[Equal] 
+          0 && \((Re[k0\^2] \[LessEqual] 0 || 
+            Im[k0\^2] \[NotEqual] 
+              0)\), \(\(1\/\(k0\^2\ rz\^2\)\)\((\[ImaginaryI]\ \@\[Pi]\ \((rz\
+\ MeijerG[{{0}, {}}, {{0, 
+                      0}, {1\/2}}, \(-\(1\/4\)\)\ k0\^2\ rz\^2] - \
+\@\(-\(1\/k0\^2\)\)\ MeijerG[{{1\/2}, {}}, {{1\/2, 
+                      1\/2}, {0}}, \(-\(1\/4\)\)\ k0\^2\ rz\^2]\ Sign[
+                  rz])\))\)\), 
+      Integrate[\(2\ \[ImaginaryI]\ K\ Cos[K\ rz]\)\/\(k0\^2\ \((K\^2 - \
+k0\^2)\)\ rz\) - \(2\ \[ImaginaryI]\ Sin[K\ rz]\)\/\(k0\^2\ \((K\^2 - \
+k0\^2)\)\ rz\^2\), {K, 0, \[Infinity]}, 
+        Assumptions \[Rule] \((Im[k0\^2] \[Equal] 0 && Re[k0\^2] > 0)\) || 
+            Im[rz] \[NotEqual] 0]]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(% /. \[Gamma] \[Rule] 0\)], "Input"],
+
+Cell[BoxData[
+    \({{\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ \((k0 - K\
+\ Sin[\[Alpha]])\)\ \((k0 + K\ Sin[\[Alpha]])\)\)\/\(k0\^2\ \((K\^2 - \
+k0\^2)\)\), 
+        0, \(-\(\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ K\
+\^2\ Cos[\[Alpha]]\ Sin[\[Alpha]]\)\/\(K\^2\ k0\^2 - 
+                k0\^4\)\)\)}, {0, \[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ \
+Cos[\[Alpha]]\)\/\(K\^2 - k0\^2\), 
+        0}, {\(-\(\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ \
+K\^2\ Cos[\[Alpha]]\ Sin[\[Alpha]]\)\/\(K\^2\ k0\^2 - k0\^4\)\)\), 
+        0, \(\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ \
+\((k0\^2 - K\^2\ Cos[\[Alpha]]\^2)\)\)\/\(k0\^2\ \((K\^2 - k0\^2)\)\)}}\)], \
+"Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(int = \(\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ \((k0 \
+- K\ Sin[\[Alpha]])\)\ \((k0 + K\ Sin[\[Alpha]])\)\)\/\(k0\^2\ \((K\^2 - \
+k0\^2)\)\)\)], "Input"],
+
+Cell[BoxData[
+    \(\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ \((k0 - K\ \
+Sin[\[Alpha]])\)\ \((k0 + K\ Sin[\[Alpha]])\)\)\/\(k0\^2\ \((K\^2 - \
+k0\^2)\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(Integrate[int, {K, 0, \[Infinity]}]\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(int2 = \(-\(\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ \
+K\^2\ Cos[\[Alpha]]\ Sin[\[Alpha]]\)\/\(K\^2\ k0\^2 - k0\^4\)\)\)\)], "Input"],
+
+Cell[BoxData[
+    \(\(-\(\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ K\^2\ \
+Cos[\[Alpha]]\ Sin[\[Alpha]]\)\/\(K\^2\ k0\^2 - k0\^4\)\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(int2b = Integrate[int2, {\[Alpha], 0, \[Pi]}]\)], "Input"],
+
+Cell[BoxData[
+    \(\(2\ \[ImaginaryI]\ \((K\ rz\ Cos[K\ rz] - Sin[K\ rz])\)\)\/\(k0\^2\ \
+\((K\^2 - k0\^2)\)\ rz\^2\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(2\ \[ImaginaryI]\ \((K\ rz\ Cos[K\ rz] - Sin[K\ rz])\)\)\/\(k0\^2\ \
+\((K\^2 - k0\^2)\)\ rz\^2\)\), "\[IndentingNewLine]", 
+    \(int2b\)}], "Input"],
+
+Cell[BoxData[
+    \(\(2\ \[ImaginaryI]\ \((K\ rz\ Cos[K\ rz] - Sin[K\ rz])\)\)\/\(k0\^2\ \
+\((K\^2 - k0\^2)\)\ rz\^2\)\)], "Output"],
+
+Cell[BoxData[
+    \(\(2\ \[ImaginaryI]\ \((K\ rz\ Cos[K\ rz] - Sin[K\ rz])\)\)\/\(k0\^2\ \
+\((K\^2 - k0\^2)\)\ rz\^2\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Integrate[int2b, {K, 0, \[Infinity]}]\)], "Input"],
+
+Cell[BoxData[
+    \(If[Im[rz] \[Equal] 
+          0 && \((Re[k0\^2] \[LessEqual] 0 || 
+            Im[k0\^2] \[NotEqual] 
+              0)\), \(\(1\/\(k0\^2\ rz\^2\)\)\((\[ImaginaryI]\ \@\[Pi]\ \((rz\
+\ MeijerG[{{0}, {}}, {{0, 
+                      0}, {1\/2}}, \(-\(1\/4\)\)\ k0\^2\ rz\^2] - \
+\@\(-\(1\/k0\^2\)\)\ MeijerG[{{1\/2}, {}}, {{1\/2, 
+                      1\/2}, {0}}, \(-\(1\/4\)\)\ k0\^2\ rz\^2]\ Sign[
+                  rz])\))\)\), 
+      Integrate[\(2\ \[ImaginaryI]\ K\ Cos[K\ rz]\)\/\(k0\^2\ \((K\^2 - \
+k0\^2)\)\ rz\) - \(2\ \[ImaginaryI]\ Sin[K\ rz]\)\/\(k0\^2\ \((K\^2 - \
+k0\^2)\)\ rz\^2\), {K, 0, \[Infinity]}, 
+        Assumptions \[Rule] \((Im[k0\^2] \[Equal] 0 && Re[k0\^2] > 0)\) || 
+            Im[rz] \[NotEqual] 0]]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(int3 = \[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\/\(K\^2 \
+- k0\^2\)\)], "Input"],
+
+Cell[BoxData[
+    \(\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\/\(K\^2 - \
+k0\^2\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Integrate[int3, {\[Alpha], 0, \[Pi]}]\)], "Input"],
+
+Cell[BoxData[
+    \(\(\(1\/\(K\^2 - k0\^2\)\)\(If[
+      K\ rz \[Element] Reals, \[Pi]\ BesselJ[0, K\ rz], 
+      Integrate[\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\), {\
+\[Alpha], 0, \[Pi]}, 
+        Assumptions \[Rule] K\ rz \[NotElement] Reals]]\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(int4 = \(-\(\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ \
+K\^2\ Cos[\[Alpha]]\ Sin[\[Alpha]]\)\/\(K\^2\ k0\^2 - k0\^4\)\)\)\)], "Input"],
+
+Cell[BoxData[
+    \(\(-\(\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ K\^2\ \
+Cos[\[Alpha]]\ Sin[\[Alpha]]\)\/\(K\^2\ k0\^2 - k0\^4\)\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Integrate[int4, {\[Alpha], 0, \[Pi]}]\)], "Input"],
+
+Cell[BoxData[
+    \(\(2\ \[ImaginaryI]\ \((K\ rz\ Cos[K\ rz] - Sin[K\ rz])\)\)\/\(k0\^2\ \
+\((K\^2 - k0\^2)\)\ rz\^2\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(int5 = \(\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ \
+\((k0\^2 - K\^2\ Cos[\[Alpha]]\^2)\)\)\/\(k0\^2\ \((K\^2 - k0\^2)\)\)\)], \
+"Input"],
+
+Cell[BoxData[
+    \(\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ \((k0\^2 - \
+K\^2\ Cos[\[Alpha]]\^2)\)\)\/\(k0\^2\ \((K\^2 - k0\^2)\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Integrate[int5, {\[Alpha], 0, \[Pi]}]\)], "Input"],
+
+Cell[BoxData[
+    \(If[K\ rz \[Element] 
+        Reals, \(\[Pi]\ \((\(-BesselJ[0, K\ rz]\) + \(K\ BesselJ[1, K\ \
+rz]\)\/\(K\^2\ rz - k0\^2\ rz\))\)\)\/k0\^2, 
+      Integrate[\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ rz\ Cos[\[Alpha]]\)\ \
+\((k0\^2 - K\^2\ Cos[\[Alpha]]\^2)\)\)\/\(k0\^2\ \((K\^2 - k0\^2)\)\), {\
+\[Alpha], 0, \[Pi]}, 
+        Assumptions \[Rule] K\ rz \[NotElement] Reals]]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(fourint\)], "Input"],
+
+Cell[BoxData[
+    \({{\(\[ExponentialE]\^\(\[ImaginaryI]\ kz\ rz\)\ \((k0 - kx)\)\ \((k0 + \
+kx)\)\)\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\^2 + kz\^2)\)\), \(-\(\(\
+\[ExponentialE]\^\(\[ImaginaryI]\ kz\ rz\)\ kx\ ky\)\/\(k0\^2\ \((\(-k0\^2\) \
++ kx\^2 + ky\^2 + 
+                    kz\^2)\)\)\)\), \(-\(\(\[ExponentialE]\^\(\[ImaginaryI]\ \
+kz\ rz\)\ kx\ kz\)\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\^2 + 
+                    kz\^2)\)\)\)\)}, {\(-\(\(\[ExponentialE]\^\(\[ImaginaryI]\
+\ kz\ rz\)\ kx\ ky\)\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\^2 + 
+                    kz\^2)\)\)\)\), \(\[ExponentialE]\^\(\[ImaginaryI]\ kz\ \
+rz\)\ \((k0 - ky)\)\ \((k0 + ky)\)\)\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\^2 \
++ kz\^2)\)\), \(-\(\(\[ExponentialE]\^\(\[ImaginaryI]\ kz\ rz\)\ ky\ \
+kz\)\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\^2 + 
+                    kz\^2)\)\)\)\)}, {\(-\(\(\[ExponentialE]\^\(\[ImaginaryI]\
+\ kz\ rz\)\ kx\ kz\)\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\^2 + 
+                    kz\^2)\)\)\)\), \(-\(\(\[ExponentialE]\^\(\[ImaginaryI]\ \
+kz\ rz\)\ ky\ kz\)\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\^2 + 
+                    kz\^2)\)\)\)\), \(-\(\(\[ExponentialE]\^\(\[ImaginaryI]\ \
+kz\ rz\)\ \((\(-k0\^2\) + kz\^2)\)\)\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + 
+                    ky\^2 + kz\^2)\)\)\)\)}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(int1a = \(\[ExponentialE]\^\(\[ImaginaryI]\ kz\ rz\)\ \((k0 - kx)\)\ \
+\((k0 + kx)\)\)\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\^2 + kz\^2)\)\)\)], \
+"Input"],
+
+Cell[BoxData[
+    \(\(\[ExponentialE]\^\(\[ImaginaryI]\ kz\ rz\)\ \((k0 - kx)\)\ \((k0 + \
+kx)\)\)\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\^2 + kz\^2)\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Integrate[int1a, ky]\)], "Input"],
+
+Cell[BoxData[
+    \(\(\[ExponentialE]\^\(\[ImaginaryI]\ kz\ rz\)\ \((k0 - kx)\)\ \((k0 + \
+kx)\)\ ArcTan[ky\/\@\(\(-k0\^2\) + kx\^2 + kz\^2\)]\)\/\(k0\^2\ \
+\@\(\(-k0\^2\) + kx\^2 + kz\^2\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(ArcTan[\[Infinity]]\)], "Input"],
+
+Cell[BoxData[
+    \(\[Pi]\/2\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(ArcTan[\(-\[Infinity]\)]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-\(\[Pi]\/2\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(int1b = \[Pi]*\(\[ExponentialE]\^\(\[ImaginaryI]\ kz\ rz\)\ \((k0 - kx)\
+\)\ \((k0 + kx)\)\)\/\(k0\^2\ \@\(\(-k0\^2\) + kx\^2 + kz\^2\)\)\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{\(General::"spell1"\), \(\(:\)\(\ \)\), "\<\"Possible spelling \
+error: new symbol name \\\"\\!\\(int1b\\)\\\" is similar to existing symbol \
+\\\"\\!\\(int1a\\)\\\". \\!\\(\\*ButtonBox[\\\"Mehr\[Ellipsis]\\\", \
+ButtonStyle->\\\"RefGuideLinkText\\\", ButtonFrame->None, \
+ButtonData:>\\\"General::spell1\\\"]\\)\"\>"}]], "Message"],
+
+Cell[BoxData[
+    \(\(\[ExponentialE]\^\(\[ImaginaryI]\ kz\ rz\)\ \((k0 - kx)\)\ \((k0 + \
+kx)\)\ \[Pi]\)\/\(k0\^2\ \@\(\(-k0\^2\) + kx\^2 + kz\^2\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(int1b\)], "Input"],
+
+Cell[BoxData[
+    \(\(\[ExponentialE]\^\(\[ImaginaryI]\ kz\ rz\)\ \((k0 - kx)\)\ \((k0 + \
+kx)\)\ \[Pi]\)\/\(k0\^2\ \@\(\(-k0\^2\) + kx\^2 + kz\^2\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Integrate[int1b, kx]\)], "Input"],
+
+Cell[BoxData[
+    \(\(\(1\/k0\^2\)\((\[ExponentialE]\^\(\[ImaginaryI]\ kz\ rz\)\ \[Pi]\ \((\
+\(-\(1\/2\)\)\ kx\ \@\(\(-k0\^2\) + kx\^2 + kz\^2\) + 
+            1\/2\ \((k0\^2 + kz\^2)\)\ Log[
+                kx + \@\(\(-k0\^2\) + kx\^2 + kz\^2\)])\))\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(int2a = \(-\(\(\[ExponentialE]\^\(\[ImaginaryI]\ kz\ rz\)\ kx\ \
+ky\)\/\(k0\^2\ \((\(-k0\^2\) + kx\^2 + ky\^2 + kz\^2)\)\)\)\)\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{\(General::"spell"\), \(\(:\)\(\ \)\), "\<\"Possible spelling \
+error: new symbol name \\\"\\!\\(int2a\\)\\\" is similar to existing symbols \
+\\!\\({int2, int2b}\\). \\!\\(\\*ButtonBox[\\\"Mehr\[Ellipsis]\\\", \
+ButtonStyle->\\\"RefGuideLinkText\\\", ButtonFrame->None, \
+ButtonData:>\\\"General::spell\\\"]\\)\"\>"}]], "Message"],
+
+Cell[BoxData[
+    \(\(-\(\(\[ExponentialE]\^\(\[ImaginaryI]\ kz\ rz\)\ kx\ ky\)\/\(k0\^2\ \
+\((\(-k0\^2\) + kx\^2 + ky\^2 + kz\^2)\)\)\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Integrate[int1a, kx]\)], "Input"],
+
+Cell[BoxData[
+    \(\(\[ExponentialE]\^\(\[ImaginaryI]\ kz\ rz\)\ \((\(-kx\) + \(\((ky\^2 + \
+kz\^2)\)\ ArcTan[kx\/\@\(\(-k0\^2\) + ky\^2 + kz\^2\)]\)\/\@\(\(-k0\^2\) + ky\
+\^2 + kz\^2\))\)\)\/k0\^2\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(int2b = \[ExponentialE]\^\(\[ImaginaryI]\ kz\ rz\)\ *\[Pi]*\(\((ky\^2 + \
+kz\^2)\)\(\ \)\)\/\@\(\(-k0\^2\) + ky\^2 + kz\^2\)\)], "Input"],
+
+Cell[BoxData[
+    \(\(\[ExponentialE]\^\(\[ImaginaryI]\ kz\ rz\)\ \((ky\^2 + kz\^2)\)\ \
+\[Pi]\)\/\@\(\(-k0\^2\) + ky\^2 + kz\^2\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Integrate[int2b, kz]\)], "Input"],
+
+Cell[BoxData[
+    \(\[Pi]\ \(\[Integral]\(\(\[ExponentialE]\^\(\[ImaginaryI]\ kz\ rz\)\ \
+\((ky\^2 + 
+                    kz\^2)\)\)\/\@\(\(-k0\^2\) + ky\^2 + kz\^2\)\) \
+\[DifferentialD]kz\)\)], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"5.2 for Microsoft Windows",
+ScreenRectangle->{{0, 1280}, {0, 948}},
+ScreenStyleEnvironment->"Presentation",
+WindowSize->{706, 831},
+WindowMargins->{{0, Automatic}, {Automatic, 0}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1776, 53, 91, 1, 38, "Input"],
+Cell[1870, 56, 88, 1, 38, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[1995, 62, 38, 1, 38, "Input"],
+Cell[2036, 65, 157, 2, 62, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2230, 72, 70, 1, 38, "Input"],
+Cell[2303, 75, 67, 1, 38, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2407, 81, 56, 1, 38, "Input"],
+Cell[2466, 84, 226, 4, 85, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2729, 93, 43, 1, 38, "Input"],
+Cell[2775, 96, 3112, 45, 637, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5924, 146, 48, 1, 38, "Input"],
+Cell[5975, 149, 918, 14, 237, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[6930, 168, 120, 2, 61, "Input"],
+Cell[7053, 172, 1315, 19, 256, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[8405, 196, 45, 1, 38, "Input"],
+Cell[8453, 199, 304, 5, 111, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[8794, 209, 48, 1, 38, "Input"],
+Cell[8845, 212, 91, 1, 58, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[8973, 218, 42, 1, 38, "Input"],
+Cell[9018, 221, 703, 11, 154, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[9758, 237, 126, 2, 61, "Input"],
+Cell[9887, 241, 118, 2, 39, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[10042, 248, 54, 1, 38, "Input"],
+Cell[10099, 251, 114, 2, 54, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[10250, 258, 53, 1, 38, "Input"],
+Cell[10306, 261, 63, 1, 39, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[10406, 267, 236, 4, 84, "Input"],
+Cell[10645, 273, 220, 4, 84, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[10902, 282, 55, 1, 38, "Input"],
+Cell[10960, 285, 114, 2, 54, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[11111, 292, 54, 1, 38, "Input"],
+Cell[11168, 295, 103, 2, 39, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[11308, 302, 86, 1, 54, "Input"],
+Cell[11397, 305, 51, 1, 54, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[11485, 311, 78, 1, 54, "Input"],
+Cell[11566, 314, 35, 1, 38, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[11638, 320, 78, 1, 54, "Input"],
+Cell[11719, 323, 35, 1, 38, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[11791, 329, 115, 2, 40, "Input"],
+Cell[11909, 333, 111, 2, 60, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[12057, 340, 65, 1, 38, "Input"],
+Cell[12125, 343, 133, 3, 61, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[12295, 351, 67, 1, 38, "Input"],
+Cell[12365, 354, 147, 2, 60, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[12549, 361, 34, 1, 38, "Input"],
+Cell[12586, 364, 88, 1, 38, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[12711, 370, 50, 1, 38, "Input"],
+Cell[12764, 373, 46, 1, 38, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[12847, 379, 59, 1, 38, "Input"],
+Cell[12909, 382, 118, 2, 39, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[13064, 389, 48, 1, 38, "Input"],
+Cell[13115, 392, 57, 1, 39, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[13209, 398, 64, 1, 38, "Input"],
+Cell[13276, 401, 1738, 26, 452, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[15051, 432, 78, 1, 38, "Input"],
+Cell[15132, 435, 2260, 33, 452, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[17429, 473, 78, 1, 38, "Input"],
+Cell[17510, 476, 2979, 45, 441, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[20526, 526, 48, 1, 38, "Input"],
+Cell[20577, 529, 762, 14, 308, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[21376, 548, 56, 1, 38, "Input"],
+Cell[21435, 551, 732, 12, 202, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[22204, 568, 192, 3, 61, "Input"],
+Cell[22399, 573, 187, 3, 60, "Output"]
+}, Open  ]],
+Cell[22601, 579, 68, 1, 38, "Input"],
+
+Cell[CellGroupData[{
+Cell[22694, 584, 172, 2, 59, "Input"],
+Cell[22869, 588, 166, 2, 58, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[23072, 595, 78, 1, 38, "Input"],
+Cell[23153, 598, 132, 2, 58, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[23322, 605, 172, 3, 81, "Input"],
+Cell[23497, 610, 132, 2, 58, "Output"],
+Cell[23632, 614, 132, 2, 58, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[23801, 621, 70, 1, 38, "Input"],
+Cell[23874, 624, 762, 14, 308, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[24673, 643, 116, 2, 58, "Input"],
+Cell[24792, 647, 110, 2, 57, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[24939, 654, 70, 1, 38, "Input"],
+Cell[25012, 657, 280, 5, 78, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[25329, 667, 172, 2, 59, "Input"],
+Cell[25504, 671, 166, 2, 58, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[25707, 678, 70, 1, 38, "Input"],
+Cell[25780, 681, 132, 2, 58, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[25949, 688, 173, 3, 61, "Input"],
+Cell[26125, 693, 165, 2, 60, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[26327, 700, 70, 1, 38, "Input"],
+Cell[26400, 703, 403, 7, 142, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[26840, 715, 40, 1, 38, "Input"],
+Cell[26883, 718, 1315, 19, 256, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[28235, 742, 174, 3, 61, "Input"],
+Cell[28412, 747, 165, 2, 60, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[28614, 754, 53, 1, 38, "Input"],
+Cell[28670, 757, 205, 3, 79, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[28912, 765, 52, 1, 38, "Input"],
+Cell[28967, 768, 42, 1, 51, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[29046, 774, 57, 1, 38, "Input"],
+Cell[29106, 777, 51, 1, 51, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[29194, 783, 170, 2, 64, "Input"],
+Cell[29367, 787, 358, 5, 74, "Message"],
+Cell[29728, 794, 164, 2, 62, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[29929, 801, 38, 1, 38, "Input"],
+Cell[29970, 804, 164, 2, 62, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[30171, 811, 53, 1, 38, "Input"],
+Cell[30227, 814, 268, 4, 97, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[30532, 823, 159, 2, 61, "Input"],
+Cell[30694, 827, 357, 5, 74, "Message"],
+Cell[31054, 834, 152, 2, 60, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[31243, 841, 53, 1, 38, "Input"],
+Cell[31299, 844, 212, 3, 107, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[31548, 852, 157, 2, 65, "Input"],
+Cell[31708, 856, 144, 2, 64, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[31889, 863, 53, 1, 38, "Input"],
+Cell[31945, 866, 205, 4, 64, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

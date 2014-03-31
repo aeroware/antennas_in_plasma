@@ -1,0 +1,133 @@
+\documentclass[a4paper,10pt]{article}
+
+%\usepackage[T1]{fontenc}
+%\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{booktabs}
+%\usepackage{ulem}
+\usepackage{color}
+
+%opening
+\title{How to implement the ASAP toolbox including the effects of magnetized plasma.\\
+A guide and project proposal.}
+\author{Oswald, T.H}
+
+\begin{document}
+
+\maketitle
+\newpage
+
+\begin{abstract}
+A large part of the work of the radio science group of the space research institute Graz involves the numerical determination of space craft antenna properties. For this task we use partly software bought or downloaded from the internet, partly a collection of Matlab routines written by actual or former members of the group. In my opinion, this procedure bears two major drawbacks which justify the large amount of work of writing a own complete and consistent set of software. Those reasons and a proposal how to proceed in implementing this software is the content of this report.
+\end{abstract}
+%
+\newpage
+\tableofcontents
+\newpage
+\section{Introduction}
+The analysis of the spacecraft antennas as we perform is divided in two general steps. The first step is to compute the current distribution on the spacecraft surface. This is done by employing the open source ASAP program, a highly sophisticated software which is capable of producing the solutions to many different problems. In future we will also use the proprietary CONCEPT II from the University of Hamburg-Harburg.\\
+
+The second step is to calculate all interesting antenna properties, for example the effective length vectors or the antenna impedances, on base of the current distribution which was computed in step one. For this we use our Matlab toolbox which was written by many members of the institute.
+
+\section{Why do we need a new software package ?}
+In this section I will describe three reasons why I think that it would be a good idea to spend a few years on the research and the implementation of a new antenna scattering package. Of course, there is a fourth good reason, namely that I want to get my PhD, but since that is maybe not of general interest to the institute, I left this point out.
+
+\subsection{The plasma influence}
+The most important aspect of the project I propose is the inclusion of the space plasma into the model. Space plasma is altering the effects of an antenna in many different ways and all those were ignored in previous studies. To name a view:
+
+\begin{description}
+    \item[Resonances] In a two component plasma there are four fundamental frequencies where the antenna resonates, which is normally manifested in an increase of the magnitude of the effective length vector. Those are the two plasma frequencies and the cyclotron frequencies. All four are located within the normal range of the receivers on spacecraft. The inclusion of these resonance effects would be possible even in the most simplest of the possible models, as I will describe later.
+
+\item[The resonance cone]
+Calculating short dipoles with a constant current results in a cone-shaped singularity where the fields and the energy flux goes to infinity. This computational artefact can be circumvented by postulating a current density that decreases with $f^{-4}$ in Fourier space, but a finite resonance cone remains.
+
+\item[Departure from reciprocity] It is common knowledge that reciprocity is not valid in magnetized plasmas. There is a second aspect of reciprocity that we would have to consider. An emitting antenna excites not only EM waves but also electrostatic plasma waves and ion plasma waves, as well as cyclotron waves. So when computing the power pattern, which one would normally include all those waves (or only the electrostatic waves in the most simplest model). However, an other antenna which would receive this signal receive a completely different waveform because the different waves have a different propagation velocity, which also depends on the direction of propagation in a magnetized plasma. So reciprocity is not even valid in unmagnetized plasma, a fact that seems to be often ignored. Also the natural sources do not normally emit all kinds of plasma waves as an antenna so we would have to consider what is emitted by what sources and what does the antenna receive.
+
+\item[The method of determining the effective length vectors]
+A short dipole in an unmagnetized plasma is an isotropic radiator (electrostatic waves are longitudinal). So in addition to the last item one can not identify the direction of an effective length vector by looking at the minimum of the power pattern.
+
+\item[Alteration of power pattern]
+The power pattern and the effective length vectors will be different as in vacuum. These differences should be included in the new calculations.
+
+\item[Influence upon the input impedance]
+The antenna impedances are influenced by magnetized plasma. In general the resonances increase the real parts of the impedances,
+
+\item[Dependance upon plasma parameters]
+Depending on the model of the plasma which is manifested by the permittivity tensor we use, the antenna properties are expected to depend upon electron and ion temperature, density and the direction and magnitude of the magnetic field.
+
+\item[The sheath]
+The sheath, or ion gap as it is often called, is an essentially electron free region above the surface of the spacecraft. While this effect would be difficult to include, I have an idea how to do it, which will be described later.
+
+\item[The wake]
+Behind a spacecraft, there exists a wake which influences the antenna properties in to ways. If an antenna reaches into the wake, it experiences a gradient in plasma density and this induces an electric field into the antenna. Additionally in the intermittent zone of the wake, there can be a plasma instability that acts as a radio source.
+\end{description}
+
+\subsection{To rely on software written by someone else}
+ASAP is an open source program. It is very powerful and the source code is available. Unfortunately the program is written in an outdated programming language and using programming style. It is "spagetti code" from the first to the last line and could be described as \emph{write only program} without exaggeration. So it is nearly impossible for us to understand every part of the code. This, in turn, is necessary, in my opinion, because only if we understand the code completely, we can estimate its capability and restriction with confidence. Also error estimation and detection and correction of bugs in the code requires an understanding of it.\\
+
+CONCEPT is a proprietary piece of software. It is very powerful and flexible, which is not of great value for us, since we only perform one single type of calculation with it, namely the computation of the current distribution. Handling of the program is very tedious and we have no clue what happens inside, since we are not allowed to see the source code.\\
+
+If we would write our own software to calculate the current distribution we would be able to design it specifically for our requirements. It would not be a software to deal with all possible and impossible problems in electromagnetics, but a tool to deal with spacecraft antennas. We would know exactly how it works and could better interpret the results and estimate the uncertainties.
+
+
+\subsection{The way of the naturally growing toolbox}
+The functionality of the matlab toolbox that we use to create the models, compute the effective length vectors and the impedances is constantly changed and expanded by different people concurrently. I exists in several different version which are not compatible to each other and its use becomes increasingly complicated. The usability and, what is more important, reusability would be increased if we would combine our experience to write a new, consistent version of the toolbox from scratch.
+
+\section{Project structure}
+I propose that the project could be organized to consist of the following steps.
+
+\subsection{Implementation of plasma effect by using the vacuum current distribution}
+The basic set of equations for treating antennas in plasma, using a dielectric plasma model can be
+
+\begin{eqnarray}
+% \nonumber to remove numbering (before each equation)
+  \nabla \cdot \mathbf{D} &=& \rho_{ant} \label{max1}\\
+\nabla \times \mathbf{H}- \frac{\partial \mathbf{D}}{\partial t}&=& \mathbf{j}_{ant} \\
+\nabla \times \mathbf{E} + \frac{\partial \mathbf{B}}{\partial t} &=& 0 \\
+\nabla \cdot \mathbf{B} &=& 0\label{max4}
+\end{eqnarray}
+
+in combination with
+
+\begin{equation}
+    \mathbf{D}=\mathbf{\epsilon} \cdot \mathbf{E}
+\end{equation}
+
+$ \mathbf{j}_{ant}$ is the antenna current density and $\rho_{ant}$ the charge density on the antenna. At this stage we would use the values computed by asap or concept. Analysis of basic antenna elements has shown that the actual form of the current distribution influences the antenna impedance and power pattern only slightly. If this is also true for a complicated structure, we could get some interesting results by solving the equations (\ref{max1})-(\ref{max4}), which is possible but hard, depending on the form of the permittivity tensor.\\
+
+The first task would be to derive the permittivity tensor suited for our purposes. The simplest form that includes information about the plasma would be\\
+
+\begin{equation}\label{isotropic_tensor}
+ \bar{\varepsilon}=\varepsilon_0
+ \left(
+ \begin{array}{ccc}
+ 1-\frac{\omega_p^2}{\omega^2} & 0 & 0 \\
+ 0 & 1-\frac{\omega_p^2}{\omega^2} & 0 \\
+ 0 & 0 & 1-\frac{\omega_p^2}{\omega^2}
+ \\\end{array}
+  \right)
+  \end{equation}\\
+
+Many refinements to increase realism are thinkable.
+
+\subsection{Derivation of the green tensors for isotropic and magnetized plasma to be used in EFIE}
+\subsection{Implementation of the method of moments including the Green tensors found in the last step}
+\subsection{Application of the new routines to basic antennas and spacecraft}
+\subsection{Investigation regarding the use of MFIE with included plasma effects}
+\subsection{Implementation of MFIE}
+\subsection{Investigation about the possibility to include other plasma effects in the numerical method}
+
+
+\newpage
+
+\bibliography{../Bibliography/MyBib}
+\bibliographystyle{agu04}
+\newpage
+\listoffigures
+\newpage
+\listoftables
+
+\end{document}

@@ -1,0 +1,105 @@
+\contentsline {part}{Teil\ I\hspace {1em}Principles}{1}
+\contentsline {chapter}{\numberline {1.}Introduction}{2}
+\contentsline {section}{\numberline {1.1}What does an antenna receive ?}{2}
+\contentsline {section}{\numberline {1.2}Transmitting antennas}{2}
+\contentsline {chapter}{\numberline {2.}Basic parameters}{3}
+\contentsline {section}{\numberline {2.1}Range of the Debye length}{3}
+\contentsline {section}{\numberline {2.2}Is a relativistic treatment necessary ?}{3}
+\contentsline {section}{\numberline {2.3}Why kinetic theory ?}{3}
+\contentsline {section}{\numberline {2.4}Plasma Parameter}{4}
+\contentsline {section}{\numberline {2.5}Plasma frequency}{4}
+\contentsline {section}{\numberline {2.6}Variation of the plasma parameters of the solar system, ignoring the influence of the planets}{5}
+\contentsline {chapter}{\numberline {3.}Modeling the antenna}{14}
+\contentsline {chapter}{\numberline {4.}Thermal noise spectroscopy}{15}
+\contentsline {part}{Teil\ II\hspace {1em}Single particle effects}{17}
+\contentsline {chapter}{\numberline {5.}Effect of a single charge in the rest frame of a metal surface}{18}
+\contentsline {section}{\numberline {5.1}A charge near a conducting, grounded sphere}{18}
+\contentsline {subsection}{\numberline {5.1.1}The charge distribution}{18}
+\contentsline {subsection}{\numberline {5.1.2}The force}{20}
+\contentsline {section}{\numberline {5.2}A charge near a conducting, isolated sphere of charge Q}{23}
+\contentsline {subsection}{\numberline {5.2.1}The charge distribution}{23}
+\contentsline {subsection}{\numberline {5.2.2}The force}{25}
+\contentsline {section}{\numberline {5.3}A charge near a conducting, isolated sphere of charge Q, using the Debye potential}{30}
+\contentsline {subsection}{\numberline {5.3.1}Deriving the Debye potential}{30}
+\contentsline {subsection}{\numberline {5.3.2}The Debye potential in cgs units}{31}
+\contentsline {subsection}{\numberline {5.3.3}The charge distribution}{33}
+\contentsline {subsection}{\numberline {5.3.4}The force}{37}
+\contentsline {chapter}{\numberline {6.}Particle speed due to EM wave}{43}
+\contentsline {section}{\numberline {6.1}Ignoring the magnetic field}{43}
+\contentsline {section}{\numberline {6.2}Including the magnetic field}{43}
+\contentsline {subsection}{\numberline {6.2.1}the full equations}{43}
+\contentsline {subsection}{\numberline {6.2.2}Analytical solution of the simplified case}{44}
+\contentsline {part}{Teil\ III\hspace {1em}Magnetohydrodynamic effects}{48}
+\contentsline {chapter}{\numberline {7.}MHD basics}{49}
+\contentsline {section}{\numberline {7.1}Basic equations}{49}
+\contentsline {subsection}{\numberline {7.1.1}Force Density}{49}
+\contentsline {subsection}{\numberline {7.1.2}The energy equation}{49}
+\contentsline {subsection}{\numberline {7.1.3}System of equations}{50}
+\contentsline {subsection}{\numberline {7.1.4}Basic equation according to \cite {baumjohann1}}{51}
+\contentsline {subsubsection}{Momentum equation}{51}
+\contentsline {subsubsection}{Energy equation}{51}
+\contentsline {subsubsection}{Generalized Ohm's law}{52}
+\contentsline {subsubsection}{Alternate set of equations}{53}
+\contentsline {subsection}{\numberline {7.1.5}Basic equation according to \cite {landau_lifschitz_8}}{54}
+\contentsline {subsubsection}{Alternate set of equations}{54}
+\contentsline {subsection}{\numberline {7.1.6}Possible simplifications}{54}
+\contentsline {subsubsection}{Further simplification of Newton II}{57}
+\contentsline {subsection}{\numberline {7.1.7}Validity of MHD}{58}
+\contentsline {part}{Teil\ IV\hspace {1em}Kinetic effects}{59}
+\contentsline {chapter}{\numberline {8.}Basics of the kinetic plasma theory}{60}
+\contentsline {section}{\numberline {8.1}Exact phase space}{60}
+\contentsline {section}{\numberline {8.2}The average Distribution function}{60}
+\contentsline {section}{\numberline {8.3}The Liouville theorem}{61}
+\contentsline {section}{\numberline {8.4}The macroscopic observables}{62}
+\contentsline {section}{\numberline {8.5}Maxwell equations}{63}
+\contentsline {part}{Teil\ V\hspace {1em}Plasma Waves}{64}
+\contentsline {chapter}{\numberline {9.}MHD waves}{65}
+\contentsline {section}{\numberline {9.1}Linearized perturbation theory}{65}
+\contentsline {subsection}{\numberline {9.1.1}Equations}{65}
+\contentsline {subsection}{\numberline {9.1.2}Harmonic solution}{68}
+\contentsline {subsubsection}{Alfven waves}{69}
+\contentsline {subsubsection}{MHD Compression Wave}{71}
+\contentsline {section}{\numberline {9.2}Langmuir waves}{75}
+\contentsline {chapter}{\numberline {10.}Kinetic plasma waves}{78}
+\contentsline {section}{\numberline {10.1}Electrostatic waves}{78}
+\contentsline {subsection}{\numberline {10.1.1}Landau damping}{81}
+\contentsline {subsubsection}{Ad Integral 1:}{83}
+\contentsline {subsubsection}{Ad Integral 2:}{84}
+\contentsline {subsection}{\numberline {10.1.2}Two fluid instability}{85}
+\contentsline {subsection}{\numberline {10.1.3}Cyclotron maser Instability}{85}
+\contentsline {subsection}{\numberline {10.1.4}Qualitative physical description of Landau damping}{88}
+\contentsline {chapter}{\numberline {11.}Wave zoology}{89}
+\contentsline {section}{\numberline {11.1}MHD waves}{89}
+\contentsline {section}{\numberline {11.2}Kinetic waves}{89}
+\contentsline {part}{Teil\ VI\hspace {1em}EM waves in plasma}{91}
+\contentsline {chapter}{\numberline {12.}Frequency dispersion characteristics}{92}
+\contentsline {section}{\numberline {12.1}General}{92}
+\contentsline {section}{\numberline {12.2}The Maxwell equations in Matter}{93}
+\contentsline {section}{\numberline {12.3}The Boundary Conditions}{93}
+\contentsline {section}{\numberline {12.4}Dielectric tensor}{93}
+\contentsline {subsection}{\numberline {12.4.1}Cold plasma approximation}{93}
+\contentsline {subsection}{\numberline {12.4.2}The Stix notation}{95}
+\contentsline {subsection}{\numberline {12.4.3}the general dispersion relation}{96}
+\contentsline {subsection}{\numberline {12.4.4}Hot plasma}{98}
+\contentsline {section}{\numberline {12.5}The dyadic Green's function}{98}
+\contentsline {subsection}{\numberline {12.5.1}Vacuum case}{101}
+\contentsline {subsubsection}{Derivation from scratch}{103}
+\contentsline {subsection}{\numberline {12.5.2}Isotropic case}{105}
+\contentsline {subsection}{\numberline {12.5.3}Anisotropic case}{105}
+\contentsline {subsubsection}{Fields}{105}
+\contentsline {subsubsection}{Potentials}{109}
+\contentsline {section}{\numberline {12.6}Permeability}{110}
+\contentsline {section}{\numberline {12.7}Nonlocal response}{111}
+\contentsline {part}{Teil\ VII\hspace {1em}A body moving through plasma}{112}
+\contentsline {chapter}{\numberline {13.}Potential of S/C surface}{113}
+\contentsline {chapter}{\numberline {14.}The basic equations}{114}
+\contentsline {part}{Teil\ VIII\hspace {1em}Covariant description}{115}
+\contentsline {chapter}{\numberline {15.}The basic equations}{116}
+\contentsline {part}{Teil\ IX\hspace {1em}Ideen}{117}
+\contentsline {chapter}{\numberline {16.}Referenzen}{119}
+\contentsline {part}{Teil\ X\hspace {1em}Quantum mechanical description}{121}
+\contentsline {part}{Teil\ XI\hspace {1em}Solid State effects}{122}
+\contentsline {part}{Teil\ XII\hspace {1em}Bepi Colombo}{123}
+\contentsline {chapter}{\numberline {17.}Parameters at and in the Hermean magnetosphere}{124}
+\contentsline {chapter}{\numberline {18.}What to do}{127}
+\contentsline {chapter}{Appendix A}{128}

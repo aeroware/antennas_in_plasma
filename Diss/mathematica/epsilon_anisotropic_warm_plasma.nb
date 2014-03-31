@@ -1,0 +1,459 @@
+(************** Content-type: application/mathematica **************
+                     CreatedBy='Mathematica 5.2'
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[     15247,        352]*)
+(*NotebookOutlinePosition[     15892,        374]*)
+(*  CellTagsIndexPosition[     15848,        370]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+Cell[BoxData[""], "Input"],
+
+Cell[BoxData[
+    \(\(\(ii := {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}\)\(\[IndentingNewLine]\)
+    \)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(\(ii\)\(\[IndentingNewLine]\)
+    \)\)], "Input"],
+
+Cell[BoxData[
+    \({{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(sigma = {{A*k^2*sin \((\[Theta])\)^2, 0, 0}, {0, 0, 0}, {0, 0, 
+          0}}\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{\(General::"spell1"\), \(\(:\)\(\ \)\), "\<\"Possible spelling \
+error: new symbol name \\\"\\!\\(sin\\)\\\" is similar to existing symbol \
+\\\"\\!\\(Sin\\)\\\". \\!\\(\\*ButtonBox[\\\"Mehr\[Ellipsis]\\\", \
+ButtonStyle->\\\"RefGuideLinkText\\\", ButtonFrame->None, \
+ButtonData:>\\\"General::spell1\\\"]\\)\"\>"}]], "Message"],
+
+Cell[BoxData[
+    \({{A\ k\^2\ sin\ \[Theta]\^2, 0, 0}, {0, 0, 0}, {0, 0, 0}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(sigma = {{A*k^2*Sin \((\[Theta])\)^2, 0, 0}, {0, 0, 0}, {0, 0, 
+          0}}\)], "Input"],
+
+Cell[BoxData[
+    \({{A\ k\^2\ Sin\ \[Theta]\^2, 0, 0}, {0, 0, 0}, {0, 0, 0}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(\(sigma = {{A*k^2*Sin \((\[Theta])\)^2, i*B, 
+            A*k^2*Sin \((\[Theta])\)*Cos \((\[Theta])\)}, {\(-i\)*B, 1, 
+            0}, {A*k^2*Sin \((\[Theta])\)*Cos \((\[Theta])\)}, 0, 
+          A*k^2*Cos \((\[Theta])\)^2}\)\(}\)\)\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{\(Syntax::"bktmop"\), \(\(:\)\(\ \)\), "\<\"Expression \
+\\\"\\!\\(sigma = \\(\\({\\(\\({\\(\\(A * \\(\\(k^2\\)\\) * Sin \\(\\(\\(\\((\
+\[Theta])\\)\\)^2\\)\\)\\)\\), \\(\\(i * B\\)\\), \\(\\(A * \\(\\(k^2\\)\\) * \
+Sin \\(\\((\[Theta])\\)\\) * Cos \\(\\((\[Theta])\\)\\)\\)\\)}\\)\\), \\(\\({\
+\\(\\(\\(\\(-i\\)\\) * B\\)\\), 1, 0}\\)\\), \\(\\({\\(\[LeftSkeleton] 1 \
+\[RightSkeleton]\\)}\\)\\), 0, \\(\\(A * \\(\\(k^2\\)\\) * Cos \\(\\(\\(\\((\
+\[Theta])\\)\\)^2\\)\\)\\)\\)}\\)\\)}\\)\\\" has no opening \\\"\\!\\(\\\"{\\\
+\"\\)\\\".\\!\\(\\\"\\\"\\) \\!\\(\\*ButtonBox[\\\"Mehr\[Ellipsis]\\\", \
+ButtonStyle->\\\"RefGuideLinkText\\\", ButtonFrame->None, \
+ButtonData:>\\\"General::bktmop\\\"]\\)\"\>"}]], "Message"],
+
+Cell[BoxData[
+    StyleBox[
+      ErrorBox[\(\(sigma = {{A*k^2*Sin \((\[Theta])\)^2, i*B, 
+                A*k^2*Sin \((\[Theta])\)*Cos \((\[Theta])\)}, {\(-i\)*B, 1, 
+                0}, {A*k^2*Sin \((\[Theta])\)*Cos \((\[Theta])\)}, 0, 
+              A*k^2*Cos \((\[Theta])\)^2}\)\(}\)\)],
+      ShowStringCharacters->True]], "Message"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(sigma = {{A*k^2*Sin \((\[Theta])\)^2, i*B, 
+          A*k^2*Sin \((\[Theta])\)*Cos \((\[Theta])\)}, {\(-i\)*B, 1, 
+          0}, {A*k^2*Sin \((\[Theta])\)*Cos \((\[Theta])\), 0, 
+          A*k^2*Cos \((\[Theta])\)^2}}\)], "Input"],
+
+Cell[BoxData[
+    \({{A\ k\^2\ Sin\ \[Theta]\^2, B\ i, 
+        A\ Cos\ k\^2\ Sin\ \[Theta]\^2}, {\(-B\)\ i, 1, 
+        0}, {A\ Cos\ k\^2\ Sin\ \[Theta]\^2, 0, 
+        A\ Cos\ k\^2\ \[Theta]\^2}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(i\)], "Input"],
+
+Cell[BoxData[
+    \(i\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(i^2\)], "Input"],
+
+Cell[BoxData[
+    \(i\^2\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(I^2\)], "Input"],
+
+Cell[BoxData[
+    \(\(-1\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(sigma = {{u^2\/\[Omega]^2*k^2*Sin[\[Theta]]^2, 
+          I*\[CapitalOmega]\/\[Omega], 
+          u^2\/\[Omega]^2*k^2*Sin[\[Theta]]*
+            Cos[\[Theta]]}, {\(-I\)*\[CapitalOmega]\/\[Omega], 0, 
+          0}, {u^2\/\[Omega]^2*k^2*Sin[\[Theta]]*Cos[\[Theta]], 0, 
+          u^2\/\[Omega]^2*k^2*Cos[\[Theta]]^2}}\)], "Input"],
+
+Cell[BoxData[
+    \({{\(k\^2\ u\^2\ Sin[\[Theta]]\^2\)\/\[Omega]\^2, \(\[ImaginaryI]\ \
+\[CapitalOmega]\)\/\[Omega], \(k\^2\ u\^2\ Cos[\[Theta]]\ Sin[\[Theta]]\)\/\
+\[Omega]\^2}, {\(-\(\(\[ImaginaryI]\ \[CapitalOmega]\)\/\[Omega]\)\), 0, 
+        0}, {\(k\^2\ u\^2\ Cos[\[Theta]]\ Sin[\[Theta]]\)\/\[Omega]\^2, 
+        0, \(k\^2\ u\^2\ Cos[\[Theta]]\^2\)\/\[Omega]\^2}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(M = ii - sigma\)], "Input"],
+
+Cell[BoxData[
+    \({{1 - \(k\^2\ u\^2\ Sin[\[Theta]]\^2\)\/\[Omega]\^2, \(-\(\(\
+\[ImaginaryI]\ \[CapitalOmega]\)\/\[Omega]\)\), \(-\(\(k\^2\ u\^2\ Cos[\
+\[Theta]]\ Sin[\[Theta]]\)\/\[Omega]\^2\)\)}, {\(\[ImaginaryI]\ \
+\[CapitalOmega]\)\/\[Omega], 1, 
+        0}, {\(-\(\(k\^2\ u\^2\ Cos[\[Theta]]\ Sin[\[Theta]]\)\/\[Omega]\^2\)\
+\), 0, 1 - \(k\^2\ u\^2\ Cos[\[Theta]]\^2\)\/\[Omega]\^2}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(\(M\)\(\[IndentingNewLine]\)
+    \)\)], "Input"],
+
+Cell[BoxData[
+    \({{1 - \(k\^2\ u\^2\ Sin[\[Theta]]\^2\)\/\[Omega]\^2, \(-\(\(\
+\[ImaginaryI]\ \[CapitalOmega]\)\/\[Omega]\)\), \(-\(\(k\^2\ u\^2\ Cos[\
+\[Theta]]\ Sin[\[Theta]]\)\/\[Omega]\^2\)\)}, {\(\[ImaginaryI]\ \
+\[CapitalOmega]\)\/\[Omega], 1, 
+        0}, {\(-\(\(k\^2\ u\^2\ Cos[\[Theta]]\ Sin[\[Theta]]\)\/\[Omega]\^2\)\
+\), 0, 1 - \(k\^2\ u\^2\ Cos[\[Theta]]\^2\)\/\[Omega]\^2}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\[Chi] = Inverse[M]\)], "Input"],
+
+Cell[BoxData[
+    \({{\(1 - \(k\^2\ u\^2\ Cos[\[Theta]]\^2\)\/\[Omega]\^2\)\/\(1 - \
+\[CapitalOmega]\^2\/\[Omega]\^2 - \(k\^2\ u\^2\ \
+Cos[\[Theta]]\^2\)\/\[Omega]\^2 + \(k\^2\ u\^2\ \[CapitalOmega]\^2\ Cos[\
+\[Theta]]\^2\)\/\[Omega]\^4 - \(k\^2\ u\^2\ \
+Sin[\[Theta]]\^2\)\/\[Omega]\^2\), \(\(\[ImaginaryI]\ \[CapitalOmega]\)\/\
+\[Omega] - \(\[ImaginaryI]\ k\^2\ u\^2\ \[CapitalOmega]\ Cos[\[Theta]]\^2\)\/\
+\[Omega]\^3\)\/\(1 - \[CapitalOmega]\^2\/\[Omega]\^2 - \(k\^2\ u\^2\ Cos[\
+\[Theta]]\^2\)\/\[Omega]\^2 + \(k\^2\ u\^2\ \[CapitalOmega]\^2\ Cos[\[Theta]]\
+\^2\)\/\[Omega]\^4 - \(k\^2\ u\^2\ Sin[\[Theta]]\^2\)\/\[Omega]\^2\), \(k\^2\ \
+u\^2\ Cos[\[Theta]]\ Sin[\[Theta]]\)\/\(\[Omega]\^2\ \((1 - \
+\[CapitalOmega]\^2\/\[Omega]\^2 - \(k\^2\ u\^2\ \
+Cos[\[Theta]]\^2\)\/\[Omega]\^2 + \(k\^2\ u\^2\ \[CapitalOmega]\^2\ Cos[\
+\[Theta]]\^2\)\/\[Omega]\^4 - \(k\^2\ u\^2\ \
+Sin[\[Theta]]\^2\)\/\[Omega]\^2)\)\)}, {\(\(-\(\(\[ImaginaryI]\ \
+\[CapitalOmega]\)\/\[Omega]\)\) + \(\[ImaginaryI]\ k\^2\ u\^2\ \
+\[CapitalOmega]\ Cos[\[Theta]]\^2\)\/\[Omega]\^3\)\/\(1 - \
+\[CapitalOmega]\^2\/\[Omega]\^2 - \(k\^2\ u\^2\ \
+Cos[\[Theta]]\^2\)\/\[Omega]\^2 + \(k\^2\ u\^2\ \[CapitalOmega]\^2\ Cos[\
+\[Theta]]\^2\)\/\[Omega]\^4 - \(k\^2\ u\^2\ \
+Sin[\[Theta]]\^2\)\/\[Omega]\^2\), \(1 - \(k\^2\ u\^2\ Cos[\[Theta]]\^2\)\/\
+\[Omega]\^2 - \(k\^2\ u\^2\ Sin[\[Theta]]\^2\)\/\[Omega]\^2\)\/\(1 - \
+\[CapitalOmega]\^2\/\[Omega]\^2 - \(k\^2\ u\^2\ \
+Cos[\[Theta]]\^2\)\/\[Omega]\^2 + \(k\^2\ u\^2\ \[CapitalOmega]\^2\ Cos[\
+\[Theta]]\^2\)\/\[Omega]\^4 - \(k\^2\ u\^2\ \
+Sin[\[Theta]]\^2\)\/\[Omega]\^2\), \(-\(\(\[ImaginaryI]\ k\^2\ u\^2\ \
+\[CapitalOmega]\ Cos[\[Theta]]\ Sin[\[Theta]]\)\/\(\[Omega]\^3\ \((1 - \
+\[CapitalOmega]\^2\/\[Omega]\^2 - \(k\^2\ u\^2\ \
+Cos[\[Theta]]\^2\)\/\[Omega]\^2 + \(k\^2\ u\^2\ \[CapitalOmega]\^2\ Cos[\
+\[Theta]]\^2\)\/\[Omega]\^4 - \(k\^2\ u\^2\ \
+Sin[\[Theta]]\^2\)\/\[Omega]\^2)\)\)\)\)}, {\(k\^2\ u\^2\ Cos[\[Theta]]\ Sin[\
+\[Theta]]\)\/\(\[Omega]\^2\ \((1 - \[CapitalOmega]\^2\/\[Omega]\^2 - \(k\^2\ \
+u\^2\ Cos[\[Theta]]\^2\)\/\[Omega]\^2 + \(k\^2\ u\^2\ \[CapitalOmega]\^2\ \
+Cos[\[Theta]]\^2\)\/\[Omega]\^4 - \(k\^2\ u\^2\ \
+Sin[\[Theta]]\^2\)\/\[Omega]\^2)\)\), \(\[ImaginaryI]\ k\^2\ u\^2\ \
+\[CapitalOmega]\ Cos[\[Theta]]\ Sin[\[Theta]]\)\/\(\[Omega]\^3\ \((1 - \
+\[CapitalOmega]\^2\/\[Omega]\^2 - \(k\^2\ u\^2\ \
+Cos[\[Theta]]\^2\)\/\[Omega]\^2 + \(k\^2\ u\^2\ \[CapitalOmega]\^2\ Cos[\
+\[Theta]]\^2\)\/\[Omega]\^4 - \(k\^2\ u\^2\ \
+Sin[\[Theta]]\^2\)\/\[Omega]\^2)\)\), \(1 - \[CapitalOmega]\^2\/\[Omega]\^2 - \
+\(k\^2\ u\^2\ Sin[\[Theta]]\^2\)\/\[Omega]\^2\)\/\(1 - \[CapitalOmega]\^2\/\
+\[Omega]\^2 - \(k\^2\ u\^2\ Cos[\[Theta]]\^2\)\/\[Omega]\^2 + \(k\^2\ u\^2\ \
+\[CapitalOmega]\^2\ Cos[\[Theta]]\^2\)\/\[Omega]\^4 - \(k\^2\ u\^2\ Sin[\
+\[Theta]]\^2\)\/\[Omega]\^2\)}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[\[Chi]]\)], "Input"],
+
+Cell[BoxData[
+    \({{\(2\ \((\[Omega]\^4 - k\^2\ u\^2\ \[Omega]\^2\ \
+Cos[\[Theta]]\^2)\)\)\/\(2\ \[Omega]\^2\ \((\[Omega]\^2 - \[CapitalOmega]\^2)\
+\) + k\^2\ u\^2\ \((\(-2\)\ \[Omega]\^2 + \[CapitalOmega]\^2)\) + k\^2\ u\^2\ \
+\[CapitalOmega]\^2\ Cos[2\ \[Theta]]\), \(2\ \[ImaginaryI]\ \[Omega]\ \
+\[CapitalOmega]\ \((\[Omega]\^2 - k\^2\ u\^2\ Cos[\[Theta]]\^2)\)\)\/\(2\ \
+\[Omega]\^2\ \((\[Omega]\^2 - \[CapitalOmega]\^2)\) + k\^2\ u\^2\ \((\(-2\)\ \
+\[Omega]\^2 + \[CapitalOmega]\^2)\) + k\^2\ u\^2\ \[CapitalOmega]\^2\ Cos[2\ \
+\[Theta]]\), \(k\^2\ u\^2\ \[Omega]\^2\ Sin[2\ \[Theta]]\)\/\(2\ \[Omega]\^2\ \
+\((\[Omega]\^2 - \[CapitalOmega]\^2)\) + k\^2\ u\^2\ \((\(-2\)\ \[Omega]\^2 + \
+\[CapitalOmega]\^2)\) + k\^2\ u\^2\ \[CapitalOmega]\^2\ Cos[2\ \[Theta]]\)}, \
+{\(-\(\(2\ \[ImaginaryI]\ \[Omega]\ \[CapitalOmega]\ \((\[Omega]\^2 - 
+                    k\^2\ u\^2\ Cos[\[Theta]]\^2)\)\)\/\(2\ \[Omega]\^2\ \((\
+\[Omega]\^2 - \[CapitalOmega]\^2)\) + 
+                k\^2\ u\^2\ \((\(-2\)\ \[Omega]\^2 + \[CapitalOmega]\^2)\) + 
+                k\^2\ u\^2\ \[CapitalOmega]\^2\ Cos[
+                    2\ \[Theta]]\)\)\), \(2\ \((\(-k\^2\)\ u\^2\ \[Omega]\^2 \
++ \[Omega]\^4)\)\)\/\(2\ \[Omega]\^2\ \((\[Omega]\^2 - \[CapitalOmega]\^2)\) \
++ k\^2\ u\^2\ \((\(-2\)\ \[Omega]\^2 + \[CapitalOmega]\^2)\) + k\^2\ u\^2\ \
+\[CapitalOmega]\^2\ Cos[2\ \[Theta]]\), \(2\ \[ImaginaryI]\ k\^2\ u\^2\ \
+\[Omega]\ \[CapitalOmega]\ Cos[\[Theta]]\ Sin[\[Theta]]\)\/\(\(-2\)\ \[Omega]\
+\^4 + 2\ \[Omega]\^2\ \[CapitalOmega]\^2 + k\^2\ u\^2\ \((2\ \[Omega]\^2 - \
+\[CapitalOmega]\^2)\) - k\^2\ u\^2\ \[CapitalOmega]\^2\ Cos[2\ \[Theta]]\)}, \
+{\(k\^2\ u\^2\ \[Omega]\^2\ Sin[2\ \[Theta]]\)\/\(2\ \[Omega]\^2\ \((\[Omega]\
+\^2 - \[CapitalOmega]\^2)\) + k\^2\ u\^2\ \((\(-2\)\ \[Omega]\^2 + \
+\[CapitalOmega]\^2)\) + k\^2\ u\^2\ \[CapitalOmega]\^2\ Cos[2\ \[Theta]]\), \
+\(\[ImaginaryI]\ k\^2\ u\^2\ \[Omega]\ \[CapitalOmega]\ Sin[2\ \
+\[Theta]]\)\/\(2\ \[Omega]\^2\ \((\[Omega]\^2 - \[CapitalOmega]\^2)\) + k\^2\ \
+u\^2\ \((\(-2\)\ \[Omega]\^2 + \[CapitalOmega]\^2)\) + k\^2\ u\^2\ \
+\[CapitalOmega]\^2\ Cos[2\ \[Theta]]\), \(2\ \[Omega]\^2\ \((\[Omega]\^2 - \
+\[CapitalOmega]\^2 - k\^2\ u\^2\ Sin[\[Theta]]\^2)\)\)\/\(2\ \[Omega]\^2\ \((\
+\[Omega]\^2 - \[CapitalOmega]\^2)\) + k\^2\ u\^2\ \((\(-2\)\ \[Omega]\^2 + \
+\[CapitalOmega]\^2)\) + k\^2\ u\^2\ \[CapitalOmega]\^2\ Cos[2\ \
+\[Theta]]\)}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(FullSimplify[\[Chi]]\)], "Input"],
+
+Cell[BoxData[
+    \({{\(2\ \[Omega]\^2\ \((\[Omega] - k\ u\ Cos[\[Theta]])\)\ \((\[Omega] + \
+k\ u\ Cos[\[Theta]])\)\)\/\(2\ \[Omega]\^2\ \((\[Omega] - \[CapitalOmega])\)\ \
+\((\[Omega] + \[CapitalOmega])\) + k\^2\ u\^2\ \((\(-2\)\ \[Omega]\^2 + \
+\[CapitalOmega]\^2)\) + k\^2\ u\^2\ \[CapitalOmega]\^2\ Cos[2\ \[Theta]]\), \
+\(2\ \[ImaginaryI]\ \[Omega]\ \[CapitalOmega]\ \((\[Omega] - k\ u\ Cos[\
+\[Theta]])\)\ \((\[Omega] + k\ u\ Cos[\[Theta]])\)\)\/\(2\ \[Omega]\^2\ \((\
+\[Omega] - \[CapitalOmega])\)\ \((\[Omega] + \[CapitalOmega])\) + k\^2\ u\^2\ \
+\((\(-2\)\ \[Omega]\^2 + \[CapitalOmega]\^2)\) + k\^2\ u\^2\ \
+\[CapitalOmega]\^2\ Cos[2\ \[Theta]]\), \(k\^2\ u\^2\ \[Omega]\^2\ Sin[2\ \
+\[Theta]]\)\/\(2\ \[Omega]\^2\ \((\[Omega] - \[CapitalOmega])\)\ \((\[Omega] \
++ \[CapitalOmega])\) + k\^2\ u\^2\ \((\(-2\)\ \[Omega]\^2 + \
+\[CapitalOmega]\^2)\) + k\^2\ u\^2\ \[CapitalOmega]\^2\ Cos[2\ \[Theta]]\)}, \
+{\(-\(\(2\ \[ImaginaryI]\ \[Omega]\ \[CapitalOmega]\ \((\[Omega] - 
+                    k\ u\ Cos[\[Theta]])\)\ \((\[Omega] + 
+                    k\ u\ Cos[\[Theta]])\)\)\/\(2\ \[Omega]\^2\ \((\[Omega] - \
+\[CapitalOmega])\)\ \((\[Omega] + \[CapitalOmega])\) + 
+                k\^2\ u\^2\ \((\(-2\)\ \[Omega]\^2 + \[CapitalOmega]\^2)\) + 
+                k\^2\ u\^2\ \[CapitalOmega]\^2\ Cos[
+                    2\ \[Theta]]\)\)\), \(2\ \((\(-k\^2\)\ u\^2\ \[Omega]\^2 \
++ \[Omega]\^4)\)\)\/\(2\ \[Omega]\^2\ \((\[Omega] - \[CapitalOmega])\)\ \((\
+\[Omega] + \[CapitalOmega])\) + k\^2\ u\^2\ \((\(-2\)\ \[Omega]\^2 + \
+\[CapitalOmega]\^2)\) + k\^2\ u\^2\ \[CapitalOmega]\^2\ Cos[2\ \[Theta]]\), \
+\(-\(\(2\ \[ImaginaryI]\ k\^2\ u\^2\ \[Omega]\ \[CapitalOmega]\ Cos[\[Theta]]\
+\ Sin[\[Theta]]\)\/\(2\ \[Omega]\^2\ \((\[Omega] - \[CapitalOmega])\)\ \((\
+\[Omega] + \[CapitalOmega])\) + 
+                k\^2\ u\^2\ \((\(-2\)\ \[Omega]\^2 + \[CapitalOmega]\^2)\) + 
+                k\^2\ u\^2\ \[CapitalOmega]\^2\ Cos[
+                    2\ \[Theta]]\)\)\)}, {\(k\^2\ u\^2\ \[Omega]\^2\ Sin[2\ \
+\[Theta]]\)\/\(2\ \[Omega]\^2\ \((\[Omega] - \[CapitalOmega])\)\ \((\[Omega] \
++ \[CapitalOmega])\) + k\^2\ u\^2\ \((\(-2\)\ \[Omega]\^2 + \
+\[CapitalOmega]\^2)\) + k\^2\ u\^2\ \[CapitalOmega]\^2\ Cos[2\ \[Theta]]\), \
+\(\[ImaginaryI]\ k\^2\ u\^2\ \[Omega]\ \[CapitalOmega]\ Sin[2\ \
+\[Theta]]\)\/\(2\ \[Omega]\^2\ \((\[Omega] - \[CapitalOmega])\)\ \((\[Omega] \
++ \[CapitalOmega])\) + k\^2\ u\^2\ \((\(-2\)\ \[Omega]\^2 + \
+\[CapitalOmega]\^2)\) + k\^2\ u\^2\ \[CapitalOmega]\^2\ Cos[2\ \[Theta]]\), \
+\(2\ \[Omega]\^2\ \((\[Omega]\^2 - \[CapitalOmega]\^2 - k\^2\ u\^2\ Sin[\
+\[Theta]]\^2)\)\)\/\(2\ \[Omega]\^2\ \((\[Omega] - \[CapitalOmega])\)\ \((\
+\[Omega] + \[CapitalOmega])\) + k\^2\ u\^2\ \((\(-2\)\ \[Omega]\^2 + \
+\[CapitalOmega]\^2)\) + k\^2\ u\^2\ \[CapitalOmega]\^2\ Cos[2\ \
+\[Theta]]\)}}\)], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"5.2 for Microsoft Windows",
+ScreenRectangle->{{0, 1280}, {0, 946}},
+WindowSize->{773, 834},
+WindowMargins->{{-1, Automatic}, {-7, Automatic}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+Cell[1754, 51, 26, 0, 30, "Input"],
+Cell[1783, 53, 108, 2, 50, "Input"],
+
+Cell[CellGroupData[{
+Cell[1916, 59, 71, 2, 50, "Input"],
+Cell[1990, 63, 67, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2094, 69, 110, 2, 30, "Input"],
+Cell[2207, 73, 354, 5, 22, "Message"],
+Cell[2564, 80, 91, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2692, 86, 110, 2, 30, "Input"],
+Cell[2805, 90, 91, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2933, 96, 267, 4, 50, "Input"],
+Cell[3203, 102, 746, 10, 37, "Message"],
+Cell[3952, 114, 338, 6, 37, "Message"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4327, 125, 250, 4, 50, "Input"],
+Cell[4580, 131, 211, 4, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4828, 140, 34, 1, 30, "Input"],
+Cell[4865, 143, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4937, 149, 36, 1, 30, "Input"],
+Cell[4976, 152, 38, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5051, 158, 36, 1, 30, "Input"],
+Cell[5090, 161, 40, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5167, 167, 348, 6, 76, "Input"],
+Cell[5518, 175, 384, 5, 45, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5939, 185, 47, 1, 30, "Input"],
+Cell[5989, 188, 405, 6, 82, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[6431, 199, 70, 2, 50, "Input"],
+Cell[6504, 203, 405, 6, 82, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[6946, 214, 52, 1, 30, "Input"],
+Cell[7001, 217, 2818, 43, 406, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[9856, 265, 49, 1, 30, "Input"],
+Cell[9908, 268, 2403, 33, 207, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[12348, 306, 53, 1, 30, "Input"],
+Cell[12404, 309, 2827, 40, 359, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

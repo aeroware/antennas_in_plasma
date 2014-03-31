@@ -1,0 +1,19 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{\textit{Fahleson}(1967)}]{fahleson67}
+Fahleson, U. (1967), Theory of electric field measurements conducted in the
+  magnetosphere with electric probes, \textit{Space Science Reviews},
+  \textit{7}, 238--262.
+
+\bibitem[{\textit{Gurnett}(2000)}]{gurnett98}
+Gurnett, D. (2000), Principles of space plasma wave instrument design, in
+  \textit{Measurement Techniques in Space Plasmas, Fields}, edited by R.~Pfaff,
+  E.~Borovsky, and D.~Young, pp. 121--137, American Geophysical Union,
+  Washington, DC.
+
+\end{thebibliography}

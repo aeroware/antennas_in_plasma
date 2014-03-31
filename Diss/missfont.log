@@ -1,0 +1,17 @@
+mktextfm ecrm1000
+mktexpk --mfmode lexmarks --bdpi 1200 --mag 1+0/1200 --dpi 1200 ecrm0600
+mktexpk --mfmode lexmarks --bdpi 1200 --mag 1+0/1200 --dpi 1200 ecrm0800
+mktexpk --mfmode lexmarks --bdpi 1200 --mag 1+0/1200 --dpi 1200 ecbx0500
+mktexpk --mfmode lexmarks --bdpi 1200 --mag 1+0/1200 --dpi 1200 ecbx0700
+mktexpk --mfmode lexmarks --bdpi 1200 --mag 1+0/1200 --dpi 1200 ecrm0700
+mktexpk --mfmode lexmarks --bdpi 1200 --mag 1+0/1200 --dpi 1200 ecbx1000
+mktexpk --mfmode lexmarks --bdpi 1200 --mag 1+0/1200 --dpi 1200 ecsl1200
+mktexpk --mfmode lexmarks --bdpi 1200 --mag 1+0/1200 --dpi 1200 ecrm1440
+mktexpk --mfmode lexmarks --bdpi 1200 --mag 1+0/1200 --dpi 1200 ecsl0900
+mktexpk --mfmode lexmarks --bdpi 1200 --mag 1+0/1200 --dpi 1200 ecrm0900
+mktexpk --mfmode lexmarks --bdpi 1200 --mag 1+0/1200 --dpi 1200 ecti1000
+mktexpk --mfmode lexmarks --bdpi 1200 --mag 1+0/1200 --dpi 1200 ecsl1000
+mktexpk --mfmode lexmarks --bdpi 1200 --mag 1+0/1200 --dpi 1200 ecrm1200
+mktexpk --mfmode lexmarks --bdpi 1200 --mag 1+0/1200 --dpi 1200 ecrm1728
+mktexpk --mfmode lexmarks --bdpi 1200 --mag 1+0/1200 --dpi 1200 ecrm1000
+mktextfm ecrm1000

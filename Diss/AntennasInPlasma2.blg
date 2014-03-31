@@ -1,0 +1,23 @@
+This is BibTeX, Version 0.99cThe top-level auxiliary file: AntennasInPlasma2.aux
+White space in argument---line 377 of file AntennasInPlasma2.aux
+ : \citation{manning2000
+ :                       }
+I'm skipping whatever remains of this command
+White space in argument---line 406 of file AntennasInPlasma2.aux
+ : \citation{ylä
+ :               -oijala05}
+I'm skipping whatever remains of this command
+The style file: agu04.bst
+Database file #1: ../../Bibliography/MyBib.bib
+You're missing a field name---line 262 of file ../../Bibliography/MyBib.bib
+ :   
+ :   %volume =       {31},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 731 of file ../../Bibliography/MyBib.bib
+ :   
+ :   %volume =       {},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--missing publisher in zhian04
+(There were 4 error messages)

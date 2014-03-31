@@ -1,0 +1,13 @@
+\contentsline {section}{\numberline {0.1}Basics of the kinetic plasma theory}{1}
+\contentsline {subsection}{\numberline {0.1.1}Exact phase space}{1}
+\contentsline {subsection}{\numberline {0.1.2}The average Distribution function}{1}
+\contentsline {subsection}{\numberline {0.1.3}The Liouville theorem}{2}
+\contentsline {subsection}{\numberline {0.1.4}The macroscopic observables}{3}
+\contentsline {section}{\numberline {0.2}Kinetic plasma waves}{4}
+\contentsline {subsection}{\numberline {0.2.1}Electrostatic waves}{4}
+\contentsline {subsection}{\numberline {0.2.2}Landau damping}{7}
+\contentsline {subsubsection}{Ad Integral 1:}{10}
+\contentsline {subsubsection}{Ad Integral 2:}{11}
+\contentsline {subsection}{\numberline {0.2.3}Two fluid instability}{12}
+\contentsline {subsection}{\numberline {0.2.4}Cyclotron maser Instability}{16}
+\contentsline {subsection}{\numberline {0.2.5}Qualitative physical description of Landau damping}{16}

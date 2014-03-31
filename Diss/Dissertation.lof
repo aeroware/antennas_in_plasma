@@ -1,0 +1,39 @@
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces 6 meter dipole used for calculation}}{69}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Electric field strength $[Vm^{-1}]$ at 10m (top) and 100m (bottom) distance in at 300kHz}}{71}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Electric field strength $[Vm^{-1}]$ at 300m (top) and 500m (bottom) distance in vacuum at 300kHz}}{72}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Electric field strength $[Vm^{-1}]$ at 1000m (top) and 10000m (bottom) distance in vacuum at 300kHz}}{73}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Electric field strength $[Vm^{-1}]$ at 10m (top) and 50m (bottom) distance in vacuum at 50MHz}}{74}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Electric field strength $[Vm^{-1}]$ at 100m (top) and 10000m (bottom) distance in vacuum at 50MHz}}{75}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Electric field strength $[Vm^{-1}]$ at 10m (top) and 10000m (bottom) distance in vacuum at 25MHz}}{76}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Electric field strength $[Vm^{-1}]$ at 10m (top) and 10000m (bottom) distance in vacuum at $\frac {3}{2}\lambda $ resonance condition}}{77}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Electric field strength $[Vm^{-1}]$ at 10000m distance in vacuum (top) and isotropic cold plasma (bottom) with $\frac {\omega _{pe}^2}{\omega ^2}=0.9$ at 300kHz}}{79}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Electric field strength $[Vm^{-1}]$ 10000m distance in isotropic cold plasma with $\frac {\omega _{pe}^2}{\omega ^2}=0.9$, taking the effect of ions into account, at 300kHz}}{80}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Electric field strength $[Vm^{-1}]$ 1000m distance isotropic cold plasma with $\frac {\omega _{pe}^2}{\omega ^2}=0.9$ at 300kHz (top), as well as in 10m at 25MHz (bottom)}}{81}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces The current distribution [A] (y-axis) along the dipole segments (x-axis) at 300kHz in vacuum}}{83}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces The current distribution [A] (y-axis) along the dipole segments (x-axis) at 300kHz in plasma}}{84}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces The current distribution [A] (y-axis) along the dipole segments (x-axis) at 3MHz in vacuum}}{85}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces The current distribution [A] (y-axis) along the dipole segments (x-axis) at 3MHz in plasma}}{86}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces The current distribution [A] (y-axis) along the dipole segments (x-axis) at 30MHz in vacuum}}{87}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces The current distribution [A] (y-axis) along the dipole segments (x-axis) at 30MHz in plasma}}{88}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Impedance curves of the dipole with and without plasma. Fixed $\frac {\omega _{pe}^2}{\omega ^2}=0.9$ }}{89}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Impedance curves of the dipole with and without plasma. $\omega _{pe}=10MHz$ }}{90}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Electric field strength $[Vm^{-1}]$ at 10000m distance in vacuum (top) and in plasma at $\frac {3}{2}\lambda $ resonance condition (bottom)}}{92}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces The impedance of the S/WAVES antennas in vacuum (top) in relation to cold plasma with $\epsilon _r=0.1$ (bottom)}}{95}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces The impedance of the S/WAVES antennas in vacuum (top) in relation to cold plasma with $f_{pe}=10MHz$ (bottom)}}{96}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces The impedance of the S/WAVES antennas in cold plasma with $f_{pe}=10MHz$, zooming into the frequency range around 10MHz}}{97}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces The impedance of the S/WAVES antennas in cold plasma with $f_{pe}=1MHz$}}{98}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Circuit diagram of an antenna system \cite {bale07}}}{101}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces The impedance of the S/WAVES $E_x-E_y$ dipole with inclusion of the plasma sheath (top) in relation to the case in vacuum (bottom)}}{118}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces The impedance of the S/WAVES $E_z$ monopole with inclusion of the plasma sheath (top) in relation to the case in vacuum (bottom)}}{119}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}

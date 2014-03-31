@@ -1,0 +1,2217 @@
+(************** Content-type: application/mathematica **************
+                     CreatedBy='Mathematica 5.2'
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[     82933,       1829]*)
+(*NotebookOutlinePosition[     83660,       1853]*)
+(*  CellTagsIndexPosition[     83616,       1849]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+    \(\(\(M = {{1, 0, 0}, {0, 1, 0}, {0, 0, 
+          1}}\)\(\[IndentingNewLine]\)\(\[IndentingNewLine]\)
+    \)\)], "Input",
+  CellLabel->"In[16]:="],
+
+Cell[BoxData[
+    \({{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}\)], "Output",
+  CellLabel->"Out[16]="],
+
+Cell[BoxData[
+    \({{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}\)], "Output",
+  CellLabel->"Out[4]=",
+  GeneratedCell->False,
+  CellAutoOverwrite->False]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(\(\[IndentingNewLine]\)\(k = {k1, k2, k3}\)\)\)], "Input",
+  CellLabel->"In[22]:="],
+
+Cell[BoxData[
+    \({k1, k2, k3}\)], "Output",
+  CellLabel->"Out[22]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Outer[Times, k, k]\)], "Input",
+  CellLabel->"In[223]:="],
+
+Cell[BoxData[
+    \({{k1\^2, k1\ k2, k1\ k3}, {k1\ k2, k2\^2, k2\ k3}, {k1\ k3, k2\ k3, 
+        k3\^2}}\)], "Output",
+  CellLabel->"Out[223]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\[Lambda] = 
+      k . k*M - Outer[Times, k, k] - k0^2*\[Epsilon]\[Epsilon]\)], "Input",
+  CellLabel->"In[18]:="],
+
+Cell[BoxData[
+    \({{k2\^2 + k3\^2 - k0\^2\ S, \[ImaginaryI]\ D\ k0\^2 - 
+          k1\ k2, \(-k1\)\ k3}, {\(-\[ImaginaryI]\)\ D\ k0\^2 - k1\ k2, 
+        k1\^2 + k3\^2 - k0\^2\ S, \(-k2\)\ k3}, {\(-k1\)\ k3, \(-k2\)\ k3, 
+        k1\^2 + k2\^2 - k0\^2\ P}}\)], "Output",
+  CellLabel->"Out[18]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\[Epsilon]\[Epsilon] = {{S, \(-\[ImaginaryI]\)\ D, 
+          0}, {\[ImaginaryI]\ D, S, 0}, {0, 0, P}}\)], "Input",
+  CellLabel->"In[17]:="],
+
+Cell[BoxData[
+    \({{S, \(-\[ImaginaryI]\)\ D, 0}, {\[ImaginaryI]\ D, S, 0}, {0, 0, 
+        P}}\)], "Output",
+  CellLabel->"Out[17]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(\(\[IndentingNewLine]\)\(Simplify[\[Lambda]]\)\)\)], "Input",
+  CellLabel->"In[43]:="],
+
+Cell[BoxData[
+    \({{k2\^2 + k3\^2 - 
+          S\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0, \(-k1\)\ k2 + \
+\[ImaginaryI]\ D\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0, \(-k1\)\ k3}, \
+{\(-k1\)\ k2 - \[ImaginaryI]\ D\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0, 
+        k1\^2 + k3\^2 - 
+          S\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0, \(-k2\)\ k3}, {\(-k1\)\ \
+k3, \(-k2\)\ k3, 
+        k1\^2 + k2\^2 - P\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0}}\)], "Output",\
+
+  CellLabel->"Out[43]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(detlam = Det[\[Lambda]]\)], "Input",
+  CellLabel->"In[10]:="],
+
+Cell[BoxData[
+    \(\(-k1\^2\)\ k3\^2\ P\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0 - 
+      k2\^2\ k3\^2\ P\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0 - 
+      k3\^4\ P\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0 - 
+      k1\^4\ S\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0 - 
+      2\ k1\^2\ k2\^2\ S\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0 - 
+      k2\^4\ S\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0 - 
+      k1\^2\ k3\^2\ S\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0 - 
+      k2\^2\ k3\^2\ S\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0 - 
+      D\^2\ k1\^2\ \[Omega]\^4\ \[Epsilon]\_0\%2\ \[Mu]\_0\%2 - 
+      D\^2\ k2\^2\ \[Omega]\^4\ \[Epsilon]\_0\%2\ \[Mu]\_0\%2 + 
+      k1\^2\ P\ S\ \[Omega]\^4\ \[Epsilon]\_0\%2\ \[Mu]\_0\%2 + 
+      k2\^2\ P\ S\ \[Omega]\^4\ \[Epsilon]\_0\%2\ \[Mu]\_0\%2 + 
+      2\ k3\^2\ P\ S\ \[Omega]\^4\ \[Epsilon]\_0\%2\ \[Mu]\_0\%2 + 
+      k1\^2\ S\^2\ \[Omega]\^4\ \[Epsilon]\_0\%2\ \[Mu]\_0\%2 + 
+      k2\^2\ S\^2\ \[Omega]\^4\ \[Epsilon]\_0\%2\ \[Mu]\_0\%2 + 
+      D\^2\ P\ \[Omega]\^6\ \[Epsilon]\_0\%3\ \[Mu]\_0\%3 - 
+      P\ S\^2\ \[Omega]\^6\ \[Epsilon]\_0\%3\ \[Mu]\_0\%3\)], "Output",
+  CellLabel->"Out[10]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[%]\)], "Input",
+  CellLabel->"In[11]:="],
+
+Cell[BoxData[
+    \(\(-\[Omega]\^2\)\ \[Epsilon]\_0\ \[Mu]\_0\ \((\((k1\^2 + k2\^2 + 
+                k3\^2)\)\ \((k3\^2\ P + \((k1\^2 + 
+                      k2\^2)\)\ S)\) + \((D\^2\ \((k1\^2 + k2\^2)\) - 
+                S\ \((2\ k3\^2\ P + k1\^2\ \((P + S)\) + 
+                      k2\^2\ \((P + 
+                            S)\))\))\)\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0 \
++ P\ \((\(-D\^2\) + 
+                S\^2)\)\ \[Omega]\^4\ \[Epsilon]\_0\%2\ \[Mu]\_0\%2)\)\)], \
+"Output",
+  CellLabel->"Out[11]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(FullSimplify[%]\)], "Input",
+  CellLabel->"In[12]:="],
+
+Cell[BoxData[
+    \(\(-\[Omega]\^2\)\ \[Epsilon]\_0\ \[Mu]\_0\ \((\((k1\^2 + k2\^2 + 
+                k3\^2)\)\ \((k3\^2\ P + \((k1\^2 + 
+                      k2\^2)\)\ S)\) - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \
+\((\(-D\^2\)\ \((k1\^2 + k2\^2)\) + 
+                S\ \((2\ k3\^2\ P + k1\^2\ \((P + S)\) + 
+                      k2\^2\ \((P + S)\))\) + 
+                P\ \((D - S)\)\ \((D + 
+                      S)\)\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\))\)\)], \
+"Output",
+  CellLabel->"Out[12]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(\(% /. 
+      k1 \[Rule] K*Sin[\[Alpha]]*Cos[\[CurlyPhi]]\)\(\[IndentingNewLine]\)
+    \)\)], "Input",
+  CellLabel->"In[166]:="],
+
+Cell[BoxData[
+    \({{k2\^2 + k3\^2 - K0\ S, \[ImaginaryI]\ D\ K0 - 
+          K\ k2\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]], \(-K\)\ k3\ \
+Cos[\[CurlyPhi]]\ Sin[\[Alpha]]}, {\(-\[ImaginaryI]\)\ D\ K0 - 
+          K\ k2\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]], 
+        k3\^2 - K0\ S + 
+          K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2, \(-k2\)\ k3}, {\(-K\)\ \
+k3\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]], \(-k2\)\ k3, 
+        k2\^2 - K0\ P + 
+          K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2}}\)], "Output",
+  CellLabel->"Out[166]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(\(\[IndentingNewLine]\)\(% /. 
+      k2 \[Rule] K*Sin[\[Alpha]]*Sin[\[CurlyPhi]]\)\)\)], "Input",
+  CellLabel->"In[167]:="],
+
+Cell[BoxData[
+    \({{k3\^2 - K0\ S + 
+          K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2, \[ImaginaryI]\ D\ K0 - 
+          K\^2\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]], \(-K\)\ \
+k3\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]]}, {\(-\[ImaginaryI]\)\ D\ K0 - 
+          K\^2\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]], 
+        k3\^2 - K0\ S + 
+          K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2, \(-K\)\ k3\ Sin[\
+\[Alpha]]\ Sin[\[CurlyPhi]]}, {\(-K\)\ k3\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]], \
+\(-K\)\ k3\ Sin[\[Alpha]]\ Sin[\[CurlyPhi]], \(-K0\)\ P + 
+          K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + 
+          K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2}}\)], "Output",
+  CellLabel->"Out[167]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(\(% /. 
+      k3 \[Rule] 
+        K*Cos[\[Alpha]]\)\(\[IndentingNewLine]\)\(\[IndentingNewLine]\)
+    \)\)], "Input",
+  CellLabel->"In[168]:="],
+
+Cell[BoxData[
+    \({{\(-K0\)\ S + K\^2\ Cos[\[Alpha]]\^2 + 
+          K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2, \[ImaginaryI]\ D\ K0 - 
+          K\^2\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]], \(-K\^2\
+\)\ Cos[\[Alpha]]\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]]}, {\(-\[ImaginaryI]\)\ D\ \
+K0 - K\^2\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]], \(-K0\)\ S + 
+          K\^2\ Cos[\[Alpha]]\^2 + 
+          K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2, \(-K\^2\)\ \
+Cos[\[Alpha]]\ Sin[\[Alpha]]\ Sin[\[CurlyPhi]]}, {\(-K\^2\)\ Cos[\[Alpha]]\ \
+Cos[\[CurlyPhi]]\ Sin[\[Alpha]], \(-K\^2\)\ Cos[\[Alpha]]\ Sin[\[Alpha]]\ \
+Sin[\[CurlyPhi]], \(-K0\)\ P + K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + 
+          K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2}}\)], "Output",
+  CellLabel->"Out[168]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(\(Simplify[%]\)\(\[IndentingNewLine]\)
+    \)\)], "Input",
+  CellLabel->"In[16]:="],
+
+Cell[BoxData[
+    \(\(-\(1\/2\)\)\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((K\^4\ \((P + 
+                S + \((P - S)\)\ Cos[
+                    2\ \[Alpha]])\) - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \
+\((K\^2\ \((\(-D\^2\) + 3\ P\ S + 
+                      S\^2 + \((D\^2 + \((P - S)\)\ S)\)\ Cos[
+                          2\ \[Alpha]])\) + 
+                2\ P\ \((D\^2 - 
+                      S\^2)\)\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\))\)\)], \
+"Output",
+  CellLabel->"Out[16]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(\(FullSimplify[%]\)\(\[IndentingNewLine]\)\(\[IndentingNewLine]\)
+    \)\)], "Input",
+  CellLabel->"In[170]:="],
+
+Cell[BoxData[
+    \({{\(-K0\)\ S + 
+          K\^2\ \((Cos[\[Alpha]]\^2 + 
+                Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2)\), \[ImaginaryI]\ D\ \
+K0 - K\^2\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]], \(-K\^2\)\ \
+Cos[\[Alpha]]\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]]}, {\(-\[ImaginaryI]\)\ D\ K0 - 
+          K\^2\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]], \(-K0\)\
+\ S + K\^2\ \((Cos[\[Alpha]]\^2 + 
+                Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2)\), \(-K\^2\)\ Cos[\
+\[Alpha]]\ Sin[\[Alpha]]\ Sin[\[CurlyPhi]]}, {\(-K\^2\)\ Cos[\[Alpha]]\ Cos[\
+\[CurlyPhi]]\ Sin[\[Alpha]], \(-K\^2\)\ Cos[\[Alpha]]\ Sin[\[Alpha]]\ Sin[\
+\[CurlyPhi]], 
+        1\/2\ \((K\^2 - 2\ K0\ P - K\^2\ Cos[2\ \[Alpha]])\)}}\)], "Output",
+  CellLabel->"Out[170]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Inverse[\[Lambda]]\)], "Input",
+  CellLabel->"In[19]:="],
+
+Cell[BoxData[
+    \({{\((\(-k2\^2\)\ k3\^2 + \((k1\^2 + k2\^2 - k0\^2\ P)\)\ \((k1\^2 + 
+                    k3\^2 - k0\^2\ S)\))\)/\((\(-D\^2\)\ k0\^4\ k1\^2 - 
+              D\^2\ k0\^4\ k2\^2 + D\^2\ k0\^6\ P - k0\^2\ k1\^2\ k3\^2\ P - 
+              k0\^2\ k2\^2\ k3\^2\ P - k0\^2\ k3\^4\ P - k0\^2\ k1\^4\ S - 
+              2\ k0\^2\ k1\^2\ k2\^2\ S - k0\^2\ k2\^4\ S - 
+              k0\^2\ k1\^2\ k3\^2\ S - k0\^2\ k2\^2\ k3\^2\ S + 
+              k0\^4\ k1\^2\ P\ S + k0\^4\ k2\^2\ P\ S + 
+              2\ k0\^4\ k3\^2\ P\ S + k0\^4\ k1\^2\ S\^2 + 
+              k0\^4\ k2\^2\ S\^2 - 
+              k0\^6\ P\ S\^2)\), \((k1\ k2\ k3\^2 - \((\[ImaginaryI]\ D\ \
+k0\^2 - k1\ k2)\)\ \((k1\^2 + k2\^2 - 
+                    k0\^2\ P)\))\)/\((\(-D\^2\)\ k0\^4\ k1\^2 - 
+              D\^2\ k0\^4\ k2\^2 + D\^2\ k0\^6\ P - k0\^2\ k1\^2\ k3\^2\ P - 
+              k0\^2\ k2\^2\ k3\^2\ P - k0\^2\ k3\^4\ P - k0\^2\ k1\^4\ S - 
+              2\ k0\^2\ k1\^2\ k2\^2\ S - k0\^2\ k2\^4\ S - 
+              k0\^2\ k1\^2\ k3\^2\ S - k0\^2\ k2\^2\ k3\^2\ S + 
+              k0\^4\ k1\^2\ P\ S + k0\^4\ k2\^2\ P\ S + 
+              2\ k0\^4\ k3\^2\ P\ S + k0\^4\ k1\^2\ S\^2 + 
+              k0\^4\ k2\^2\ S\^2 - 
+              k0\^6\ P\ S\^2)\), \((k1\^3\ k3 - \[ImaginaryI]\ D\ k0\^2\ k2\ \
+k3 + k1\ k2\^2\ k3 + k1\ k3\^3 - 
+              k0\^2\ k1\ k3\ S)\)/\((\(-D\^2\)\ k0\^4\ k1\^2 - 
+              D\^2\ k0\^4\ k2\^2 + D\^2\ k0\^6\ P - k0\^2\ k1\^2\ k3\^2\ P - 
+              k0\^2\ k2\^2\ k3\^2\ P - k0\^2\ k3\^4\ P - k0\^2\ k1\^4\ S - 
+              2\ k0\^2\ k1\^2\ k2\^2\ S - k0\^2\ k2\^4\ S - 
+              k0\^2\ k1\^2\ k3\^2\ S - k0\^2\ k2\^2\ k3\^2\ S + 
+              k0\^4\ k1\^2\ P\ S + k0\^4\ k2\^2\ P\ S + 
+              2\ k0\^4\ k3\^2\ P\ S + k0\^4\ k1\^2\ S\^2 + 
+              k0\^4\ k2\^2\ S\^2 - 
+              k0\^6\ P\ S\^2)\)}, {\((k1\ k2\ k3\^2 - \((\(-\[ImaginaryI]\)\ \
+D\ k0\^2 - k1\ k2)\)\ \((k1\^2 + k2\^2 - 
+                    k0\^2\ P)\))\)/\((\(-D\^2\)\ k0\^4\ k1\^2 - 
+              D\^2\ k0\^4\ k2\^2 + D\^2\ k0\^6\ P - k0\^2\ k1\^2\ k3\^2\ P - 
+              k0\^2\ k2\^2\ k3\^2\ P - k0\^2\ k3\^4\ P - k0\^2\ k1\^4\ S - 
+              2\ k0\^2\ k1\^2\ k2\^2\ S - k0\^2\ k2\^4\ S - 
+              k0\^2\ k1\^2\ k3\^2\ S - k0\^2\ k2\^2\ k3\^2\ S + 
+              k0\^4\ k1\^2\ P\ S + k0\^4\ k2\^2\ P\ S + 
+              2\ k0\^4\ k3\^2\ P\ S + k0\^4\ k1\^2\ S\^2 + 
+              k0\^4\ k2\^2\ S\^2 - 
+              k0\^6\ P\ S\^2)\), \((\(-k1\^2\)\ k3\^2 + \((k1\^2 + k2\^2 - 
+                    k0\^2\ P)\)\ \((k2\^2 + k3\^2 - 
+                    k0\^2\ S)\))\)/\((\(-D\^2\)\ k0\^4\ k1\^2 - 
+              D\^2\ k0\^4\ k2\^2 + D\^2\ k0\^6\ P - k0\^2\ k1\^2\ k3\^2\ P - 
+              k0\^2\ k2\^2\ k3\^2\ P - k0\^2\ k3\^4\ P - k0\^2\ k1\^4\ S - 
+              2\ k0\^2\ k1\^2\ k2\^2\ S - k0\^2\ k2\^4\ S - 
+              k0\^2\ k1\^2\ k3\^2\ S - k0\^2\ k2\^2\ k3\^2\ S + 
+              k0\^4\ k1\^2\ P\ S + k0\^4\ k2\^2\ P\ S + 
+              2\ k0\^4\ k3\^2\ P\ S + k0\^4\ k1\^2\ S\^2 + 
+              k0\^4\ k2\^2\ S\^2 - 
+              k0\^6\ P\ S\^2)\), \((\[ImaginaryI]\ D\ k0\^2\ k1\ k3 + 
+              k1\^2\ k2\ k3 + k2\^3\ k3 + k2\ k3\^3 - 
+              k0\^2\ k2\ k3\ S)\)/\((\(-D\^2\)\ k0\^4\ k1\^2 - 
+              D\^2\ k0\^4\ k2\^2 + D\^2\ k0\^6\ P - k0\^2\ k1\^2\ k3\^2\ P - 
+              k0\^2\ k2\^2\ k3\^2\ P - k0\^2\ k3\^4\ P - k0\^2\ k1\^4\ S - 
+              2\ k0\^2\ k1\^2\ k2\^2\ S - k0\^2\ k2\^4\ S - 
+              k0\^2\ k1\^2\ k3\^2\ S - k0\^2\ k2\^2\ k3\^2\ S + 
+              k0\^4\ k1\^2\ P\ S + k0\^4\ k2\^2\ P\ S + 
+              2\ k0\^4\ k3\^2\ P\ S + k0\^4\ k1\^2\ S\^2 + 
+              k0\^4\ k2\^2\ S\^2 - 
+              k0\^6\ P\ S\^2)\)}, {\((k1\^3\ k3 + \[ImaginaryI]\ D\ k0\^2\ k2\
+\ k3 + k1\ k2\^2\ k3 + k1\ k3\^3 - 
+              k0\^2\ k1\ k3\ S)\)/\((\(-D\^2\)\ k0\^4\ k1\^2 - 
+              D\^2\ k0\^4\ k2\^2 + D\^2\ k0\^6\ P - k0\^2\ k1\^2\ k3\^2\ P - 
+              k0\^2\ k2\^2\ k3\^2\ P - k0\^2\ k3\^4\ P - k0\^2\ k1\^4\ S - 
+              2\ k0\^2\ k1\^2\ k2\^2\ S - k0\^2\ k2\^4\ S - 
+              k0\^2\ k1\^2\ k3\^2\ S - k0\^2\ k2\^2\ k3\^2\ S + 
+              k0\^4\ k1\^2\ P\ S + k0\^4\ k2\^2\ P\ S + 
+              2\ k0\^4\ k3\^2\ P\ S + k0\^4\ k1\^2\ S\^2 + 
+              k0\^4\ k2\^2\ S\^2 - 
+              k0\^6\ P\ S\^2)\), \((\(-\[ImaginaryI]\)\ D\ k0\^2\ k1\ k3 + 
+              k1\^2\ k2\ k3 + k2\^3\ k3 + k2\ k3\^3 - 
+              k0\^2\ k2\ k3\ S)\)/\((\(-D\^2\)\ k0\^4\ k1\^2 - 
+              D\^2\ k0\^4\ k2\^2 + D\^2\ k0\^6\ P - k0\^2\ k1\^2\ k3\^2\ P - 
+              k0\^2\ k2\^2\ k3\^2\ P - k0\^2\ k3\^4\ P - k0\^2\ k1\^4\ S - 
+              2\ k0\^2\ k1\^2\ k2\^2\ S - k0\^2\ k2\^4\ S - 
+              k0\^2\ k1\^2\ k3\^2\ S - k0\^2\ k2\^2\ k3\^2\ S + 
+              k0\^4\ k1\^2\ P\ S + k0\^4\ k2\^2\ P\ S + 
+              2\ k0\^4\ k3\^2\ P\ S + k0\^4\ k1\^2\ S\^2 + 
+              k0\^4\ k2\^2\ S\^2 - k0\^6\ P\ S\^2)\), \((\(-D\^2\)\ k0\^4 + 
+              k1\^2\ k3\^2 + k2\^2\ k3\^2 + k3\^4 - k0\^2\ k1\^2\ S - 
+              k0\^2\ k2\^2\ S - 2\ k0\^2\ k3\^2\ S + 
+              k0\^4\ S\^2)\)/\((\(-D\^2\)\ k0\^4\ k1\^2 - 
+              D\^2\ k0\^4\ k2\^2 + D\^2\ k0\^6\ P - k0\^2\ k1\^2\ k3\^2\ P - 
+              k0\^2\ k2\^2\ k3\^2\ P - k0\^2\ k3\^4\ P - k0\^2\ k1\^4\ S - 
+              2\ k0\^2\ k1\^2\ k2\^2\ S - k0\^2\ k2\^4\ S - 
+              k0\^2\ k1\^2\ k3\^2\ S - k0\^2\ k2\^2\ k3\^2\ S + 
+              k0\^4\ k1\^2\ P\ S + k0\^4\ k2\^2\ P\ S + 
+              2\ k0\^4\ k3\^2\ P\ S + k0\^4\ k1\^2\ S\^2 + 
+              k0\^4\ k2\^2\ S\^2 - k0\^6\ P\ S\^2)\)}}\)], "Output",
+  CellLabel->"Out[19]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(invlan = FullSimplify[%]\)], "Input",
+  CellLabel->"In[20]:="],
+
+Cell[BoxData[
+    RowBox[{\(General::"spell1"\), \(\(:\)\(\ \)\), "\<\"Possible spelling \
+error: new symbol name \\\"\\!\\(invlan\\)\\\" is similar to existing symbol \
+\\\"\\!\\(invlam\\)\\\". \\!\\(\\*ButtonBox[\\\"Mehr\[Ellipsis]\\\", \
+ButtonStyle->\\\"RefGuideLinkText\\\", ButtonFrame->None, \
+ButtonData:>\\\"General::spell1\\\"]\\)\"\>"}]], "Message",
+  CellLabel->"From In[20]:="],
+
+Cell[BoxData[
+    \({{\(k1\^4 + k0\^2\ \((\(-k3\^2\)\ P - k2\^2\ S + k0\^2\ P\ S)\) + k1\^2\
+\ \((k2\^2 + k3\^2 - k0\^2\ \((P + S)\))\)\)\/\(k0\^2\ \((D\^2\ k0\^2\ \
+\((\(-k1\^2\) - k2\^2 + k0\^2\ P)\) - \((k1\^2 + k2\^2 + k3\^2 - k0\^2\ S)\)\ \
+\((k3\^2\ P + \((k1\^2 + k2\^2 - k0\^2\ P)\)\ S)\))\)\), \(\(-\[ImaginaryI]\)\
+\ D\ k0\^2\ \((k1\^2 + k2\^2 - k0\^2\ P)\) + k1\ k2\ \((k1\^2 + k2\^2 + k3\^2 \
+- k0\^2\ P)\)\)\/\(k0\^2\ \((D\^2\ k0\^2\ \((\(-k1\^2\) - k2\^2 + k0\^2\ P)\) \
+- \((k1\^2 + k2\^2 + k3\^2 - k0\^2\ S)\)\ \((k3\^2\ P + \((k1\^2 + k2\^2 - k0\
+\^2\ P)\)\ S)\))\)\), \(k3\ \((k1\^3 - \[ImaginaryI]\ D\ k0\^2\ k2 + k1\ \
+\((k2\^2 + k3\^2 - k0\^2\ S)\))\)\)\/\(k0\^2\ \((D\^2\ k0\^2\ \((\(-k1\^2\) - \
+k2\^2 + k0\^2\ P)\) - \((k1\^2 + k2\^2 + k3\^2 - k0\^2\ S)\)\ \((k3\^2\ P + \
+\((k1\^2 + k2\^2 - k0\^2\ P)\)\ S)\))\)\)}, {\(\[ImaginaryI]\ D\ k0\^2\ \((k1\
+\^2 + k2\^2 - k0\^2\ P)\) + k1\ k2\ \((k1\^2 + k2\^2 + k3\^2 - k0\^2\ \
+P)\)\)\/\(k0\^2\ \((D\^2\ k0\^2\ \((\(-k1\^2\) - k2\^2 + k0\^2\ P)\) - \
+\((k1\^2 + k2\^2 + k3\^2 - k0\^2\ S)\)\ \((k3\^2\ P + \((k1\^2 + k2\^2 - \
+k0\^2\ P)\)\ S)\))\)\), \(k1\^2\ \((k2\^2 - k0\^2\ S)\) + \((k2\^2 - k0\^2\ \
+P)\)\ \((k2\^2 + k3\^2 - k0\^2\ S)\)\)\/\(k0\^2\ \((D\^2\ k0\^2\ \
+\((\(-k1\^2\) - k2\^2 + k0\^2\ P)\) - \((k1\^2 + k2\^2 + k3\^2 - k0\^2\ S)\)\ \
+\((k3\^2\ P + \((k1\^2 + k2\^2 - k0\^2\ P)\)\ S)\))\)\), \(k3\ \((\
+\[ImaginaryI]\ D\ k0\^2\ k1 + k2\ \((k1\^2 + k2\^2 + k3\^2 - k0\^2\ S)\))\)\)\
+\/\(k0\^2\ \((D\^2\ k0\^2\ \((\(-k1\^2\) - k2\^2 + k0\^2\ P)\) - \((k1\^2 + \
+k2\^2 + k3\^2 - k0\^2\ S)\)\ \((k3\^2\ P + \((k1\^2 + k2\^2 - k0\^2\ P)\)\ S)\
+\))\)\)}, {\(k3\ \((k1\^3 + \[ImaginaryI]\ D\ k0\^2\ k2 + k1\ \((k2\^2 + \
+k3\^2 - k0\^2\ S)\))\)\)\/\(k0\^2\ \((D\^2\ k0\^2\ \((\(-k1\^2\) - k2\^2 + k0\
+\^2\ P)\) - \((k1\^2 + k2\^2 + k3\^2 - k0\^2\ S)\)\ \((k3\^2\ P + \((k1\^2 + \
+k2\^2 - k0\^2\ P)\)\ S)\))\)\), \(k3\ \((\(-\[ImaginaryI]\)\ D\ k0\^2\ k1 + \
+k2\ \((k1\^2 + k2\^2 + k3\^2 - k0\^2\ S)\))\)\)\/\(k0\^2\ \((D\^2\ k0\^2\ \((\
+\(-k1\^2\) - k2\^2 + k0\^2\ P)\) - \((k1\^2 + k2\^2 + k3\^2 - k0\^2\ S)\)\ \
+\((k3\^2\ P + \((k1\^2 + k2\^2 - k0\^2\ P)\)\ S)\))\)\), \(\(-D\^2\)\ k0\^4 + \
+\((k3\^2 - k0\^2\ S)\)\ \((k1\^2 + k2\^2 + k3\^2 - k0\^2\ S)\)\)\/\(k0\^2\ \
+\((D\^2\ k0\^2\ \((\(-k1\^2\) - k2\^2 + k0\^2\ P)\) - \((k1\^2 + k2\^2 + \
+k3\^2 - k0\^2\ S)\)\ \((k3\^2\ P + \((k1\^2 + k2\^2 - k0\^2\ P)\)\ \
+S)\))\)\)}}\)], "Output",
+  CellLabel->"Out[20]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(% /. D \[Rule] 0\)], "Input",
+  CellLabel->"In[46]:="],
+
+Cell[BoxData[
+    \({{\((\(-k1\^2\)\ \((k1\^2 + k2\^2 + 
+                    k3\^2)\) + \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((k3\^2\
+\ P + k2\^2\ S + k1\^2\ \((P + S)\) - 
+                    P\ S\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\))\)/\((\
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((\((k1\^2 + k2\^2 + 
+                        k3\^2)\)\ \((k3\^2\ P + \((k1\^2 + 
+                              k2\^2)\)\ S)\) - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0\ \((S\ \((2\ k3\^2\ P + k1\^2\ \((P + S)\) + k2\^2\ \((P + S)\))\) - 
+                        P\ S\^2\ \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\))\))\), \((\(-k1\)\ k2\ \((k1\^2 + k2\^2 + k3\^2)\) + 
+              k1\ k2\ P\ \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\)/\((\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((\((k1\^2 + k2\^2 + 
+                        k3\^2)\)\ \((k3\^2\ P + \((k1\^2 + 
+                              k2\^2)\)\ S)\) - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0\ \((S\ \((2\ k3\^2\ P + k1\^2\ \((P + S)\) + k2\^2\ \((P + S)\))\) - 
+                        P\ S\^2\ \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\))\))\), \((\(-k1\)\ k3\ \((k1\^2 + k2\^2 + k3\^2)\) + 
+              k1\ k3\ S\ \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\)/\((\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((\((k1\^2 + k2\^2 + 
+                        k3\^2)\)\ \((k3\^2\ P + \((k1\^2 + 
+                              k2\^2)\)\ S)\) - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0\ \((S\ \((2\ k3\^2\ P + k1\^2\ \((P + S)\) + k2\^2\ \((P + S)\))\) - 
+                        P\ S\^2\ \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\))\))\)}, {\(-\(\((k1\ k2\ \((k1\^2 + k2\^2 + k3\^2)\) - 
+                k1\ k2\ P\ \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\)/\((\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((\((k1\^2 + k2\^2 + 
+                          k3\^2)\)\ \((k3\^2\ P + \((k1\^2 + 
+                                k2\^2)\)\ S)\) - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0\ \((S\ \((2\ k3\^2\ P + k1\^2\ \((P + S)\) + k2\^2\ \((P + S)\))\) - 
+                          P\ S\^2\ \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\))\))\)\)\), \((\(-k2\^2\)\ \((k1\^2 + k2\^2 + 
+                    k3\^2)\) + \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((k3\^2\
+\ P + k1\^2\ S + k2\^2\ \((P + S)\) - 
+                    P\ S\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\))\)/\((\
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((\((k1\^2 + k2\^2 + 
+                        k3\^2)\)\ \((k3\^2\ P + \((k1\^2 + 
+                              
+                              k2\^2)\)\ S)\) - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0\ \((S\ \((2\ k3\^2\ P + k1\^2\ \((P + S)\) + k2\^2\ \((P + S)\))\) - 
+                        P\ S\^2\ \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\))\))\), \((\(-k2\)\ k3\ \((k1\^2 + k2\^2 + k3\^2)\) + 
+              k2\ k3\ S\ \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\)/\((\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((\((k1\^2 + k2\^2 + 
+                        k3\^2)\)\ \((k3\^2\ P + \((k1\^2 + 
+                              k2\^2)\)\ S)\) - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0\ \((S\ \((2\ k3\^2\ P + k1\^2\ \((P + S)\) + k2\^2\ \((P + S)\))\) - 
+                        P\ S\^2\ \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\))\))\)}, {\((\(-k1\)\ k3\ \((k1\^2 + k2\^2 + k3\^2)\) + 
+              k1\ k3\ S\ \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\)/\((\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((\((k1\^2 + k2\^2 + 
+                        k3\^2)\)\ \((k3\^2\ P + \((k1\^2 + 
+                              k2\^2)\)\ S)\) - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0\ \((S\ \((2\ k3\^2\ P + k1\^2\ \((P + S)\) + k2\^2\ \((P + S)\))\) - 
+                        P\ S\^2\ \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\))\))\), \((\(-k2\)\ k3\ \((k1\^2 + k2\^2 + k3\^2)\) + 
+              k2\ k3\ S\ \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\)/\((\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((\((k1\^2 + k2\^2 + 
+                        k3\^2)\)\ \((k3\^2\ P + \((k1\^2 + 
+                              k2\^2)\)\ S)\) - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0\ \((S\ \((2\ k3\^2\ P + k1\^2\ \((P + S)\) + k2\^2\ \((P + S)\))\) - 
+                        P\ S\^2\ \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\))\))\), \((\(-k3\^2\)\ \((k1\^2 + k2\^2 + 
+                    k3\^2)\) + \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((\((k1\
+\^2 + k2\^2 + 2\ k3\^2)\)\ S - 
+                    S\^2\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\))\)/\((\
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((\((k1\^2 + k2\^2 + 
+                        k3\^2)\)\ \((k3\^2\ P + \((k1\^2 + 
+                              k2\^2)\)\ S)\) - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0\ \((S\ \((2\ k3\^2\ P + k1\^2\ \((P + S)\) + k2\^2\ \((P + S)\))\) - 
+                        P\ S\^2\ \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\))\))\)}}\)], "Output",
+  CellLabel->"Out[46]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(\(% /. P -> 1\)\(\[IndentingNewLine]\)
+    \)\)], "Input",
+  CellLabel->"In[47]:="],
+
+Cell[BoxData[
+    \({{\((\(-k1\^2\)\ \((k1\^2 + k2\^2 + 
+                    k3\^2)\) + \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((k3\^2 \
++ k2\^2\ S + k1\^2\ \((1 + S)\) - 
+                    S\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\))\)/\((\[Omega]\
+\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((\((k1\^2 + k2\^2 + 
+                        k3\^2)\)\ \((k3\^2 + \((k1\^2 + 
+                              k2\^2)\)\ S)\) - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0\ \((S\ \((2\ k3\^2 + k1\^2\ \((1 + S)\) + k2\^2\ \((1 + S)\))\) - 
+                        S\^2\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\))\))\), \
+\((\(-k1\)\ k2\ \((k1\^2 + k2\^2 + k3\^2)\) + 
+              k1\ k2\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)/\((\[Omega]\^2\ \
+\[Epsilon]\_0\ \[Mu]\_0\ \((\((k1\^2 + k2\^2 + 
+                        k3\^2)\)\ \((k3\^2 + \((k1\^2 + 
+                              k2\^2)\)\ S)\) - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0\ \((S\ \((2\ k3\^2 + k1\^2\ \((1 + S)\) + k2\^2\ \((1 + S)\))\) - 
+                        S\^2\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\))\))\), \
+\((\(-k1\)\ k3\ \((k1\^2 + k2\^2 + k3\^2)\) + 
+              k1\ k3\ S\ \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\)/\((\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((\((k1\^2 + k2\^2 + 
+                        k3\^2)\)\ \((k3\^2 + \((k1\^2 + 
+                              k2\^2)\)\ S)\) - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0\ \((S\ \((2\ k3\^2 + k1\^2\ \((1 + S)\) + k2\^2\ \((1 + S)\))\) - 
+                        S\^2\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\))\))\)}, \
+{\(-\(\((k1\ k2\ \((k1\^2 + k2\^2 + k3\^2)\) - 
+                k1\ k2\ \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\)/\((\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((\((k1\^2 + k2\^2 + 
+                          k3\^2)\)\ \((k3\^2 + \((k1\^2 + 
+                                k2\^2)\)\ S)\) - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0\ \((S\ \((2\ k3\^2 + k1\^2\ \((1 + S)\) + k2\^2\ \((1 + S)\))\) - 
+                          S\^2\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\))\))\)\
+\)\), \((\(-k2\^2\)\ \((k1\^2 + k2\^2 + 
+                    k3\^2)\) + \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((k3\^2 \
++ k1\^2\ S + k2\^2\ \((1 + S)\) - 
+                    S\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\))\)/\((\[Omega]\
+\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((\((k1\^2 + k2\^2 + 
+                        k3\^2)\)\ \((k3\^2 + \((k1\^2 + 
+                              k2\^2)\)\ S)\) - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0\ \((S\ \((2\ k3\^2 + k1\^2\ \((1 + S)\) + k2\^2\ \((1 + S)\))\) - 
+                        S\^2\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\))\))\), \
+\((\(-k2\)\ k3\ \((k1\^2 + k2\^2 + k3\^2)\) + 
+              k2\ k3\ S\ \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\)/\((\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((\((k1\^2 + k2\^2 + 
+                        k3\^2)\)\ \((k3\^2 + \((k1\^2 + 
+                              k2\^2)\)\ S)\) - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0\ \((S\ \((2\ k3\^2 + k1\^2\ \((1 + S)\) + k2\^2\ \((1 + S)\))\) - 
+                        S\^2\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\))\))\)}, \
+{\((\(-k1\)\ k3\ \((k1\^2 + k2\^2 + k3\^2)\) + 
+              k1\ k3\ S\ \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\)/\((\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((\((k1\^2 + k2\^2 + 
+                        k3\^2)\)\ \((k3\^2 + \((k1\^2 + 
+                              k2\^2)\)\ S)\) - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0\ \((S\ \((2\ k3\^2 + k1\^2\ \((1 + S)\) + k2\^2\ \((1 + S)\))\) - 
+                        S\^2\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\))\))\), \
+\((\(-k2\)\ k3\ \((k1\^2 + k2\^2 + k3\^2)\) + 
+              k2\ k3\ S\ \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\)/\((\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((\((k1\^2 + k2\^2 + 
+                        k3\^2)\)\ \((k3\^2 + \((k1\^2 + 
+                              k2\^2)\)\ S)\) - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0\ \((S\ \((2\ k3\^2 + k1\^2\ \((1 + S)\) + k2\^2\ \((1 + S)\))\) - 
+                        S\^2\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\))\))\), \
+\((\(-k3\^2\)\ \((k1\^2 + k2\^2 + 
+                    k3\^2)\) + \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((\((k1\
+\^2 + k2\^2 + 2\ k3\^2)\)\ S - 
+                    S\^2\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\))\)/\((\
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((\((k1\^2 + k2\^2 + 
+                        k3\^2)\)\ \((k3\^2 + \((k1\^2 + 
+                              k2\^2)\)\ S)\) - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0\ \((S\ \((2\ k3\^2 + k1\^2\ \((1 + S)\) + k2\^2\ \((1 + S)\))\) - 
+                        S\^2\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\))\))\)}}\
+\)], "Output",
+  CellLabel->"Out[47]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(\(\[IndentingNewLine]\)\(% /. S \[Rule] 1\)\)\)], "Input",
+  CellLabel->"In[48]:="],
+
+Cell[BoxData[
+    \({{\(\(-k1\^2\)\ \((k1\^2 + k2\^2 + k3\^2)\) + \[Omega]\^2\ \
+\[Epsilon]\_0\ \[Mu]\_0\ \((2\ k1\^2 + k2\^2 + k3\^2 - \[Omega]\^2\ \
+\[Epsilon]\_0\ \[Mu]\_0)\)\)\/\(\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \
+\((\((k1\^2 + k2\^2 + k3\^2)\)\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \
+\((2\ k1\^2 + 2\ k2\^2 + 2\ k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\))\)\), \(\(-k1\)\ k2\ \((k1\^2 + k2\^2 + k3\^2)\) + k1\ k2\ \
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\)\/\(\[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0\ \((\((k1\^2 + k2\^2 + k3\^2)\)\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0\ \((2\ k1\^2 + 2\ k2\^2 + 2\ k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\))\)\), \(\(-k1\)\ k3\ \((k1\^2 + k2\^2 + k3\^2)\) + k1\ k3\ \
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\)\/\(\[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0\ \((\((k1\^2 + k2\^2 + k3\^2)\)\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0\ \((2\ k1\^2 + 2\ k2\^2 + 2\ k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\))\)\)}, {\(-\(\(k1\ k2\ \((k1\^2 + k2\^2 + k3\^2)\) - 
+                k1\ k2\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\)\/\(\[Omega]\^2\
+\ \[Epsilon]\_0\ \[Mu]\_0\ \((\((k1\^2 + k2\^2 + k3\^2)\)\^2 - \[Omega]\^2\ \
+\[Epsilon]\_0\ \[Mu]\_0\ \((2\ k1\^2 + 2\ k2\^2 + 
+                          2\ k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\))\
+\)\)\)\), \(\(-k2\^2\)\ \((k1\^2 + k2\^2 + k3\^2)\) + \[Omega]\^2\ \[Epsilon]\
+\_0\ \[Mu]\_0\ \((k1\^2 + 2\ k2\^2 + k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\)\)\/\(\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((\((k1\^2 + k2\^2 + \
+k3\^2)\)\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((2\ k1\^2 + 2\ k2\^2 + \
+2\ k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\))\)\), \(\(-k2\)\ k3\ \((k1\
+\^2 + k2\^2 + k3\^2)\) + k2\ k3\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\)\/\(\
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((\((k1\^2 + k2\^2 + k3\^2)\)\^2 - \
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((2\ k1\^2 + 2\ k2\^2 + 2\ k3\^2 - \
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\))\)\)}, {\(\(-k1\)\ k3\ \((k1\^2 + \
+k2\^2 + k3\^2)\) + k1\ k3\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\)\/\(\[Omega]\
+\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((\((k1\^2 + k2\^2 + k3\^2)\)\^2 - \[Omega]\^2\
+\ \[Epsilon]\_0\ \[Mu]\_0\ \((2\ k1\^2 + 2\ k2\^2 + 2\ k3\^2 - \[Omega]\^2\ \
+\[Epsilon]\_0\ \[Mu]\_0)\))\)\), \(\(-k2\)\ k3\ \((k1\^2 + k2\^2 + k3\^2)\) + \
+k2\ k3\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\)\/\(\[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0\ \((\((k1\^2 + k2\^2 + k3\^2)\)\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0\ \((2\ k1\^2 + 2\ k2\^2 + 2\ k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\))\)\), \(\(-k3\^2\)\ \((k1\^2 + k2\^2 + k3\^2)\) + \[Omega]\^2\ \
+\[Epsilon]\_0\ \[Mu]\_0\ \((k1\^2 + k2\^2 + 2\ k3\^2 - \[Omega]\^2\ \
+\[Epsilon]\_0\ \[Mu]\_0)\)\)\/\(\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \
+\((\((k1\^2 + k2\^2 + k3\^2)\)\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \
+\((2\ k1\^2 + 2\ k2\^2 + 2\ k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\))\)\)}}\)], "Output",
+  CellLabel->"Out[48]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(%\)], "Input",
+  CellLabel->"In[148]:="],
+
+Cell[BoxData[
+    \({{\(-\(\(k1\^4 + K0\ \((K0 - k2\^2 - k3\^2)\) + 
+                k1\^2\ \((\(-2\)\ K0 + k2\^2 + 
+                      k3\^2)\)\)\/\(K0\ \((\(-K0\) + k1\^2 + k2\^2 + k3\^2)\)\
+\^2\)\)\), \(-\(\(k1\ k2\)\/\(K0\ \((\(-K0\) + k1\^2 + k2\^2 + 
+                    k3\^2)\)\)\)\), \(-\(\(k3\ \((k1\^3 + 
+                    k1\ \((\(-K0\) + k2\^2 + 
+                          k3\^2)\))\)\)\/\(K0\ \((\(-K0\) + k1\^2 + k2\^2 + \
+k3\^2)\)\^2\)\)\)}, {\(-\(\(k1\ k2\)\/\(K0\ \((\(-K0\) + k1\^2 + k2\^2 + 
+                    k3\^2)\)\)\)\), \(-\(\(k1\^2\ \((\(-K0\) + 
+                      k2\^2)\) + \((\(-K0\) + k2\^2)\)\ \((\(-K0\) + k2\^2 + 
+                      k3\^2)\)\)\/\(K0\ \((\(-K0\) + k1\^2 + k2\^2 + k3\^2)\)\
+\^2\)\)\), \(-\(\(k2\ k3\)\/\(K0\ \((\(-K0\) + k1\^2 + k2\^2 + 
+                    k3\^2)\)\)\)\)}, {\(-\(\(k3\ \((k1\^3 + 
+                    k1\ \((\(-K0\) + k2\^2 + 
+                          k3\^2)\))\)\)\/\(K0\ \((\(-K0\) + k1\^2 + k2\^2 + \
+k3\^2)\)\^2\)\)\), \(-\(\(k2\ k3\)\/\(K0\ \((\(-K0\) + k1\^2 + k2\^2 + 
+                    k3\^2)\)\)\)\), \(-\(\(\(-K0\) + 
+                k3\^2\)\/\(K0\ \((\(-K0\) + k1\^2 + k2\^2 + 
+                    k3\^2)\)\)\)\)}}\)], "Output",
+  CellLabel->"Out[148]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(TensorFour = FullSimplify[%]*\[ImaginaryI]*\[Mu]\_0*\[Omega]\)], "Input",\
+
+  CellLabel->"In[49]:="],
+
+Cell[BoxData[
+    \({{\(\[ImaginaryI]\ \((\(-k1\^2\) + \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\)\)\/\(\[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + k3\^2 - \[Omega]\
+\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\), \(-\(\(\[ImaginaryI]\ k1\ k2\)\/\(\[Omega]\
+\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\), \
+\(-\(\(\[ImaginaryI]\ k1\ k3\)\/\(\[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\)}, {\
+\(-\(\(\[ImaginaryI]\ k1\ k2\)\/\(\[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\), \(\
+\[ImaginaryI]\ \((\(-k2\^2\) + \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\/\(\
+\[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + k3\^2 - \[Omega]\^2\ \
+\[Epsilon]\_0\ \[Mu]\_0)\)\), \(-\(\(\[ImaginaryI]\ k2\ k3\)\/\(\[Omega]\ \
+\[Epsilon]\_0\ \((k1\^2 + k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\)}, {\
+\(-\(\(\[ImaginaryI]\ k1\ k3\)\/\(\[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\), \
+\(-\(\(\[ImaginaryI]\ k2\ k3\)\/\(\[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\), \(\
+\[ImaginaryI]\ \((\(-k3\^2\) + \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\/\(\
+\[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + k3\^2 - \[Omega]\^2\ \
+\[Epsilon]\_0\ \[Mu]\_0)\)\)}}\)], "Output",
+  CellLabel->"Out[49]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(% /. k1 \[Rule] K*Sin[\[Alpha]]*Cos[\[CurlyPhi]]\)], "Input",
+  CellLabel->"In[177]:="],
+
+Cell[BoxData[
+    \({{\(\[ImaginaryI]\ \[Omega]\ \((K0 - K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\
+\[Alpha]]\^2)\)\ \[Mu]\_0\)\/\(K0\ \((\(-K0\) + k2\^2 + k3\^2 + K\^2\ Cos[\
+\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2)\)\), \(-\(\(\[ImaginaryI]\ K\ k2\ \[Omega]\
+\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]]\ \[Mu]\_0\)\/\(K0\ \((\(-K0\) + k2\^2 + 
+                    k3\^2 + 
+                    K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2)\)\)\)\), \(-\
+\(\(\[ImaginaryI]\ K\ k3\ \[Omega]\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]]\ \[Mu]\_0\
+\)\/\(K0\ \((\(-K0\) + k2\^2 + k3\^2 + 
+                    K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2)\)\)\)\)}, \
+{\(-\(\(\[ImaginaryI]\ K\ k2\ \[Omega]\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]]\ \
+\[Mu]\_0\)\/\(K0\ \((\(-K0\) + k2\^2 + k3\^2 + 
+                    K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2)\)\)\)\), \(\
+\[ImaginaryI]\ \((K0 - k2\^2)\)\ \[Omega]\ \[Mu]\_0\)\/\(K0\ \((\(-K0\) + \
+k2\^2 + k3\^2 + K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2)\)\), \(-\(\(\
+\[ImaginaryI]\ k2\ k3\ \[Omega]\ \[Mu]\_0\)\/\(K0\ \((\(-K0\) + k2\^2 + 
+                    k3\^2 + 
+                    K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2)\)\)\)\)}, \
+{\(-\(\(\[ImaginaryI]\ K\ k3\ \[Omega]\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]]\ \
+\[Mu]\_0\)\/\(K0\ \((\(-K0\) + k2\^2 + k3\^2 + 
+                    K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2)\)\)\)\), \(-\
+\(\(\[ImaginaryI]\ k2\ k3\ \[Omega]\ \[Mu]\_0\)\/\(K0\ \((\(-K0\) + k2\^2 + 
+                    k3\^2 + 
+                    K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2)\)\)\)\), \(-\
+\(\(\[ImaginaryI]\ \((\(-K0\) + 
+                    k3\^2)\)\ \[Omega]\ \[Mu]\_0\)\/\(K0\ \((\(-K0\) + 
+                    k2\^2 + k3\^2 + 
+                    K\^2\ Cos[\[CurlyPhi]]\^2\ \
+Sin[\[Alpha]]\^2)\)\)\)\)}}\)], "Output",
+  CellLabel->"Out[177]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(\(% /. 
+      k2 \[Rule] K*Sin[\[Alpha]]*Sin[\[CurlyPhi]]\)\(\[IndentingNewLine]\)
+    \)\)], "Input",
+  CellLabel->"In[178]:="],
+
+Cell[BoxData[
+    \({{\(\[ImaginaryI]\ \[Omega]\ \((K0 - K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\
+\[Alpha]]\^2)\)\ \[Mu]\_0\)\/\(K0\ \((\(-K0\) + k3\^2 + K\^2\ \
+Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + K\^2\ Sin[\[Alpha]]\^2\ Sin[\
+\[CurlyPhi]]\^2)\)\), \(-\(\(\[ImaginaryI]\ K\^2\ \[Omega]\ Cos[\[CurlyPhi]]\ \
+Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\ \[Mu]\_0\)\/\(K0\ \((\(-K0\) + k3\^2 + 
+                    K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + 
+                    K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2)\)\)\)\), \(-\
+\(\(\[ImaginaryI]\ K\ k3\ \[Omega]\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]]\ \[Mu]\_0\
+\)\/\(K0\ \((\(-K0\) + k3\^2 + K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + 
+                    K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2)\)\)\)\)}, \
+{\(-\(\(\[ImaginaryI]\ K\^2\ \[Omega]\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]]\^2\ \
+Sin[\[CurlyPhi]]\ \[Mu]\_0\)\/\(K0\ \((\(-K0\) + k3\^2 + 
+                    K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + 
+                    K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2)\)\)\)\), \(\
+\[ImaginaryI]\ \[Omega]\ \((K0 - K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2)\
+\)\ \[Mu]\_0\)\/\(K0\ \((\(-K0\) + k3\^2 + K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\
+\[Alpha]]\^2 + K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2)\)\), \(-\(\(\
+\[ImaginaryI]\ K\ k3\ \[Omega]\ Sin[\[Alpha]]\ Sin[\[CurlyPhi]]\ \[Mu]\_0\)\/\
+\(K0\ \((\(-K0\) + k3\^2 + K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + 
+                    K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2)\)\)\)\)}, \
+{\(-\(\(\[ImaginaryI]\ K\ k3\ \[Omega]\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]]\ \
+\[Mu]\_0\)\/\(K0\ \((\(-K0\) + k3\^2 + 
+                    K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + 
+                    K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2)\)\)\)\), \(-\
+\(\(\[ImaginaryI]\ K\ k3\ \[Omega]\ Sin[\[Alpha]]\ Sin[\[CurlyPhi]]\ \[Mu]\_0\
+\)\/\(K0\ \((\(-K0\) + k3\^2 + K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + 
+                    K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2)\)\)\)\), \(-\
+\(\(\[ImaginaryI]\ \((\(-K0\) + 
+                    k3\^2)\)\ \[Omega]\ \[Mu]\_0\)\/\(K0\ \((\(-K0\) + 
+                    k3\^2 + K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + 
+                    
+                    K\^2\ Sin[\[Alpha]]\^2\ \
+Sin[\[CurlyPhi]]\^2)\)\)\)\)}}\)], "Output",
+  CellLabel->"Out[178]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(\(\[IndentingNewLine]\)\(% /. 
+      k3 \[Rule] K*Cos[\[Alpha]]\)\)\)], "Input",
+  CellLabel->"In[179]:="],
+
+Cell[BoxData[
+    \({{\(\[ImaginaryI]\ \[Omega]\ \((K0 - K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\
+\[Alpha]]\^2)\)\ \[Mu]\_0\)\/\(K0\ \((\(-K0\) + K\^2\ Cos[\[Alpha]]\^2 + K\^2\
+\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + K\^2\ Sin[\[Alpha]]\^2\ Sin[\
+\[CurlyPhi]]\^2)\)\), \(-\(\(\[ImaginaryI]\ K\^2\ \[Omega]\ Cos[\[CurlyPhi]]\ \
+Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\ \[Mu]\_0\)\/\(K0\ \((\(-K0\) + 
+                    K\^2\ Cos[\[Alpha]]\^2 + 
+                    K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + 
+                    K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2)\)\)\)\), \(-\
+\(\(\[ImaginaryI]\ K\^2\ \[Omega]\ Cos[\[Alpha]]\ Cos[\[CurlyPhi]]\ Sin[\
+\[Alpha]]\ \[Mu]\_0\)\/\(K0\ \((\(-K0\) + K\^2\ Cos[\[Alpha]]\^2 + 
+                    K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + 
+                    K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2)\)\)\)\)}, \
+{\(-\(\(\[ImaginaryI]\ K\^2\ \[Omega]\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]]\^2\ \
+Sin[\[CurlyPhi]]\ \[Mu]\_0\)\/\(K0\ \((\(-K0\) + K\^2\ Cos[\[Alpha]]\^2 + 
+                    K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + 
+                    K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2)\)\)\)\), \(\
+\[ImaginaryI]\ \[Omega]\ \((K0 - K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2)\
+\)\ \[Mu]\_0\)\/\(K0\ \((\(-K0\) + K\^2\ Cos[\[Alpha]]\^2 + K\^2\ Cos[\
+\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + K\^2\ Sin[\[Alpha]]\^2\ \
+Sin[\[CurlyPhi]]\^2)\)\), \(-\(\(\[ImaginaryI]\ K\^2\ \[Omega]\ Cos[\[Alpha]]\
+\ Sin[\[Alpha]]\ Sin[\[CurlyPhi]]\ \[Mu]\_0\)\/\(K0\ \((\(-K0\) + 
+                    K\^2\ Cos[\[Alpha]]\^2 + 
+                    K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + 
+                    K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2)\)\)\)\)}, \
+{\(-\(\(\[ImaginaryI]\ K\^2\ \[Omega]\ Cos[\[Alpha]]\ Cos[\[CurlyPhi]]\ Sin[\
+\[Alpha]]\ \[Mu]\_0\)\/\(K0\ \((\(-K0\) + K\^2\ Cos[\[Alpha]]\^2 + 
+                    K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + 
+                    K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2)\)\)\)\), \(-\
+\(\(\[ImaginaryI]\ K\^2\ \[Omega]\ Cos[\[Alpha]]\ Sin[\[Alpha]]\ Sin[\
+\[CurlyPhi]]\ \[Mu]\_0\)\/\(K0\ \((\(-K0\) + K\^2\ Cos[\[Alpha]]\^2 + 
+                    K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + 
+                    
+                    K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2)\)\)\)\), \(-\
+\(\(\[ImaginaryI]\ \[Omega]\ \((\(-K0\) + 
+                    K\^2\ Cos[\[Alpha]]\^2)\)\ \[Mu]\_0\)\/\(K0\ \((\(-K0\) + 
+                    K\^2\ Cos[\[Alpha]]\^2 + 
+                    K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + 
+                    K\^2\ Sin[\[Alpha]]\^2\ \
+Sin[\[CurlyPhi]]\^2)\)\)\)\)}}\)], "Output",
+  CellLabel->"Out[179]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[{{\(\(-K\^2\)\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + \
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\)\/\(\[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0\ \((K\^2\ Cos[\[Alpha]]\^2 + K\^2\ Cos[\[CurlyPhi]]\^2\ \
+Sin[\[Alpha]]\^2 + K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2 - \[Omega]\^2\ \
+\[Epsilon]\_0\ \[Mu]\_0)\)\), \(-\(\(K\^2\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]]\^2\
+\ Sin[\[CurlyPhi]]\)\/\(\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((K\^2\ Cos[\
+\[Alpha]]\^2 + K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + 
+                      K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2 - \
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\), \(-\(\(K\^2\ Cos[\[Alpha]]\ \
+Cos[\[CurlyPhi]]\ Sin[\[Alpha]]\)\/\(\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \
+\((K\^2\ Cos[\[Alpha]]\^2 + K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + 
+                      K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2 - \
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\)}, {\(-\(\(K\^2\ \
+Cos[\[CurlyPhi]]\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\)\/\(\[Omega]\^2\ \
+\[Epsilon]\_0\ \[Mu]\_0\ \((K\^2\ Cos[\[Alpha]]\^2 + 
+                      K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + 
+                      K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2 - \
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\), \(\(-K\^2\)\ Sin[\[Alpha]]\^2\ \
+Sin[\[CurlyPhi]]\^2 + \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\)\/\(\[Omega]\^2\ \
+\[Epsilon]\_0\ \[Mu]\_0\ \((K\^2\ Cos[\[Alpha]]\^2 + K\^2\ \
+Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + K\^2\ Sin[\[Alpha]]\^2\ Sin[\
+\[CurlyPhi]]\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\), \(-\(\(K\^2\ \
+Cos[\[Alpha]]\ Sin[\[Alpha]]\ Sin[\[CurlyPhi]]\)\/\(\[Omega]\^2\ \
+\[Epsilon]\_0\ \[Mu]\_0\ \((K\^2\ Cos[\[Alpha]]\^2 + 
+                      K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + 
+                      K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2 - \
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\)}, {\(-\(\(K\^2\ Cos[\[Alpha]]\ \
+Cos[\[CurlyPhi]]\ Sin[\[Alpha]]\)\/\(\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \
+\((K\^2\ Cos[\[Alpha]]\^2 + K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + 
+                      
+                      K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2 - \
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\), \(-\(\(K\^2\ Cos[\[Alpha]]\ \
+Sin[\[Alpha]]\ Sin[\[CurlyPhi]]\)\/\(\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \
+\((K\^2\ Cos[\[Alpha]]\^2 + K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + 
+                      K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2 - \
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\), \(\(-K\^2\)\ Cos[\[Alpha]]\^2 \
++ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\)\/\(\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\
+\_0\ \((K\^2\ Cos[\[Alpha]]\^2 + K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 \
++ K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\)\)}}]\)], "Input",
+  CellLabel->"In[153]:="],
+
+Cell[BoxData[
+    \({{\(K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 - \[Omega]\^2\ \
+\[Epsilon]\_0\ \[Mu]\_0\)\/\(\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\ \((\(-K\^2\
+\) + \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\), \(-\(\(K\^2\ Cos[\[CurlyPhi]]\
+\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\)\/\(K\^2\ \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0 - \[Omega]\^4\ \[Epsilon]\_0\%2\ \[Mu]\_0\%2\)\)\), \(-\(\(K\^2\ \
+Cos[\[Alpha]]\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]]\)\/\(K\^2\ \[Omega]\^2\ \
+\[Epsilon]\_0\ \[Mu]\_0 - \[Omega]\^4\ \[Epsilon]\_0\%2\ \[Mu]\_0\%2\)\)\)}, \
+{\(-\(\(K\^2\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\)\/\(K\^2\ \
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0 - \[Omega]\^4\ \[Epsilon]\_0\%2\ \
+\[Mu]\_0\%2\)\)\), \(K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2 - \
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\)\/\(\[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0\ \((\(-K\^2\) + \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\), \
+\(-\(\(K\^2\ Cos[\[Alpha]]\ Sin[\[Alpha]]\ Sin[\[CurlyPhi]]\)\/\(K\^2\ \
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0 - \[Omega]\^4\ \[Epsilon]\_0\%2\ \
+\[Mu]\_0\%2\)\)\)}, {\(-\(\(K\^2\ Cos[\[Alpha]]\ Cos[\[CurlyPhi]]\ Sin[\
+\[Alpha]]\)\/\(K\^2\ \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0 - \[Omega]\^4\ \
+\[Epsilon]\_0\%2\ \[Mu]\_0\%2\)\)\), \(-\(\(K\^2\ Cos[\[Alpha]]\ \
+Sin[\[Alpha]]\ Sin[\[CurlyPhi]]\)\/\(K\^2\ \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0 - \[Omega]\^4\ \[Epsilon]\_0\%2\ \[Mu]\_0\%2\)\)\), \(K\^2\ Cos[\
+\[Alpha]]\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0\)\/\(\(-K\^2\)\ \
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0 + \[Omega]\^4\ \[Epsilon]\_0\%2\ \
+\[Mu]\_0\%2\)}}\)], "Output",
+  CellLabel->"Out[153]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(FullSimplify[%]\)], "Input",
+  CellLabel->"In[180]:="],
+
+Cell[BoxData[
+    \({{\(-\(\(\[ImaginaryI]\ \[Omega]\ \((K0 - 
+                    K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2)\)\ \
+\[Mu]\_0\)\/\(K0\ \((\(-K\^2\) + 
+                    K0)\)\)\)\), \(\[ImaginaryI]\ K\^2\ \[Omega]\ Cos[\
+\[CurlyPhi]]\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\ \[Mu]\_0\)\/\(\(-K\^2\)\ K0 \
++ K0\^2\), \(\[ImaginaryI]\ K\^2\ \[Omega]\ Cos[\[Alpha]]\ Cos[\[CurlyPhi]]\ \
+Sin[\[Alpha]]\ \[Mu]\_0\)\/\(\(-K\^2\)\ K0 + K0\^2\)}, {\(\[ImaginaryI]\ K\^2\
+\ \[Omega]\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\ \
+\[Mu]\_0\)\/\(\(-K\^2\)\ K0 + K0\^2\), \(-\(\(\[ImaginaryI]\ \[Omega]\ \((K0 \
+- K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2)\)\ \[Mu]\_0\)\/\(K0\ \
+\((\(-K\^2\) + 
+                    K0)\)\)\)\), \(\[ImaginaryI]\ K\^2\ \[Omega]\ \
+Cos[\[Alpha]]\ Sin[\[Alpha]]\ Sin[\[CurlyPhi]]\ \[Mu]\_0\)\/\(\(-K\^2\)\ K0 + \
+K0\^2\)}, {\(\[ImaginaryI]\ K\^2\ \[Omega]\ Cos[\[Alpha]]\ Cos[\[CurlyPhi]]\ \
+Sin[\[Alpha]]\ \[Mu]\_0\)\/\(\(-K\^2\)\ K0 + K0\^2\), \(\[ImaginaryI]\ K\^2\ \
+\[Omega]\ Cos[\[Alpha]]\ Sin[\[Alpha]]\ Sin[\[CurlyPhi]]\ \
+\[Mu]\_0\)\/\(\(-K\^2\)\ K0 + K0\^2\), \(-\(\(\[ImaginaryI]\ \[Omega]\ \((K0 \
+- K\^2\ Cos[\[Alpha]]\^2)\)\ \[Mu]\_0\)\/\(K0\ \((\(-K\^2\) + 
+                    K0)\)\)\)\)}}\)], "Output",
+  CellLabel->"Out[180]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(TensorFour = %\)], "Input",
+  CellLabel->"In[181]:="],
+
+Cell[BoxData[
+    \({{\(-\(\(\[ImaginaryI]\ \[Omega]\ \((K0 - 
+                    K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2)\)\ \
+\[Mu]\_0\)\/\(K0\ \((\(-K\^2\) + 
+                    K0)\)\)\)\), \(\[ImaginaryI]\ K\^2\ \[Omega]\ Cos[\
+\[CurlyPhi]]\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\ \[Mu]\_0\)\/\(\(-K\^2\)\ K0 \
++ K0\^2\), \(\[ImaginaryI]\ K\^2\ \[Omega]\ Cos[\[Alpha]]\ Cos[\[CurlyPhi]]\ \
+Sin[\[Alpha]]\ \[Mu]\_0\)\/\(\(-K\^2\)\ K0 + K0\^2\)}, {\(\[ImaginaryI]\ K\^2\
+\ \[Omega]\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\ \
+\[Mu]\_0\)\/\(\(-K\^2\)\ K0 + K0\^2\), \(-\(\(\[ImaginaryI]\ \[Omega]\ \((K0 \
+- K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2)\)\ \[Mu]\_0\)\/\(K0\ \
+\((\(-K\^2\) + 
+                    K0)\)\)\)\), \(\[ImaginaryI]\ K\^2\ \[Omega]\ \
+Cos[\[Alpha]]\ Sin[\[Alpha]]\ Sin[\[CurlyPhi]]\ \[Mu]\_0\)\/\(\(-K\^2\)\ K0 + \
+K0\^2\)}, {\(\[ImaginaryI]\ K\^2\ \[Omega]\ Cos[\[Alpha]]\ Cos[\[CurlyPhi]]\ \
+Sin[\[Alpha]]\ \[Mu]\_0\)\/\(\(-K\^2\)\ K0 + K0\^2\), \(\[ImaginaryI]\ K\^2\ \
+\[Omega]\ Cos[\[Alpha]]\ Sin[\[Alpha]]\ Sin[\[CurlyPhi]]\ \
+\[Mu]\_0\)\/\(\(-K\^2\)\ K0 + K0\^2\), \(-\(\(\[ImaginaryI]\ \[Omega]\ \((K0 \
+- K\^2\ Cos[\[Alpha]]\^2)\)\ \[Mu]\_0\)\/\(K0\ \((\(-K\^2\) + 
+                    K0)\)\)\)\)}}\)], "Output",
+  CellLabel->"Out[181]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(integrator = 
+      1/\((\@\(2*\[Pi]\))\)^3*\[ExponentialE]^\((\(-\[ImaginaryI]\)*\((k1*
+                    r1 + k2*r2 + k3*r3)\))\)*TensorFour\)], "Input",
+  CellLabel->"In[37]:="],
+
+Cell[BoxData[
+    \({{\(\[ImaginaryI]\ \[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + \
+k2\ r2 + k3\ r3)\)\)\ \((\(-k1\^2\) + \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\
+\)\/\(2\ \@2\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + \
+k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\), \(-\(\(\[ImaginaryI]\ \
+\[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ r3)\)\)\ k1\ \
+k2\)\/\(2\ \@2\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\), \
+\(-\(\(\[ImaginaryI]\ \[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ \
+r2 + k3\ r3)\)\)\ k1\ k3\)\/\(2\ \@2\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\
+\ \((k1\^2 + k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\)}, {\
+\(-\(\(\[ImaginaryI]\ \[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ \
+r2 + k3\ r3)\)\)\ k1\ k2\)\/\(2\ \@2\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\
+\ \((k1\^2 + k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\), \(\
+\[ImaginaryI]\ \[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\
+\ r3)\)\)\ \((\(-k2\^2\) + \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\/\(2\ \
+\@2\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + k3\^2 - \
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\), \(-\(\(\[ImaginaryI]\ \
+\[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ r3)\)\)\ k2\ \
+k3\)\/\(2\ \@2\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\)}, {\
+\(-\(\(\[ImaginaryI]\ \[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ \
+r2 + k3\ r3)\)\)\ k1\ k3\)\/\(2\ \@2\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\
+\ \((k1\^2 + k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\), \
+\(-\(\(\[ImaginaryI]\ \[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ \
+r2 + k3\ r3)\)\)\ k2\ k3\)\/\(2\ \@2\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\
+\ \((k1\^2 + k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\), \(\
+\[ImaginaryI]\ \[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\
+\ r3)\)\)\ \((\(-k3\^2\) + \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\/\(2\ \
+\@2\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + k3\^2 - \
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)}}\)], "Output",
+  CellLabel->"Out[37]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Integrate[integrator, r1]\)], "Input",
+  CellLabel->"In[38]:="],
+
+Cell[BoxData[
+    \({{\(-\(\(\[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\
+\ r3)\)\)\ \((\(-k1\^2\) + \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\/\(2\ \
+\@2\ k1\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\), \(\
+\[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ r3)\)\)\ k2\)\
+\/\(2\ \@2\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + k3\^2 \
+- \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\), \(\[ExponentialE]\^\(\(-\
+\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ r3)\)\)\ k3\)\/\(2\ \@2\ \
+\[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + k3\^2 - \
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)}, {\(\[ExponentialE]\^\(\(-\
+\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ r3)\)\)\ k2\)\/\(2\ \@2\ \
+\[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + k3\^2 - \
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\), \(-\(\(\[ExponentialE]\^\(\(-\
+\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ r3)\)\)\ \((\(-k2\^2\) + \
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\/\(2\ \@2\ k1\ \[Pi]\^\(3/2\)\ \
+\[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\), \(\
+\[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ r3)\)\)\ k2\ \
+k3\)\/\(2\ \@2\ k1\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 \
++ k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)}, \
+{\(\[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ r3)\)\)\ \
+k3\)\/\(2\ \@2\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + \
+k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\), \(\[ExponentialE]\^\(\(-\
+\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ r3)\)\)\ k2\ k3\)\/\(2\ \@2\ k1\ \
+\[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + k3\^2 - \
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\), \(-\(\(\[ExponentialE]\^\(\(-\
+\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ r3)\)\)\ \((\(-k3\^2\) + \
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\/\(2\ \@2\ k1\ \[Pi]\^\(3/2\)\ \
+\[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\)\)\)\)}}\)], "Output",
+  CellLabel->"Out[38]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Integrate[%, r2]\)], "Input",
+  CellLabel->"In[39]:="],
+
+Cell[BoxData[
+    \({{\(\[ImaginaryI]\ \[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + \
+k2\ r2 + k3\ r3)\)\)\ \((k1\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\)\)\/\(2\ \@2\ k1\ k2\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \
+\((k1\^2 + k2\^2 + k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\), \(\
+\[ImaginaryI]\ \[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\
+\ r3)\)\)\)\/\(2\ \@2\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\
+\^2 + k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\), \(\[ImaginaryI]\ \
+\[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ r3)\)\)\ k3\)\
+\/\(2\ \@2\ k2\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + \
+k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)}, {\(\[ImaginaryI]\ \
+\[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ \
+r3)\)\)\)\/\(2\ \@2\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + \
+k2\^2 + k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\), \(\[ImaginaryI]\ \
+\[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ r3)\)\)\ \
+\((k2\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\/\(2\ \@2\ k1\ k2\ \[Pi]\
+\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + k3\^2 - \[Omega]\^2\ \
+\[Epsilon]\_0\ \[Mu]\_0)\)\), \(\[ImaginaryI]\ \[ExponentialE]\^\(\(-\
+\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ r3)\)\)\ k3\)\/\(2\ \@2\ k1\ \
+\[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + k3\^2 - \
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)}, {\(\[ImaginaryI]\ \[ExponentialE]\
+\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ r3)\)\)\ k3\)\/\(2\ \@2\ k2\ \
+\[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + k3\^2 - \
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\), \(\[ImaginaryI]\ \[ExponentialE]\^\
+\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ r3)\)\)\ k3\)\/\(2\ \@2\ k1\ \
+\[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + k3\^2 - \
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\), \(\[ImaginaryI]\ \[ExponentialE]\^\
+\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ r3)\)\)\ \((k3\^2 - \
+\[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\/\(2\ \@2\ k1\ k2\ \[Pi]\^\(3/2\)\ \
+\[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + k3\^2 - \[Omega]\^2\ \
+\[Epsilon]\_0\ \[Mu]\_0)\)\)}}\)], "Output",
+  CellLabel->"Out[39]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Integrate[%, r3]\)], "Input",
+  CellLabel->"In[40]:="],
+
+Cell[BoxData[
+    \({{\(-\(\(\[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\
+\ r3)\)\)\ \((k1\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\/\(2\ \@2\ k1\
+\ k2\ k3\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\), \
+\(-\(\[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ \
+r3)\)\)\/\(2\ \@2\ k3\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + 
+                    k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\), \
+\(-\(\[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ \
+r3)\)\)\/\(2\ \@2\ k2\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + 
+                    k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\)}, {\
+\(-\(\[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ \
+r3)\)\)\/\(2\ \@2\ k3\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + 
+                    k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\), \
+\(-\(\(\[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ \
+r3)\)\)\ \((k2\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\/\(2\ \@2\ k1\ \
+k2\ k3\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\), \
+\(-\(\[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ \
+r3)\)\)\/\(2\ \@2\ k1\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + 
+                    k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\)}, {\
+\(-\(\[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ \
+r3)\)\)\/\(2\ \@2\ k2\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + 
+                    k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\), \
+\(-\(\[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ \
+r3)\)\)\/\(2\ \@2\ k1\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + 
+                    k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\), \
+\(-\(\(\[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ \
+r3)\)\)\ \((k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\/\(2\ \@2\ k1\ \
+k2\ k3\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\)\)\)\)}}\)], "Output",
+  CellLabel->"Out[40]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(FullSimplify[%]\)], "Input",
+  CellLabel->"In[41]:="],
+
+Cell[BoxData[
+    \({{\(-\(\(\[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\
+\ r3)\)\)\ \((k1\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\/\(2\ \@2\ k1\
+\ k2\ k3\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\), \
+\(-\(\[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ \
+r3)\)\)\/\(2\ \@2\ k3\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + 
+                    k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\), \
+\(-\(\[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ \
+r3)\)\)\/\(2\ \@2\ k2\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + 
+                    k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\)}, {\
+\(-\(\[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ \
+r3)\)\)\/\(2\ \@2\ k3\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + 
+                    k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\), \
+\(-\(\(\[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ \
+r3)\)\)\ \((k2\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\/\(2\ \@2\ k1\ \
+k2\ k3\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\), \
+\(-\(\[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ \
+r3)\)\)\/\(2\ \@2\ k1\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + 
+                    k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\)}, {\
+\(-\(\[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ \
+r3)\)\)\/\(2\ \@2\ k2\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + 
+                    k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\), \
+\(-\(\[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ \
+r3)\)\)\/\(2\ \@2\ k1\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + 
+                    k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\)\), \
+\(-\(\(\[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \((k1\ r1 + k2\ r2 + k3\ \
+r3)\)\)\ \((k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \[Mu]\_0)\)\)\/\(2\ \@2\ k1\ \
+k2\ k3\ \[Pi]\^\(3/2\)\ \[Omega]\ \[Epsilon]\_0\ \((k1\^2 + k2\^2 + 
+                    k3\^2 - \[Omega]\^2\ \[Epsilon]\_0\ \
+\[Mu]\_0)\)\)\)\)}}\)], "Output",
+  CellLabel->"Out[41]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Integrate[\(-\(\(\[ImaginaryI]\ \[Omega]\ \((K0 - 
+                  K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2)\)\ \[Mu]\_0*\
+\[ExponentialE]^{\[ImaginaryI]*K*r*Cos[\[Alpha]]}\)\/\(K0\ \((\(-K\^2\) + 
+                  K0)\)\)\)\), {\[CurlyPhi], 0, 2*\[Pi]}]\)], "Input",
+  CellLabel->"In[192]:="],
+
+Cell[BoxData[
+    \({\(-\(\(\[ImaginaryI]\ \[ExponentialE]\^\(\[ImaginaryI]\ K\ r\ Cos[\
+\[Alpha]]\)\ \[Pi]\ \[Omega]\ \((\(-2\)\ K0 + 
+                  K\^2\ Sin[\[Alpha]]\^2)\)\ \[Mu]\_0\)\/\(\((K\^2 - 
+                  K0)\)\ K0\)\)\)}\)], "Output",
+  CellLabel->"Out[192]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Integrate[Out[192], {\[Alpha], 0, \[Pi]}]\)], "Input",
+  CellLabel->"In[194]:="],
+
+Cell[BoxData[
+    \({If[
+        K\ r \[Element] 
+          Reals, \(-\(\(\[ImaginaryI]\ \[Pi]\^2\ \[Omega]\ \((\(-2\)\ K0\ r\ \
+BesselJ[0, K\ r] + K\ BesselJ[1, K\ r])\)\ \[Mu]\_0\)\/\(\((K\^2 - 
+                    K0)\)\ K0\ r\)\)\), 
+        Integrate[\(-\(\(\[ImaginaryI]\ \[ExponentialE]\^\(\[ImaginaryI]\ K\ \
+r\ Cos[\[Alpha]]\)\ \[Pi]\ \[Omega]\ \((\(-2\)\ K0 + 
+                      K\^2\ Sin[\[Alpha]]\^2)\)\ \[Mu]\_0\)\/\(\((K\^2 - 
+                      K0)\)\ K0\)\)\), {\[Alpha], 0, \[Pi]}, 
+          Assumptions \[Rule] K\ r \[NotElement] Reals]]}\)], "Output",
+  CellLabel->"Out[194]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Integrate[\(-\(\(\[ImaginaryI]\ \[Pi]\^2\ \[Omega]\ \((\(-2\)\ K0\ r\ \
+BesselJ[0, K\ r] + K\ BesselJ[1, K\ r])\)\ \[Mu]\_0\)\/\(\((K\^2 - 
+                  K0)\)\ K0\ r\)\)\), K]\)], "Input",
+  CellLabel->"In[195]:="],
+
+Cell[BoxData[
+    \(\(-\(\(\[ImaginaryI]\ \[Pi]\^2\ \[Omega]\ \((\[Integral]\(\(\(-2\)\ K0\ \
+r\ BesselJ[0, K\ r] + K\ BesselJ[1, K\ r]\)\/\(K\^2 - 
+                        K0\)\) \[DifferentialD]K)\)\ \[Mu]\_0\)\/\(K0\ \
+r\)\)\)\)], "Output",
+  CellLabel->"Out[195]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(ArcTanh[\[Infinity]]\)], "Input",
+  CellLabel->"In[190]:="],
+
+Cell[BoxData[
+    \(\(-\(\(\[ImaginaryI]\ \[Pi]\)\/2\)\)\)], "Output",
+  CellLabel->"Out[190]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(TensorFour\)], "Input",
+  CellLabel->"In[196]:="],
+
+Cell[BoxData[
+    \({{\(-\(\(\[ImaginaryI]\ \[Omega]\ \((K0 - 
+                    K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2)\)\ \
+\[Mu]\_0\)\/\(K0\ \((\(-K\^2\) + 
+                    K0)\)\)\)\), \(\[ImaginaryI]\ K\^2\ \[Omega]\ Cos[\
+\[CurlyPhi]]\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\ \[Mu]\_0\)\/\(\(-K\^2\)\ K0 \
++ K0\^2\), \(\[ImaginaryI]\ K\^2\ \[Omega]\ Cos[\[Alpha]]\ Cos[\[CurlyPhi]]\ \
+Sin[\[Alpha]]\ \[Mu]\_0\)\/\(\(-K\^2\)\ K0 + K0\^2\)}, {\(\[ImaginaryI]\ K\^2\
+\ \[Omega]\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\ \
+\[Mu]\_0\)\/\(\(-K\^2\)\ K0 + K0\^2\), \(-\(\(\[ImaginaryI]\ \[Omega]\ \((K0 \
+- K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2)\)\ \[Mu]\_0\)\/\(K0\ \
+\((\(-K\^2\) + 
+                    K0)\)\)\)\), \(\[ImaginaryI]\ K\^2\ \[Omega]\ \
+Cos[\[Alpha]]\ Sin[\[Alpha]]\ Sin[\[CurlyPhi]]\ \[Mu]\_0\)\/\(\(-K\^2\)\ K0 + \
+K0\^2\)}, {\(\[ImaginaryI]\ K\^2\ \[Omega]\ Cos[\[Alpha]]\ Cos[\[CurlyPhi]]\ \
+Sin[\[Alpha]]\ \[Mu]\_0\)\/\(\(-K\^2\)\ K0 + K0\^2\), \(\[ImaginaryI]\ K\^2\ \
+\[Omega]\ Cos[\[Alpha]]\ Sin[\[Alpha]]\ Sin[\[CurlyPhi]]\ \
+\[Mu]\_0\)\/\(\(-K\^2\)\ K0 + K0\^2\), \(-\(\(\[ImaginaryI]\ \[Omega]\ \((K0 \
+- K\^2\ Cos[\[Alpha]]\^2)\)\ \[Mu]\_0\)\/\(K0\ \((\(-K\^2\) + 
+                    K0)\)\)\)\)}}\)], "Output",
+  CellLabel->"Out[196]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Integrate[\(-\(\(\(\ \)\(\[Omega]\ \((K0 - 
+                    K\^2\ Cos[\[Alpha]]\^2)\)\ \[Mu]\_0\)\)\/\(K0\ \((\(-K\^2\
+\) + K0)\)\)\)\)*\[ExponentialE]^{\[ImaginaryI]*K*r*
+              Cos[\[Alpha]]}, \[Alpha]]\)], "Input",
+  CellLabel->"In[205]:="],
+
+Cell[BoxData[
+    \({\(-\(\(\[Omega]\ \((\[Integral]\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ \
+r\ Cos[\[Alpha]]\)\ \((K0 - 
+                          K\^2\ Cos[\[Alpha]]\^2)\)\) \
+\[DifferentialD]\[Alpha])\)\ \[Mu]\_0\)\/\(K0\ \((\(-K\^2\) + 
+                  K0)\)\)\)\)}\)], "Output",
+  CellLabel->"Out[205]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Integrate[\(\(\ \)\((K0 - k1\^2)\)\)\/\(K0\ \((\(-K0\) + k1\^2 + k2\^2 \
++ k3\^2)\)\)*\[ExponentialE]^{\[ImaginaryI]*\((k1*r1 + k2*r2 + 
+                  k3*r3)\)}, {k3, \(-\[Infinity]\), \[Infinity]}]\)], "Input",\
+
+  CellLabel->"In[236]:="],
+
+Cell[BoxData[
+    RowBox[{\(Integrate::"idiv"\), \(\(:\)\(\ \)\), "\<\"Integral of \\!\\(\
+\[ExponentialE]\\^\\(\[ImaginaryI]\\\\ \\(\\((\\(\\(k1\\\\ r1\\)\\) + \
+\\(\\(k2\\\\ r2\\)\\) + \\(\\(k3\\\\ r3\\)\\))\\)\\)\\)\\/\\(\\(\\(-K0\\)\\) \
++ k1\\^2 + k2\\^2 + k3\\^2\\) - \\(\[ExponentialE]\\^\\(\[ImaginaryI]\\\\ \\(\
+\\((\\(\[LeftSkeleton] 1 \[RightSkeleton]\\))\\)\\)\\)\\\\ \
+k1\\^2\\)\\/\\(K0\\\\ \\(\\((\\(\\(-K0\\)\\) + k1\\^2 + k2\\^2 + \
+k3\\^2)\\)\\)\\)\\) does not converge on \\!\\({\\(\\(-\[Infinity]\\)\\), \
+\[Infinity]}\\). \\!\\(\\*ButtonBox[\\\"Mehr\[Ellipsis]\\\", \
+ButtonStyle->\\\"RefGuideLinkText\\\", ButtonFrame->None, \
+ButtonData:>\\\"Integrate::idiv\\\"]\\)\"\>"}]], "Message",
+  CellLabel->"From In[236]:="],
+
+Cell[BoxData[
+    \({\[Integral]\_\(-\[Infinity]\)\%\[Infinity]\(\( \[ExponentialE]\^\(\
+\[ImaginaryI]\ \((k1\ r1 + k2\ r2 + k3\ r3)\)\)\ \((K0 - 
+                    k1\^2)\)\)\/\(K0\ \((\(-K0\) + k1\^2 + k2\^2 + 
+                    k3\^2)\)\)\) \[DifferentialD]k3}\)], "Output",
+  CellLabel->"Out[236]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Integrate[%, {\[Alpha], 0, \[Pi]}]\)], "Input",
+  CellLabel->"In[218]:="],
+
+Cell[BoxData[
+    \({If[
+        K\ r \[Element] 
+          Reals, \(-\(\(\[ImaginaryI]\ \[Pi]\^2\ \[Omega]\ \((\(-2\)\ K0\ r\ \
+BesselJ[0, K\ r] + K\ BesselJ[1, K\ r])\)\ \[Mu]\_0\)\/\(\((K\^2 - 
+                    K0)\)\ K0\ r\)\)\), 
+        Integrate[\(-\(\(\[ImaginaryI]\ \[ExponentialE]\^\(\[ImaginaryI]\ K\ \
+r\ Cos[\[Alpha]]\)\ \[Pi]\ \[Omega]\ \((\(-2\)\ K0 + 
+                      K\^2\ Sin[\[Alpha]]\^2)\)\ \[Mu]\_0\)\/\(\((K\^2 - 
+                      K0)\)\ K0\)\)\), {\[Alpha], 0, \[Pi]}, 
+          Assumptions \[Rule] K\ r \[NotElement] Reals]]}\)], "Output",
+  CellLabel->"Out[218]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Integrate[\(-\(\(\[ImaginaryI]\ \[Pi]\^2\ \[Omega]\ \((\(-2\)\ K0\ r\ \
+BesselJ[0, K\ r] + K\ BesselJ[1, K\ r])\)\ \[Mu]\_0\)\/\(\((K\^2 - 
+                  K0)\)\ K0\ r\)\)\), {K, 0, \[Infinity]}]\)], "Input",
+  CellLabel->"In[220]:="],
+
+Cell[BoxData[
+    \(If[Im[r] \[Equal] 
+          0 && \((Re[K0] \[LessEqual] 0 || 
+            Im[K0] \[NotEqual] 
+              0)\), \(-\(\(1\/\(2\ K0\ r\)\)\((\[ImaginaryI]\ \[Pi]\^3\ \
+\[Omega]\ \((Sign[r]\ \((\(-BesselI[1, \@\(-K0\)\ r\ Sign[r]]\) + 
+                      StruveL[\(-1\), \@\(-K0\)\ r\ Sign[r]])\) + 
+                2\ \@\(-K0\)\ r\ \((BesselI[0, \@\(-K0\)\ r\ Sign[r]] - 
+                      StruveL[
+                        0, \@\(-K0\)\ r\ Sign[r]])\))\)\ \[Mu]\_0)\)\)\), 
+      Integrate[\(2\ \[ImaginaryI]\ \[Pi]\^2\ \[Omega]\ BesselJ[0, K\ r]\ \
+\[Mu]\_0\)\/\(K\^2 - K0\) - \(\[ImaginaryI]\ K\ \[Pi]\^2\ \[Omega]\ \
+BesselJ[1, K\ r]\ \[Mu]\_0\)\/\(\((K\^2 - K0)\)\ K0\ r\), {K, 
+          0, \[Infinity]}, 
+        Assumptions \[Rule] \((Im[K0] \[Equal] 0 && Re[K0] > 0)\) || 
+            Im[r] \[NotEqual] 0]]\)], "Output",
+  CellLabel->"Out[220]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Integrate[Sin[y]*Cos[y], {y, 0, 2*\[Pi]}]\)], "Input",
+  CellLabel->"In[214]:="],
+
+Cell[BoxData[
+    \(0\)], "Output",
+  CellLabel->"Out[214]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(FullSimplify[\(-\(1\/\(2\ K0\ r\)\)\) \((\[ImaginaryI]\ \[Pi]\^3\ \
+\[Omega]\ \((Sign[r]\ \((\(-BesselI[1, \@\(-K0\)\ r\ Sign[r]]\) + 
+                      StruveL[\(-1\), \@\(-K0\)\ r\ Sign[r]])\) + 
+                2\ \@\(-K0\)\ r\ \((BesselI[0, \@\(-K0\)\ r\ Sign[r]] - 
+                      StruveL[
+                        0, \@\(-K0\)\ r\ Sign[
+                            r]])\))\)\ \[Mu]\_0)\)]\)], "Input",
+  CellLabel->"In[221]:="],
+
+Cell[BoxData[
+    \(\(-\(\(1\/\(2\ K0\ r\)\)\((\[ImaginaryI]\ \[Pi]\^3\ \[Omega]\ \((Sign[
+                  r]\ \((\(-BesselI[1, \@\(-K0\)\ r\ Sign[r]]\) + 
+                    StruveH[\(-1\), \@K0\ r\ Sign[r]])\) + 
+              2\ r\ \((\@\(-K0\)\ BesselJ[
+                        0, \@K0\ r\ Sign[r]] + \@K0\ StruveH[
+                        0, \@K0\ r\ Sign[
+                            r]])\))\)\ \[Mu]\_0)\)\)\)\)], "Output",
+  CellLabel->"Out[221]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(\(\ \)\((K0 - k1\^2)\)\)\/\(K0\ \((\(-K0\) + k1\^2 + k2\^2 + k3\^2)\)\
+\)*\[ExponentialE]^{\[ImaginaryI]*\((k1*r1 + k2*r2 + k3*r3)\)}\)], "Input",
+  CellLabel->"In[266]:="],
+
+Cell[BoxData[
+    \({\(\[ExponentialE]\^\(\[ImaginaryI]\ \((k1\ r1 + k2\ r2 + k3\ r3)\)\)\ \
+\((K0 - k1\^2)\)\)\/\(K0\ \((\(-K0\) + k1\^2 + k2\^2 + k3\^2)\)\)}\)], \
+"Output",
+  CellLabel->"Out[266]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(% /. k1 \[Rule] K*Cos[\[Alpha]]\)], "Input",
+  CellLabel->"In[267]:="],
+
+Cell[BoxData[
+    \({\(\[ExponentialE]\^\(\[ImaginaryI]\ \((k2\ r2 + k3\ r3 + K\ r1\ Cos[\
+\[Alpha]])\)\)\ \((K0 - K\^2\ Cos[\[Alpha]]\^2)\)\)\/\(K0\ \((\(-K0\) + k2\^2 \
++ k3\^2 + K\^2\ Cos[\[Alpha]]\^2)\)\)}\)], "Output",
+  CellLabel->"Out[267]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(% /. k2 \[Rule] K*Sin[\[Alpha]]*Cos[\[CurlyPhi]]\)], "Input",
+  CellLabel->"In[268]:="],
+
+Cell[BoxData[
+    \({\(\[ExponentialE]\^\(\[ImaginaryI]\ \((k3\ r3 + K\ r1\ Cos[\[Alpha]] + \
+K\ r2\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]])\)\)\ \((K0 - K\^2\ \
+Cos[\[Alpha]]\^2)\)\)\/\(K0\ \((\(-K0\) + k3\^2 + K\^2\ Cos[\[Alpha]]\^2 + \
+K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2)\)\)}\)], "Output",
+  CellLabel->"Out[268]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(% /. k3 \[Rule] K*Sin[\[Alpha]]*Sin[\[CurlyPhi]]\)], "Input",
+  CellLabel->"In[269]:="],
+
+Cell[BoxData[
+    \({\(\[ExponentialE]\^\(\[ImaginaryI]\ \((K\ r1\ Cos[\[Alpha]] + K\ r2\ \
+Cos[\[CurlyPhi]]\ Sin[\[Alpha]] + K\ r3\ Sin[\[Alpha]]\ Sin[\[CurlyPhi]])\)\)\
+\ \((K0 - K\^2\ Cos[\[Alpha]]\^2)\)\)\/\(K0\ \((\(-K0\) + K\^2\ Cos[\[Alpha]]\
+\^2 + K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + K\^2\ Sin[\[Alpha]]\^2\ \
+Sin[\[CurlyPhi]]\^2)\)\)}\)], "Output",
+  CellLabel->"Out[269]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(% /. r1 \[Rule] R*Cos[\[Alpha]]\)], "Input",
+  CellLabel->"In[270]:="],
+
+Cell[BoxData[
+    \({\(\[ExponentialE]\^\(\[ImaginaryI]\ \((K\ R\ Cos[\[Alpha]]\^2 + K\ r2\ \
+Cos[\[CurlyPhi]]\ Sin[\[Alpha]] + K\ r3\ Sin[\[Alpha]]\ Sin[\[CurlyPhi]])\)\)\
+\ \((K0 - K\^2\ Cos[\[Alpha]]\^2)\)\)\/\(K0\ \((\(-K0\) + K\^2\ Cos[\[Alpha]]\
+\^2 + K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + K\^2\ Sin[\[Alpha]]\^2\ \
+Sin[\[CurlyPhi]]\^2)\)\)}\)], "Output",
+  CellLabel->"Out[270]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(% /. r2 \[Rule] R*Sin[\[Alpha]]*Cos[\[CurlyPhi]]\)], "Input",
+  CellLabel->"In[271]:="],
+
+Cell[BoxData[
+    \({\(\[ExponentialE]\^\(\[ImaginaryI]\ \((K\ R\ Cos[\[Alpha]]\^2 + K\ R\ \
+Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + K\ r3\ Sin[\[Alpha]]\ \
+Sin[\[CurlyPhi]])\)\)\ \((K0 - K\^2\ Cos[\[Alpha]]\^2)\)\)\/\(K0\ \((\(-K0\) \
++ K\^2\ Cos[\[Alpha]]\^2 + K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + K\^2\
+\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2)\)\)}\)], "Output",
+  CellLabel->"Out[271]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(% /. r3 \[Rule] R*Sin[\[Alpha]]*Sin[\[CurlyPhi]]\)], "Input",
+  CellLabel->"In[272]:="],
+
+Cell[BoxData[
+    \({\(\[ExponentialE]\^\(\[ImaginaryI]\ \((K\ R\ Cos[\[Alpha]]\^2 + K\ R\ \
+Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + K\ R\ Sin[\[Alpha]]\^2\ Sin[\
+\[CurlyPhi]]\^2)\)\)\ \((K0 - K\^2\ Cos[\[Alpha]]\^2)\)\)\/\(K0\ \((\(-K0\) + \
+K\^2\ Cos[\[Alpha]]\^2 + K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + K\^2\ \
+Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2)\)\)}\)], "Output",
+  CellLabel->"Out[272]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(FullSimplify[%]\)], "Input",
+  CellLabel->"In[273]:="],
+
+Cell[BoxData[
+    \({\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ R\)\ \((K0 - K\^2\ \
+Cos[\[Alpha]]\^2)\)\)\/\(\((K\^2 - K0)\)\ K0\)}\)], "Output",
+  CellLabel->"Out[273]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Integrate[%, K]\)], "Input",
+  CellLabel->"In[276]:="],
+
+Cell[BoxData[
+    \({\(-\(\(1\/\(8\ K0\ R\)\)\((\[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \@K0\
+\ R\)\ \[CurlyPhi]\ \((\[ExponentialE]\^\(2\ \[ImaginaryI]\ \@K0\ R\)\ \@K0\ \
+R\ ExpIntegralEi[\[ImaginaryI]\ \((K - \@K0)\)\ R]\ \((\(-2\)\ \[Alpha] + 
+                      Sin[2\ \[Alpha]])\) - \@K0\ R\ ExpIntegralEi[\
+\[ImaginaryI]\ \((K + \@K0)\)\ R]\ \((\(-2\)\ \[Alpha] + 
+                      Sin[2\ \[Alpha]])\) - 
+                2\ \[ImaginaryI]\ \[ExponentialE]\^\(\[ImaginaryI]\ \((K + \
+\@K0)\)\ R\)\ \((2\ \[Alpha] + Sin[2\ \[Alpha]])\))\))\)\)\)}\)], "Output",
+  CellLabel->"Out[276]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \({\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ \((r1\ Cos[\[Alpha]] + Sin[\
+\[Alpha]]\ \((r2\ Cos[0] + r3\ Sin[0])\))\)\)\ \((K0 - K\^2\ \
+Cos[\[Alpha]]\^2)\)\)\/\(\((K\^2 - K0)\)\ K0\)}\)], "Input",
+  CellLabel->"In[252]:="],
+
+Cell[BoxData[
+    \({\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ \((r1\ Cos[\[Alpha]] + r2\ Sin[\
+\[Alpha]])\)\)\ \((K0 - K\^2\ Cos[\[Alpha]]\^2)\)\)\/\(\((K\^2 - K0)\)\ K0\)}\
+\)], "Output",
+  CellLabel->"Out[252]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(FullSimplify[%]\)], "Input",
+  CellLabel->"In[253]:="],
+
+Cell[BoxData[
+    \({\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ \((r1\ Cos[\[Alpha]] + r2\ Sin[\
+\[Alpha]])\)\)\ \((K0 - K\^2\ Cos[\[Alpha]]\^2)\)\)\/\(\((K\^2 - K0)\)\ K0\)}\
+\)], "Output",
+  CellLabel->"Out[253]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Integrate[%, \[Alpha]]\)], "Input",
+  CellLabel->"In[254]:="],
+
+Cell[BoxData[
+    \({\(\[Integral]\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ \((r1\ \
+Cos[\[Alpha]] + r2\ Sin[\[Alpha]])\)\)\ \((K0 - K\^2\ Cos[\[Alpha]]\^2)\)\) \
+\[DifferentialD]\[Alpha]\)\/\(\((K\^2 - K0)\)\ K0\)}\)], "Output",
+  CellLabel->"Out[254]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(K\^2\ Cos[\[Alpha]]\^2 + K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + 
+      K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2\)], "Input",
+  CellLabel->"In[255]:="],
+
+Cell[BoxData[
+    \(K\^2\ Cos[\[Alpha]]\^2 + K\^2\ Cos[\[CurlyPhi]]\^2\ Sin[\[Alpha]]\^2 + 
+      K\^2\ Sin[\[Alpha]]\^2\ Sin[\[CurlyPhi]]\^2\)], "Output",
+  CellLabel->"Out[255]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(FullSimplify[%]\)], "Input",
+  CellLabel->"In[256]:="],
+
+Cell[BoxData[
+    \(K\^2\)], "Output",
+  CellLabel->"Out[256]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(r1\ Cos[\[Alpha]] + 
+      Sin[\[Alpha]]\ \((r2\ Cos[\[CurlyPhi]] + 
+            r3\ Sin[\[CurlyPhi]])\)\)], "Input",
+  CellLabel->"In[257]:="],
+
+Cell[BoxData[
+    \(r1\ Cos[\[Alpha]] + 
+      Sin[\[Alpha]]\ \((r2\ Cos[\[CurlyPhi]] + 
+            r3\ Sin[\[CurlyPhi]])\)\)], "Output",
+  CellLabel->"Out[257]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(FullSimplify[%]\)], "Input",
+  CellLabel->"In[258]:="],
+
+Cell[BoxData[
+    \(r1\ Cos[\[Alpha]] + 
+      Sin[\[Alpha]]\ \((r2\ Cos[\[CurlyPhi]] + 
+            r3\ Sin[\[CurlyPhi]])\)\)], "Output",
+  CellLabel->"Out[258]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\[Alpha]\)], "Input",
+  CellLabel->"In[259]:="],
+
+Cell[BoxData[
+    \(\[Alpha]\)], "Output",
+  CellLabel->"Out[259]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(r1\ Cos[\[Alpha]] + 
+      Sin[\[Alpha]]\ \((r2\ Cos[\[CurlyPhi]] + 
+            r3\ Sin[\[CurlyPhi]])\)\)], "Input",
+  CellLabel->"In[261]:="],
+
+Cell[BoxData[
+    \(r1\ Cos[\[Alpha]] + 
+      Sin[\[Alpha]]\ \((r2\ Cos[\[CurlyPhi]] + 
+            r3\ Sin[\[CurlyPhi]])\)\)], "Output",
+  CellLabel->"Out[261]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(TrigExpand[%]\)], "Input",
+  CellLabel->"In[262]:="],
+
+Cell[BoxData[
+    \(r1\ Cos[\[Alpha]] + r2\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]] + 
+      r3\ Sin[\[Alpha]]\ Sin[\[CurlyPhi]]\)], "Output",
+  CellLabel->"Out[262]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(FullSimplify[%]\)], "Input",
+  CellLabel->"In[263]:="],
+
+Cell[BoxData[
+    \(r1\ Cos[\[Alpha]] + 
+      Sin[\[Alpha]]\ \((r2\ Cos[\[CurlyPhi]] + 
+            r3\ Sin[\[CurlyPhi]])\)\)], "Output",
+  CellLabel->"Out[263]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(r1\ Cos[\[Alpha]] + r2\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]] + 
+      r3\ Sin[\[Alpha]]\ Sin[\[CurlyPhi]]\)], "Input",
+  CellLabel->"In[264]:="],
+
+Cell[BoxData[
+    \(r1\ Cos[\[Alpha]] + r2\ Cos[\[CurlyPhi]]\ Sin[\[Alpha]] + 
+      r3\ Sin[\[Alpha]]\ Sin[\[CurlyPhi]]\)], "Output",
+  CellLabel->"Out[264]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(TrigReduce[%]\)], "Input",
+  CellLabel->"In[265]:="],
+
+Cell[BoxData[
+    \(1\/2\ \((2\ r1\ Cos[\[Alpha]] + r3\ Cos[\[Alpha] - \[CurlyPhi]] - 
+          r3\ Cos[\[Alpha] + \[CurlyPhi]] + r2\ Sin[\[Alpha] - \[CurlyPhi]] + 
+          r2\ Sin[\[Alpha] + \[CurlyPhi]])\)\)], "Output",
+  CellLabel->"Out[265]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ R*Cos[\[Alpha]]\)\ \((K0 - K\^2\ \
+Cos[\[Alpha]]\^2)\)\)\/\((K\^2 - K0)\)*K^2*Sin[\[Alpha]]\)], "Input",
+  CellLabel->"In[284]:="],
+
+Cell[BoxData[
+    \(\(\[ExponentialE]\^\(\[ImaginaryI]\ K\ R\ Cos[\[Alpha]]\)\ K\^2\ \((K0 \
+- K\^2\ Cos[\[Alpha]]\^2)\)\ Sin[\[Alpha]]\)\/\(K\^2 - K0\)\)], "Output",
+  CellLabel->"Out[284]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Integrate[%, {\[Alpha], 0, \[Pi]}]\)], "Input",
+  CellLabel->"In[285]:="],
+
+Cell[BoxData[
+    \(\(2\ K\ \((\(-2\)\ K\ R\ Cos[K\ R] + \((2 - K\^2\ R\^2 + K0\ R\^2)\)\ \
+Sin[K\ R])\)\)\/\(\((K\^2 - K0)\)\ R\^3\)\)], "Output",
+  CellLabel->"Out[285]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Integrate[\(2\ K\ \((\(-2\)\ K\ R\ Cos[K\ R] + \((2 - K\^2\ R\^2 + K0\ \
+R\^2)\)\ Sin[K\ R])\)\)\/\(\((K\^2 - K0)\)\ R\^3\), K]\)], "Input",
+  CellLabel->"In[287]:="],
+
+Cell[BoxData[
+    \(\(\(1\/R\^3\)\((2\ \((K\ R\ Cos[K\ R] + 
+            1\/2\ \[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \@K0\ R\)\ \((\((\
+\[ImaginaryI] - \@K0\ R)\)\ ExpIntegralEi[\(-\[ImaginaryI]\)\ \((K - \@K0)\)\ \
+R] + \[ExponentialE]\^\(2\ \[ImaginaryI]\ \@K0\ R\)\ \((\[ImaginaryI] + \@K0\ \
+R)\)\ ExpIntegralEi[\(-\[ImaginaryI]\)\ \((K + \@K0)\)\ R])\) + 
+            1\/2\ \[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \@K0\ R\)\ \((\(-\
+\[ExponentialE]\^\(2\ \[ImaginaryI]\ \@K0\ R\)\)\ \((\[ImaginaryI] + \@K0\ R)\
+\)\ ExpIntegralEi[\[ImaginaryI]\ \((K - \@K0)\)\ R] + \((\(-\[ImaginaryI]\) + \
+\@K0\ R)\)\ ExpIntegralEi[\[ImaginaryI]\ \((K + \@K0)\)\ R])\) - 
+            3\ Sin[K\ R])\))\)\)\)], "Output",
+  CellLabel->"Out[287]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Integrate[\(\(-4\)\ K^2\ R\ Cos[K\ R]\)\/\(\((K\^2 - K0)\)\ R\^3\), 
+      K]\)], "Input",
+  CellLabel->"In[288]:="],
+
+Cell[BoxData[
+    \(\(-\(\(1\/R\^2\)\((4\ \((1\/4\ \[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \
+\@K0\ R\)\ \@K0\ \((ExpIntegralEi[\(-\[ImaginaryI]\)\ \((K - \@K0)\)\ R] - \
+\[ExponentialE]\^\(2\ \[ImaginaryI]\ \@K0\ R\)\ \
+ExpIntegralEi[\(-\[ImaginaryI]\)\ \((K + \@K0)\)\ R])\) + 
+              1\/4\ \[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \@K0\ R\)\ \@K0\ \
+\((\[ExponentialE]\^\(2\ \[ImaginaryI]\ \@K0\ R\)\ \
+ExpIntegralEi[\[ImaginaryI]\ \((K - \@K0)\)\ R] - 
+                    ExpIntegralEi[\[ImaginaryI]\ \((K + \@K0)\)\ R])\) + 
+              Sin[K\ R]\/R)\))\)\)\)\)], "Output",
+  CellLabel->"Out[288]="]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Integrate[\(\((2 - K\^2\ R\^2 + K0\ R\^2)\)\ Sin[K\ R]\)\/\(\((K\^2 - \
+K0)\)\ R\^3\), K]\)], "Input",
+  CellLabel->"In[289]:="],
+
+Cell[BoxData[
+    \(\(\(1\/R\^3\)\((R\ Cos[
+            K\ R] + \(\[ImaginaryI]\ \[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \
+\@K0\ R\)\ \((ExpIntegralEi[\(-\[ImaginaryI]\)\ \((K - \@K0)\)\ R] - \
+\[ExponentialE]\^\(2\ \[ImaginaryI]\ \@K0\ R\)\ \
+ExpIntegralEi[\(-\[ImaginaryI]\)\ \((K + \@K0)\)\ R])\)\)\/\(2\ \@K0\) - \(\
+\[ImaginaryI]\ \[ExponentialE]\^\(\(-\[ImaginaryI]\)\ \@K0\ R\)\ \((\
+\[ExponentialE]\^\(2\ \[ImaginaryI]\ \@K0\ R\)\ ExpIntegralEi[\[ImaginaryI]\ \
+\((K - \@K0)\)\ R] - ExpIntegralEi[\[ImaginaryI]\ \((K + \@K0)\)\ \
+R])\)\)\/\(2\ \@K0\))\)\)\)], "Output",
+  CellLabel->"Out[289]="]
+}, Open  ]]
+},
+FrontEndVersion->"5.2 for Microsoft Windows",
+ScreenRectangle->{{0, 1280}, {0, 948}},
+ScreenStyleEnvironment->"Presentation",
+WindowSize->{1042, 873},
+WindowMargins->{{16, Automatic}, {12, Automatic}},
+StyleDefinitions -> "ArticleClassic.nb"
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1776, 53, 165, 4, 98, "Input"],
+Cell[1944, 59, 92, 2, 62, "Output"],
+Cell[2039, 63, 143, 4, 62, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2219, 72, 105, 2, 72, "Input"],
+Cell[2327, 76, 71, 2, 62, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2435, 83, 77, 2, 46, "Input"],
+Cell[2515, 87, 144, 3, 62, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2696, 95, 133, 3, 46, "Input"],
+Cell[2832, 100, 297, 5, 85, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3166, 110, 160, 3, 46, "Input"],
+Cell[3329, 115, 136, 3, 62, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3502, 123, 108, 2, 72, "Input"],
+Cell[3613, 127, 476, 10, 85, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4126, 142, 81, 2, 46, "Input"],
+Cell[4210, 146, 1120, 18, 108, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5367, 169, 69, 2, 46, "Input"],
+Cell[5439, 173, 515, 10, 85, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5991, 188, 73, 2, 46, "Input"],
+Cell[6067, 192, 510, 10, 85, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[6614, 207, 150, 4, 72, "Input"],
+Cell[6767, 213, 524, 10, 108, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[7328, 228, 145, 3, 72, "Input"],
+Cell[7476, 233, 724, 12, 108, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[8237, 250, 165, 5, 98, "Input"],
+Cell[8405, 257, 808, 12, 108, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[9250, 274, 105, 3, 72, "Input"],
+Cell[9358, 279, 496, 10, 100, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[9891, 294, 133, 3, 98, "Input"],
+Cell[10027, 299, 770, 13, 125, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[10834, 317, 76, 2, 46, "Input"],
+Cell[10913, 321, 5641, 90, 706, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[16591, 416, 82, 2, 46, "Input"],
+Cell[16676, 420, 390, 6, 66, "Message"],
+Cell[17069, 428, 2443, 33, 467, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[19549, 466, 74, 2, 46, "Input"],
+Cell[19626, 470, 4715, 72, 522, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[24378, 547, 105, 3, 72, "Input"],
+Cell[24486, 552, 4585, 71, 453, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[29108, 628, 105, 2, 72, "Input"],
+Cell[29216, 632, 2974, 41, 520, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[32227, 678, 60, 2, 46, "Input"],
+Cell[32290, 682, 1250, 20, 238, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[33577, 707, 120, 3, 46, "Input"],
+Cell[33700, 712, 1536, 22, 179, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[35273, 739, 107, 2, 46, "Input"],
+Cell[35383, 743, 1800, 29, 277, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[37220, 777, 150, 4, 72, "Input"],
+Cell[37373, 783, 2313, 34, 472, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[39723, 822, 128, 3, 72, "Input"],
+Cell[39854, 827, 2665, 40, 480, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[42556, 872, 2841, 41, 594, "Input"],
+Cell[45400, 915, 1617, 23, 181, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[47054, 943, 74, 2, 46, "Input"],
+Cell[47131, 947, 1291, 20, 176, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[48459, 972, 73, 2, 46, "Input"],
+Cell[48535, 976, 1291, 20, 176, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[49863, 1001, 202, 4, 57, "Input"],
+Cell[50068, 1007, 2435, 35, 294, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[52540, 1047, 83, 2, 46, "Input"],
+Cell[52626, 1051, 2214, 32, 294, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[54877, 1088, 74, 2, 46, "Input"],
+Cell[54954, 1092, 2252, 31, 294, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[57243, 1128, 74, 2, 46, "Input"],
+Cell[57320, 1132, 2477, 38, 294, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[59834, 1175, 73, 2, 46, "Input"],
+Cell[59910, 1179, 2477, 38, 294, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[62424, 1222, 319, 5, 73, "Input"],
+Cell[62746, 1229, 280, 5, 83, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[63063, 1239, 100, 2, 46, "Input"],
+Cell[63166, 1243, 604, 11, 129, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[63807, 1259, 239, 4, 73, "Input"],
+Cell[64049, 1265, 269, 5, 85, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[64355, 1275, 79, 2, 46, "Input"],
+Cell[64437, 1279, 96, 2, 78, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[64570, 1286, 69, 2, 46, "Input"],
+Cell[64642, 1290, 1291, 20, 176, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[65970, 1315, 274, 5, 73, "Input"],
+Cell[66247, 1322, 311, 6, 86, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[66595, 1333, 263, 5, 77, "Input"],
+Cell[66861, 1340, 738, 11, 88, "Message"],
+Cell[67602, 1353, 307, 5, 83, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[67946, 1363, 93, 2, 46, "Input"],
+Cell[68042, 1367, 604, 11, 129, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[68683, 1383, 257, 4, 73, "Input"],
+Cell[68943, 1389, 882, 16, 203, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[69862, 1410, 100, 2, 46, "Input"],
+Cell[69965, 1414, 61, 2, 62, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[70063, 1421, 463, 8, 180, "Input"],
+Cell[70529, 1431, 459, 8, 106, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[71025, 1444, 194, 3, 77, "Input"],
+Cell[71222, 1449, 201, 4, 83, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[71460, 1458, 90, 2, 46, "Input"],
+Cell[71553, 1462, 249, 4, 83, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[71839, 1471, 107, 2, 46, "Input"],
+Cell[71949, 1475, 321, 5, 84, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[72307, 1485, 107, 2, 46, "Input"],
+Cell[72417, 1489, 393, 6, 84, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[72847, 1500, 90, 2, 46, "Input"],
+Cell[72940, 1504, 395, 6, 87, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[73372, 1515, 107, 2, 46, "Input"],
+Cell[73482, 1519, 400, 6, 87, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[73919, 1530, 107, 2, 46, "Input"],
+Cell[74029, 1534, 405, 6, 87, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[74471, 1545, 74, 2, 46, "Input"],
+Cell[74548, 1549, 168, 3, 82, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[74753, 1557, 74, 2, 46, "Input"],
+Cell[74830, 1561, 597, 9, 108, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[75464, 1575, 238, 4, 74, "Input"],
+Cell[75705, 1581, 212, 4, 82, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[75954, 1590, 74, 2, 46, "Input"],
+Cell[76031, 1594, 212, 4, 82, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[76280, 1603, 81, 2, 46, "Input"],
+Cell[76364, 1607, 252, 4, 86, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[76653, 1616, 180, 3, 46, "Input"],
+Cell[76836, 1621, 181, 3, 62, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[77054, 1629, 74, 2, 46, "Input"],
+Cell[77131, 1633, 64, 2, 62, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[77232, 1640, 163, 4, 46, "Input"],
+Cell[77398, 1646, 164, 4, 62, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[77599, 1655, 74, 2, 46, "Input"],
+Cell[77676, 1659, 164, 4, 62, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[77877, 1668, 67, 2, 46, "Input"],
+Cell[77947, 1672, 68, 2, 62, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[78052, 1679, 163, 4, 46, "Input"],
+Cell[78218, 1685, 164, 4, 62, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[78419, 1694, 72, 2, 46, "Input"],
+Cell[78494, 1698, 160, 3, 62, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[78691, 1706, 74, 2, 46, "Input"],
+Cell[78768, 1710, 164, 4, 62, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[78969, 1719, 159, 3, 46, "Input"],
+Cell[79131, 1724, 160, 3, 62, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[79328, 1732, 72, 2, 46, "Input"],
+Cell[79403, 1736, 250, 4, 77, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[79690, 1745, 189, 3, 74, "Input"],
+Cell[79882, 1750, 192, 3, 79, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[80111, 1758, 93, 2, 46, "Input"],
+Cell[80207, 1762, 173, 3, 82, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[80417, 1770, 186, 3, 73, "Input"],
+Cell[80606, 1775, 735, 11, 179, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[81378, 1791, 136, 3, 71, "Input"],
+Cell[81517, 1796, 610, 10, 156, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[82164, 1811, 148, 3, 73, "Input"],
+Cell[82315, 1816, 602, 10, 160, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+
