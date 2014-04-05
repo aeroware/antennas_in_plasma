@@ -42,7 +42,7 @@
 % (If you are submitting to a journal other than jgrga,
 % substitute the initials of the journal for "jgrga" below)
 
-\documentclass[draft,ras]{agutex}
+\documentclass[two-column,ras]{agutex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% optional article formats author might want to use
@@ -122,25 +122,24 @@
 % each author and alphabetize authors:
 
 \authoraddr{T. H. Oswald,
-Department of Extraterrestrial Physics, Austrian Academy of Sciences, Schmiedlstrasse 6, Graz, AT8042, Austria.
+Department of Extraterrestrial Physics, Institute of Space Research, Austrian Academy of Sciences, Schmiedlstrasse 6, Graz, AT8042, Austria.
 (thomas.oswald@aeroware.at)}
 
 \authoraddr{H. O. Rucker,
-Department of Extraterrestrial Physics, Austrian Academy of Sciences, Schmiedlstrasse 6, Graz, AT8042, Austria.
+Department of Extraterrestrial Physics, Institute of Space Research, Austrian Academy of Sciences, Schmiedlstrasse 6, Graz, AT8042, Austria.
 (helmut.rucker@oeaw.ac.at)}
 
 \authoraddr{W. Macher,
-Department of Extraterrestrial Physics, Austrian Academy of Sciences, Schmiedlstrasse 6, Graz, AT8042, Austria.
+Department of Extraterrestrial Physics, Institute of Space Research, Austrian Academy of Sciences, Schmiedlstrasse 6, Graz, AT8042, Austria.
 (wolfgang.macher@oeaw.ac.at)}
 
 \authoraddr{G. Fischer,
-Department of Extraterrestrial Physics, Austrian Academy of Sciences, Schmiedlstrasse 6, Graz, AT8042, Austria.
+Department of Extraterrestrial Physics, Institute of Space Research, Austrian Academy of Sciences, Schmiedlstrasse 6, Graz, AT8042, Austria.
 (georg.fischer@oeaw.ac.at)}
 
 \authoraddr{M. Sampl,
-Department of Extraterrestrial Physics, Austrian Academy of Sciences, Schmiedlstrasse 6, Graz, AT8042, Austria.
+Department of Extraterrestrial Physics, Institute of Space Research, Austrian Academy of Sciences, Schmiedlstrasse 6, Graz, AT8042, Austria.
 (manfred.sampl@oeaw.ac.at)}
-
 
 %\authoraddr{J. R. McConnell, Division of Hydrologic
 %Sciences, 123 Main Street, Desert Research Institute, Reno, NV
@@ -181,15 +180,21 @@ Department of Extraterrestrial Physics, Austrian Academy of Sciences, Schmiedlst
 % matching altaffiltext will appear at bottom of page.
 % May use \\ to start a new line.
 
-\authors{T. H. Oswald, \altaffilmark{1}
+\authors{T.H.Oswald, \altaffilmark{1}
 H. O. Rucker, \altaffilmark{1} W. Macher, \altaffilmark{1}
 G. Fischer, \altaffilmark{1}
- and M. Sampl, \altaffilmark{1}}
+and M. Sampl\altaffilmark{1}}
 
-\altaffiltext{1}{Department of Extraterrestrial Physics, Austrian Academy of Sciences, Schmiedlstrasse 6, Graz, AT8042, Austria.}
+\altaffiltext{1}{Department of Extraterrestrial Physics, Institute of Space Research, Austrian Academy of Sciences, Schmiedlstrasse 6, Graz, AT8042, Austria.}
 
+%\altaffiltext{2}{Department of Geography, Ohio State University,
+%Columbus, Ohio, USA.}
 
+%\altaffiltext{3}{Department of Space Sciences, University of
+%Michigan, Ann Arbor, Michigan, USA.}
 
+%\altaffiltext{4}{Division of Hydrologic Sciences, Desert Research
+%Institute, Reno, Nevada, USA.}
 
 %% ------------------------------------------------------------------------ %%
 %
@@ -220,9 +225,9 @@ Many spacecraft carry radio experiments. They use antennas to receive radiation 
 \section{Introduction and objectives}
 Many spacecraft carry antennas, often monopoles, to receive radiation and plasma waves created by natural processes. For a correct interpretation of the received data it is mandatory that the reception properties of the antenna are known with high accuracy. There are certain parameters which can be used to describe antenna behavior, like the effective length vectors, antenna impedances and radiation patterns. Unfortunately, the real behavior of the antennas is different than one would predict for the geometric configuration of the antennas. The reason is the influence of the body of the spacecraft as well as the influence of the surrounding space plasma.\\
 
-Here we focus on multi-monopole systems mounted on spacecraft, which are usually part of scientific instruments for the investigation of radio and/or plasma waves. The spacecraft surface is made of conducting material, so it can, in principle, be regarded as part of the antennas. As a result, each antenna behaves as if it would point into a slightly different direction, with a slightly different length. The vector that describes the direction and length of this virtual antenna is called effective length vector. This effective length vector has to be determined in order to minimize any error in data analysis.\\
+The spacecraft surface is made of conducting material, so it can, in principle, be regarded as part of the antennas. As a result, each antenna behaves as if it would point into a slightly different direction, with a slightly different length. The vector that describes the direction and length of this virtual antenna is called effective length vector. This effective length vector has to be determined, before any data analysis of the received EM waves can be conducted.\\
 
-The procedure of finding the antenna parameters is called antenna calibration. There are four often applied methods to determine the effective length vectors of the antennas of a spacecraft:
+The procedure of finding the antenna parameters is called antenna calibration. There are four known methods to determine the effective length vectors of the antennas of a spacecraft:
 
 \begin{enumerate}
 \item The numerical approach.
@@ -233,15 +238,18 @@ The procedure of finding the antenna parameters is called antenna calibration. T
 
 All four methods complement each other and are necessary components of the process of determination and validation of the antenna properties. The content of this paper is applicable to the numerical method.\\
 
-There are several numerical methods to simulate a receiving or transmitting antenna. One of the most widely used is the Method of Moments (MoM), which is exclusively used in this paper. It is realized by computer programs and consists of two steps. In the first step, the distribution of the currents on the surface of hull and antennas is calculated. This distribution can be used to calculate the effective length vectors and other antenna properties, like antenna impedances. This procedure is the second step.\\
+There are several numerical methods to simulate a receiving or transmitting antenna. One of the most widely used is the Method of Moments
+(MoM), which is exclusively used in this paper. It is realized by computer programs and consists of two steps. In the first step, the distribution of the currents on the surface of hull and antennas is calculated. This distribution can be used to calculate the effective length vectors and other antenna properties, like antenna impedances. This procedure is the second step.\\
 
-The properties of antennas on spacecraft are also influenced by the space plasma which surrounds the spacecraft. Unlike in vacuum there exist many different wave modes which can propagate through plasma and are received by the antennas. Each wave travels with a different speed and polarization, which makes the plasma wave analysis extremely difficult. The magnitude of the influence is highest at low frequencies and decreases above the characteristic plasma frequencies. At the typical frequencies of the receivers of radio experiments, i.e. DC to several MHz, the influence is small, which is the reason that plasma effects are usually neglected in spacecraft antenna calibration. It will be shown in this paper that the effects should not be ignored when calibrating spacecraft antennas which operate under certain conditions. It should be said that MoM is probably least suitable for including plasma effects, in comparison with other numerical methods which work by evaluating the electromagnetic equations at multiple points inside the surrounding medium, but it is very common and suitable for calibration of spacecraft antennas.\\
+The properties of antennas on spacecraft are also influenced by the space plasma which surrounds the spacecraft. Unlike in vacuum there exist many different wave modes which can propagate through plasma and are received by the antennas. Each wave travels with a different speed and polarization, which makes the analysis extremely difficult. The magnitude of the influence is highest at low frequencies and decreases above the characteristic plasma frequencies. At the typical frequencies of the receivers of radio experiments the influence is small, which is the reason that plasma effects are usually neglected in spacecraft antenna calibration. It will be shown in this paper that the effects should not be ignored when calibrating spacecraft antennas which operate under certain conditions. It should be said that MoM is probably least suitable for including plasma effects, in comparison with other numerical methods, but it is very common and suitable for calibration of spacecraft antennas.\\
 
-The objective of this paper is to show how plasma effects can be included into the numerical calibration process. Only frequencies in the radio frequency range well above the plasma resonance frequencies are considered. This considerably restricts the number of wave-modes which have to be taken into account.\\
+The objective of this paper is to show how plasma effects can be included into the numerical calibration process. Only frequencies in the radio frequency range well above the plasma resonance frequencies are considered. This restricts the number of wave-modes which have to be taken into account considerably.\\
 
 First the theoretical framework is established and the necessary equations, which are used in the numerical computations, are shown or derived. Then a practical example is presented, analyzing a dipole in surrounding cold isotropic (which means unmagnetized in this context) plasma.\\
 
-In the following section the method is directly applied to the calibration of the antennas of the NASA STEREO spacecraft. The original calibration of these spacecraft were presented in \cite{ossi09}.\\
+In the following section the method is is directly applied to the calibration of the antennas of the NASA STEREO spacecraft. The original calibration of these spacecraft were presented in \cite{ossi08}.\\
+
+A similar investigation for a dipole in cold magnetized plasma will be published in a subsequent article. This topic is so complex that a full 3D solver to analyze a whole spacecraft, does not exist at the time of writing this article.\\
 
 There exists a totally different method to include plasma effects in numerical calibration, to model the so-called plasma sheath, a boundary zone around the spacecraft which forms due to the interaction of the conducting surface of the spacecraft with the plasma. This method is not part of this paper.\\
 
@@ -265,9 +273,9 @@ The integral equation, which needs to be solved for the purpose of this paper is
  \mathbf{j}=\sum_{n} c_n j_n
 \end{equation}
 
-$j_n$ is called the basis function. Different kinds of functions can be used as basis functions in electromagnetic problems. The most simple function is the pulse function, which is used in one of the 1D solvers used for the computations in this paper. A very common choice is to use linear triangular functions, which converge faster during the solution process, while other solvers use a sum of a sine and a cosine function which have the advantage of being able to be integrated analytically over the wire grid. The very well known open source software NEC 2 uses the sum of a sine, a cosine and a constant function. Other solutions are possible.\\
+$j_n$ is called the basis function. Different kinds of functions can be used as basis functions in electromagnetic problems. The most simple function is the pulse function, which is used in one of the 1D solvers used for the computations in this paper. A very common choice is to use linear triangular functions, which converge faster during the solution process, while other solvers use a sum of a sine and a cosine function which have the advantage of being able to be integrated analytically. The very well known open source software NEC 2 uses the sum of a sine, a cosine and a constant function. Other solutions are possible.\\
 
-The correct choice of the basis functions is vital for the successful computation of electromagnetic problems and depends also on the area of application. When the wavelength is much longer than the typical extension of one basis function, there is little difference between usability of the three possible basis functions (pulse, linear, sinusoidal).\\
+The correct choice of the basis functions is vital for the successful computation of electromagnetic problems and depends also on the area of application. When the wavelength is much longer than the typical extension of one basis function, there is little difference between the three possible basis functions (pulse, linear, sinusoidal) and, while sinusoidal functions are the proper choice if the dimension of the object approaches the same magnitude as the wavelength.\\
 
 $c_n$ are the constants which are to be determined in the solution process, often called amplitudes. Combining (\ref{eq:linear_operator}) and (\ref{eq:bas_funct_expans}) gives
 
@@ -296,7 +304,7 @@ The solution for the amplitude vector is
  c_n=l_{mn}^{-1}g_m
 \end{equation}
 
-with $l_{mn}^{-1}$ being the inverse of the matrix built from the elements $l_{mn}=\left\langle w_m, L j_n\right\rangle$.
+while most solvers use more sophisticated methods than simple matrix inversion.\\
 
 When using the MoM for solving electromagnetic problems, the equation to be solved is often Pocklington's equation, the electric field integral equation or the reaction equation. The resulting matrix equation has then the form
 
@@ -310,13 +318,13 @@ where $Z=l_{mn}$ can be seen as an impedance. The unknown quantity is the curren
 The excitation of the antenna system is manifested in the shape of the excitation vector $\mathbf{V}$ which was denoted $g_m$ in the general case and has the physical unit volts. When the antenna is excited at a single feed, like in the case of the spacecraft antenna calibration, all elements of the vector are set to zero, except the element corresponding to the segment which is used as feeding point in the simulation. This element is set to the excitation voltage of the antenna.\\
 
 
-When the antenna system is excited by an incoming wave, the elements of the vector hold the values
+When the antenna system is excited by an incoming wave, the elements of the vector hold the value
 
 \begin{equation}
- V_i=\mathbf{E(r_\mathit{i})} \cdot \mathbf{s_\mathit{i}}
+ V_i=\mathbf{E_i(r_i)} \cdot \mathbf{s_i}
 \end{equation}
 
-where $\mathbf{s_\mathit{i}}$ is the corresponding segment \textit{i} and $\mathbf{E(r_\mathit{i})}$ is the incident electric field at location $\mathbf{r}_\mathit{i}$, the location of the midpoint of segment \textit{i}.
+where $\mathbf{s_i}$ is the corresponding segment i and $\mathbf{E_i(r_i)}$ is the incident electric field at location $\mathbf{r}_i$, the location of the midpoint of segment i.
 
 \subsection{Electrodynamics of plasma}
 \subsubsection{Maxwell's equations}
@@ -357,12 +365,12 @@ Performing the Fourier transform and using the results of the convolution theore
 where
 
 \begin{eqnarray}
-    \mathbf{\epsilon}(\mathbf{k},\omega)&=&\int_{0}^\infty\int_V\hat{\epsilon}_{ij}(t-t',\mathbf{r}-\mathbf{r'}) \\
+    \mathbf{\epsilon}(\mathbf{k},\omega)&=&\int_{0,\infty}\int_V\hat{\epsilon}_{ij}(t-t',\mathbf{r}-\mathbf{r'}) \\
 && \cdot e^{\imath (\mathbf{k}\cdot \mathbf{r}- \omega t)}d^3\mathbf{(r-r')}d(t-t') \nonumber
 \end{eqnarray}
 
 $\epsilon_0$ is the constant of permittivity of free space, while $\epsilon$ and $\epsilon_r$
-are dyadic entities in the most general case. In the dielectric model of the plasma which is used here, all plasma physics is included in the equivalent dielectric tensor. This has the advantage, that only the dielectric tensor has to be changed when changing the model of plasma, maybe to a more complex form for instance. When using the fluid approximation, this procedure can always be used without loss of generality. When dealing with a kinetic model of plasma, one has to use caution because certain physical effects can be lost due to this simplification. Then it would be advisable to manipulate the kinetic equations directly. However it will be shown that the use of a kinetic plasma model is not necessary for the scope of this paper, which is the simulation of the properties of spacecraft antennas in the RF range.\\
+are dyadic entities in the most general case. In the dielectric model of the plasma which is used here, all plasma physics is included in the equivalent dielectric tensor. This has the advantage, that only the dielectric tensor has to be changed when changing the model of plasma, maybe to a more complex form for instance. When using the fluid approximation, this procedure can always be used without loss of generality. When dealing with a kinetic model of plasma, one has to use caution because certain physical effects can be lost due to this simplification. Then it would be advisable to manipulate the kinetic equations directly. However it will be shown that the use of a kinetic plasma model is not necessary for the scope of this paper, which is the simulation of spacecraft antennas in the RF range.\\
 
 The polarization field is an induced electric field which exists as a response to an externally applied field and, on a macroscopic level, counteracts and thereby decreases the external field. Materials exist where this relationship is not linear and a more complicated relation needs to be formulated. Eventually most materials become non-linear when
 sufficiently strong external fields are applied. The content of this paper applies only to linear media. A similar analysis leads to the magnetic constitutive equation.\\
@@ -376,7 +384,7 @@ At this stage it seems important to ask whether or not a classical model is just
     \hbar \omega \ll m c^2
 \end{equation}
 
-(see \cite{melrose1}) where m is the mass of the particles involved. The criterion is less stringent for smaller masses, so the electron mass should be used here. If the criterion is satisfied for electrons, it is automatically satisfied for ions of any kind. $\hbar=1.0546 \cdot 10^{-34} Js $ is Planck's constant. Substituting the values for the constant, the speed of light in vacuum and the electron mass, one gets
+where m is the mass of the particles involved. The criterion is less stringent for smaller masses, so the electron mass should be used here. If the criterion is satisfied for electrons, it is automatically satisfied for ions of any kind. $\hbar=1.0546 \cdot 10^{-34} Js $ is Planck's constant. Substituting the values for the constant, the speed of light in vacuum and the electron mass, one gets
 
 \begin{equation}
     \omega \ll 7.77 \cdot 10^{20} \frac{rad}{s}
@@ -392,7 +400,7 @@ length. Above this frequency, the plasma is not responding to the waves in its c
 \subsubsection{The dielectric tensor}
 The dielectric tensor holds the information of the (linear response of the) matter in the dielectric model. Different models and different stages of simplification yield different dielectric tensors. The most simple approach to describe a plasma is the cold plasma approximation, in which the thermal motion of the particles is neglected. This model will be the starting point of the treatment. The spatial dispersion can therefore be neglected and $\bar{\epsilon}(\mathbf{k},\omega)=\bar{\epsilon}(0,\omega)=\epsilon(\omega)$ can be used (see \cite{ginzburg} or \cite{stix}). Anisotropy is usually the result of an external magnetic field.\\
 
-Media which are modeled with a permittivity tensor depending on the frequency are called dispersive. Plasma is a strongly dispersive medium. If the tensor has the form
+Media which are modeled with a permittivity tensor which depends on the frequency are called dispersive. Plasma is a strongly dispersive medium. If the tensor has the form
 
 \begin{equation}
     \epsilon_{ij}(\omega)=\delta_{ij} \epsilon_{ij}(\omega)=\epsilon_{ii}(\omega)
@@ -423,7 +431,7 @@ The dielectric tensor of a spatially dispersive isotropic medium can be written 
    \epsilon_{ij}(\mathbf{k},\omega)=\epsilon^l(\mathbf{k},\omega)\hat{k}_i \hat{k}_j+\epsilon^t(\mathbf{k},\omega)(\delta_{ij}-\hat{k}_i \hat{k}_j)
 \end{equation}
 
-where the additive components are the longitudinal and transverse parts. The dielectric tensor, in general, has to fulfill 3 properties (see \cite{melrose1} for details):\\
+where the additive components are the longitudinal and transverse parts. The dielectric tensor, in general, has to fulfill 3 properties (see. \cite{melrose1} for details):\\
 
 \begin{enumerate}
     \item When separated into a hermitian and an anti-hermitian part, the hermitian part describes the reactive response, while the anti-hermitian part describes the resistive response. A matrix is hermitian if the transposed conjugated of the matrix is equal to itself:$M_{ij}=M_{ij}^\dagger (-\mathbf{k},-\omega)$\\
@@ -479,7 +487,7 @@ where $\omega_p$ is the electron plasma frequency. There is a cutoff, when the f
     \epsilon_{ii}=1-\sum_s \frac{\omega_{p,s}^2 }{ \omega^2 } 
 \end{equation}
 
-although for the application of this article, the influence of the ions can be neglected. The relation between the equivalent permittivity and the refractive index is $n=\sqrt{\epsilon_r\mu_r}$.\\ 
+although for the application of this article, the influence of the ions can be neglected. The relation between the equivaltent permittivity and the refractive index is $n=\sqrt{\epsilon_r\mu_r}$.\\ 
 
 This model can be implemented in the antenna calculation without much difficulties. Many existing solvers allow to set the real part and the imaginary part of the dielectric function of the medium in which the antenna is embedded. The real part of the dielectric function would be equivalent to one of the diagonal entries of this tensor.\\
 
@@ -487,7 +495,7 @@ This model can be implemented in the antenna calculation without much difficulti
 The kinetic theory describes many different kinds of waves. Since only radiation of frequencies which are above the characteristic plasma frequency are treated, it seems important to include two waves, the electrostatic Langmuir waves, and the electromagnetic waves. Only the influence of
 the electrons will be considered.\\
 
-Langmuir waves exist at frequencies slightly above the plasma frequency. Waves of this kind which are generated in the vicinity of the spacecraft are received by the antennas and used for quasithermal noise analysis. For remote sensing activities, scientific antennas are not usable in this frequency range. Langmuir waves at higher frequencies, possibly generated at some remote location will not be received because they will not reach the spacecraft, being heavily damped. Therefore Langmuir waves will not be considered in this article.\\
+Langmuir waves exist at frequencies slightly above the plasma frequency. Waves of this kind which are generated in the vicinity of the spacecraft are received by the antennas and used for quasithermal noise analysis. For remote sensing activities, scientific antennas are not usable in this frequency range. Langmuir waves at higher frequencies, possibly generated at some remote location will not be received because they will not reach the spacecraft, being heavily damped. Therefore Langmuire waves will not be considered in this article.\\
 
 To derive the dielectric function of electromagnetic waves, using the kinetic plasma theory, one has to start with the equation of motion and use the method of perturbation to linearize the equation.
 
@@ -541,11 +549,11 @@ where $g(\mathbf{r},\mathbf{r'})$ is the Green's function of the potential.
     g(\mathbf{r},\mathbf{r'})= \frac{e^{- \imath k  | \mathbf{r}-\mathbf{r'} |}}{| \mathbf{r}-\mathbf{r'} |}
 \end{equation}
 
-Even in isotropic media, it is a dyadic function. The equivalent dielectric function is part of the wavenumber $k=\omega \sqrt{\mu_0 \epsilon_0 \epsilon_r}$, which is the wavenumber of the electromagnetic waves in the medium. $\eta$ is the impedance of the medium, $\eta=\frac{\eta_0}{\sqrt{\epsilon_r}}=\sqrt{\frac{\mu_0}{\epsilon_0\epsilon_r}}$. It is worth noting that, in order to calculate the electric field, radiated due to a current density $\mathbf{j}$, one can use equation (\ref{def_greens_function}), which is perfectly valid in free space and use wavenumber $k$ as defined above, instead of $k_0=\omega \sqrt{\mu_0 \epsilon_0}$ which would be used in free space, as well as the intrinsic impedance of the medium, instead of free space. The whole procedure to switch from free space to isotropic plasma is to make the transformation $k^2 \rightarrow k^2\epsilon_r$ and $\eta_o \rightarrow \eta$.\\
+Even in isotropic media, it is a dyadic functions. The equivalent dielectric function is part of the wavenumber $k=\omega \sqrt{\mu_0 \epsilon_0 \epsilon_r}$, which is the wavenumber of the electromagnetic waves in the medium. $\eta$ is the impedance of the medium, $\eta=\frac{\eta_0}{\sqrt{\epsilon_r}}=\sqrt{\frac{\mu_0}{\epsilon_0\epsilon_r}}$. It is worth noting that, in order to calculate the electric field, radiated due to a current density $\mathbf{j}$, one can use equation (\ref{def_greens_function}), which is perfectly valid in free space and use wavenumber $k$ as defined above, instead of $k_0=\omega \sqrt{\mu_0 \epsilon_0}$ which would be used in free space, as well as the intrinsic impedance of the medium, instead of free space. The whole procedure to switch from free space to isotropic plasma is to make the transformation $k^2 \rightarrow k^2\epsilon_r$ and $\eta_o \rightarrow \eta$.\\
 
 For the use in actual MoM code, often special forms or variation are used. One of the solvers used for the examples in this publication employs the following form of Pocklington's equation, published in \cite{richmond66}:
 
-\begin{eqnarray}\label{eq:pocklington}
+\begin{eqnarray}
 E&=&\frac{\lambda \eta}{8 \pi^2 \imath} \int_{-\frac{l}{2}}^{\frac{l}{2}} \frac{e^{-\imath k r}}{r^5} \left[ (1+\imath k r)\right.  \\
 &&\left.  \cdot (2 r^2-3a^2)+k^2a^2r^2\right]I(z') dz'\nonumber
 \end{eqnarray}
@@ -569,15 +577,20 @@ Once the currents are computed, all other observables, as fields and patterns, a
 A second solver was implemented which uses sinusoidal functions. The equation on which this solver is based can be found in \cite{davidson}.\\
 
 For validation many calculations were performed, using the open source programs NEC2 and ASAP, as well as the proprietary software CONCEPT II, to compare the results. Due to the different equations used in the software packages, the results can differ, depending on the frequency used.\\
-
 \section{Analysis of a dipole in isotropic cold plasma}
 \subsection{Introduction}
-For testing purposes it seems suitable to use a 6 meter long dipole oriented along the z-axis, ranging from $z=0$ to $z=6$. The wire has a radius of 5mm. The accurate number of segments $N$ is determined automatically during the calculation by testing the results on stability. The dipole consists of several hundred segments of equal length and is excited by a voltage of magnitude 1 at a feed which is located exactly in the middle of the dipole which is marked by the green circle in the figure. The width [meter] of the gap is $\frac{6}{N}m$. One advantage of this test system is its rotational symmetry. A 1D test system can be used for analysis which avoids unnecessary complications as a result of the geometry.\\
+For testing purposes it seems suitable to use a 6 meter long dipole oriented along the z-axis, ranging from $z=0$ to $z=6$ (see Figure \ref{figDipol}). The wire has a radius of 5mm. The accurate number of segments $N$ is determined automatically during the calculation by testing the results on stability. The dipole consists of several hundred segments of equal length and is excited by a voltage of magnitude 1 at a feed which is located exactly in the middle of the dipole which is marked by the green circle in the figure. The width [meter] of the gap is $\frac{6}{N}m$. One advantage of this test system is its rotational symmetry. A 1D test system can be used for analysis which avoids unnecessary complications as a result of the geometry.\\
 
 Two 1D solvers have been written for this task, both use the collocation method. Solver 1 uses constant functions as basis functions. This solver is implemented in Fortran 95, because it requires numerical integration of the electric field integral equation to create the elements of the matrix. A standard of 50 integration steps per wire segment is used.\\
 
 The other solver is implemented in Matlab and uses sinusoidal basis functions. The integration of the electric field integral equation can be performed analytically, yielding a closed formula, which outperforms the numerical method of the other solver. The results are within the limit of the accuracy of the methods and therefore the solvers can be regarded as equivalent.\\
 
+
+
+\begin{figure}
+ \noindent\includegraphics[width=20pc]{dipol.eps}\\
+  \caption{6 meter dipole used for calculation}\label{figDipol}
+\end{figure}
 
 \subsection{The impedances}
 \begin{table*}
@@ -591,7 +604,7 @@ $300 kHz$ & 6.3712e-03 - 3.4405e+04i &  6.4781e-03 - 3.3973e+04i \\
 $1 MHz$ & 7.0845e-02 - 1.0309e+04i &  7.2034e-02 - 1.0180e+04i \\
 $10 MHz$ &  7.7069e+00 - 8.8976e+02i&  7.8383e+00 - 8.7385e+02i\\
 \hline
-& ASAP  & Concept II\\
+& ASAP  & Concept 2\\
 \hline
 $300 kHz$ &  4.3244e-01 - 3.3003e+04i &  1.4896e-02 - 3.3060e+04i\\
 $1 MHz$ & 1.3959e-01 - 9.8883e+03i &  8.5201e-02 - 9.9056e+03i\\
@@ -614,7 +627,7 @@ $300 kHz$ & 4.5049e-03 - 6.8814e+04i & 4.5805e-03 - 6.7950e+04i  \\
 $1 MHz$ &  5.0074e-02 - 2.0632e+04i &  5.0914e-02 - 2.0372e+04i \\
 $10 MHz$ & 5.2205e+00 - 1.9246e+03i &  5.3087e+00 - 1.8958e+03i \\
 \hline
-& ASAP  & Concept II  \\
+& ASAP  & Concept 2  \\
 \hline
 $300 kHz$ & 8.3245e+00 - 6.6011e+04i &  4.4189e-03 - 6.6123e+04i \\
 $1 MHz$ & 5.0866e-01 - 1.9791e+04i &  4.9119e-02 - 1.9825e+04i \\
@@ -623,11 +636,11 @@ $10 MHz$ &  5.1739e+00 - 1.8435e+03i&  5.1377e+00 - 1.8466e+03i \\
 \end{tabular}
 \end{table*}
 
-Table \ref{tab:impedances_vacuum} shows the antenna impedance of the dipole at three different frequencies, computed by the two in-house-written solvers, as well as by two well proven solvers for reference. As one can see, there are some variations, especially of the resistive (real) part. The reason is that the impedance is calculated by dividing the voltage at the feed, which is 1V in this example, by the current at the feed. The current and the modeling of the excitation at the antenna feed crucially depend on the details of the implementation. For instance, solvers 1 and 2 are implemented by using perfectly conducting wires, while the computations with ASAP and Concept II are performed by using a realistic conductivity. The sign of the imaginary part shows, whether the antenna behaves capacitive (-) or inductive (+).\\
+Table \ref{tab:impedances_vacuum} shows the antenna impedance of the dipole at three different frequencies, computed by the two in-house-written solvers, as well as by two well proven solvers for reference. As one can see, there are some variations, especially of the resistive (real) part. The reason is that the impedance is calculated by dividing the voltage at the feed, which is 1V in this example, by the current at the feed. The current and the modeling of the excitation at the antenna feed crucially depend on the details of the implementation. For instance, the own solvers are implemented by using perfectly conducting wires, while the computations with ASAP and Concept II are performed by using a realistic conductivity. The sign of the imaginary part shows, whether the antenna behaves capacitive (-) or inductive (+).\\
 
-Table \ref{tab:impedances_plasma} shows the impedances, calculated with the effect of the surrounding plasma included. Only the effect of the electron movement is considered and the relative permittivity has a value of $0.5$.\\
+Table \ref{tab:impedances_plasma} shows the impedances, calculated with the effect of the surrounding plasma included. Only the effect of the electron is considered and the relative permittivity has a value of $0.5$.\\
 
-The difference between the results of different solvers is not so prominent when an integration is performed over all currents. Quantities like the effective length and the field patterns are produced by performing such an integration and usually the differences between the solvers are small in these cases.\\
+The difference between the results of different solvers is not so prominent when an integration is performed over all currents. Quantities like the effective length and the field patterns are produced by performing such an integration and usually the differences between the solvers is small in these cases.\\
 
 
 \subsection{The electrical far-field-pattern}
@@ -639,14 +652,12 @@ Field patterns are a very good way to visualize direction dependent properties o
 \label{fig:patterns_vacuum}
 \end{figure}
 
-Figure \ref{fig:patterns_vacuum} shows 2-dimensional plots of the electric far-field pattern of the 6m dipole at $10 MHz$ in vacuum (upper figure) and in isotropic cold plasma, using a relative permittivity of 0.5. The result is in perfect agreement with the results when computed with Concept II and with theory. The radiated field in plasma is lower than in vacuum. In this configuration the difference is approximately 1 order of magnitude. The reason is that the antenna current has a smaller magnitude in plasma. This can be understood when considering equation (\ref{eq:pocklington}). The impedance of the medium $\eta$ is lager than in vacuum, which means that the mutual impedances between the wire elements, which are the elements of the matrix in the MoM, are larger in plasma. Hence a smaller current as source produces the required electric field. With physical reasoning the phenomenon of smaller current amplitudes can be understood by realizing that the radiated power density is also proportional to the impedance of the medium. Hence, smaller current amplitudes are demanded by the requirement of energy conservation.\\ 
-
-In this case only electrons are considered. When considering also ions, the magnitude of the respective values of the pattern is even lower by a small amount. The difference is so small that the effect of the ions can be neglected in this case.
+Figures \ref{fig:patterns_vacuum} show 2-dimensional plots of the electric far-field pattern of the 6m dipole at $10 MHz$ in vacuum (upper figure) and in isotropic cold plasma, using a relative permittivity of 0.5. The result is in perfect agreement with the results when computed with Concept II and with theory. The radiated field in plasma is lower than in vacuum. in this configuration the difference is approximately 1 order of magnitude. The physical reason is that part of the transmitted energy is stored in the oscillating motion of the plasma particles. This energy is often called ordered kinetic energy. In this case only electrons are considered, when considering also ions, the magnitude of the respective values of the pattern is even lower by a small amount. The difference is so small that the effect of the ions can be neglected in this case.
 
 \subsection{The effective length vectors}
 A very useful antenna property which describes the behavior of a transmitting antenna is the effective length vector. It can be computed as
 
-\begin{equation}\label{eq:heff}
+\begin{equation}
 \textbf{h}_{eff}=\frac{1}{I}\int \mathbf{J}(\mathbf{r}')e^{\imath \mathbf{k} \cdot \mathbf{r}'} dV'
  \end{equation}
 
@@ -660,7 +671,7 @@ When using computed effective length vectors for analyzing data, one should keep
 \label{tab:heff_vacuum}
 \begin{tabular}{|c|c|c|c|}
  \hline
- & solver 1  & solver 2  & Concept II \\
+ & solver 1  & solver 2  & Concept 2 \\
 \hline
 $300 kHz$ & 2.842 & 2.864 & 2.812 \\
 $1 MHz$ & 2.843 & 2.866 &  2.813 \\
@@ -674,7 +685,7 @@ $10 MHz$ & 2.985 & 3.010 &  2.863  \\
 \label{tab:heff_plasma}
 \begin{tabular}{|c|c|c|c|}
  \hline
- & solver 1  & solver 2  & Concept II \\
+ & solver 1  & solver 2  & Concept 2 \\
 \hline
 $300 kHz$ & 2.842 & 2.864 & 2.812  \\
 $1 MHz$ & 2.842 & 2.865 & 2.812  \\
@@ -683,9 +694,9 @@ $10 MHz$ & 2.912 & 2.935 & 2.789 \\
 \end{tabular}
 \end{table}
 
-Tables \ref{tab:heff_vacuum} and \ref{tab:heff_plasma} show the magnitude of the effective length vectors, also called the effective lengths, of the dipole under the specified conditions. The direction of the wave was always taken to be the positive x-axis, i.e. perpendicular to the dipole. Investigations have shown that the directional variation of the effective length vector is only very small at those frequencies used for the calulations.\\
+Tables \ref{tab:heff_vacuum} and \ref{tab:heff_plasma} show the lengths of the effective length vectors of the dipole under the specified conditions. The direction of the wave was always taken to be the positive x-axis, i.e. perpendicular to the dipole. Investigations have shown that the dependence of the effective length vector is only very small at the frequencies where calculations were performed.\\
 
-Only the real part is presented here. Since the current is parallel to the z-axis throughout the whole dipole, also the effective length vector is parallel to the z-axis in accordance with (\ref{eq:heff}).\\
+Only the real part is presented here. Since the direction of the effective length vector of a straight dipole is always in the direction of the dipole, there is no need to present the vectors in vector form.\\
 
 As it can be seen, the effect of the plasma is a shortening of the effective length vectors. Although the effect is quite small in the presented data, as well as under most realistic conditions, it is generally true.\\
 
@@ -702,7 +713,7 @@ Figures \ref{fig:impedances_dipole_solver2_real} and \ref{fig:impedances_dipole_
 
 As it can be seen, the antenna resonances, the frequencies where the imaginary part of the impedance vanishes, are shifted to a higher frequency This corresponds to the effect to be expected for a shorter effective length vector. The plasma effect increases with increasing frequency.\\
 
-Knowledge of the antenna resonances is of vital importance for the correct interpretation of measured data of radio experiments on spacecraft. Especially the even numbered resonances where the imaginary part of the impedance crosses the zero line from the positive to the negative area corresponds to a peak of the curve of the real part and in vicinity of this peak the effective length vectors computed by numerical means can not be considered as reliable since slight variation of the geometry may change the pattern completely. Therefore the inclusion of the plasma effect in numerical calibration can be considered as important, also at radio frequencies.\\
+Knowledge of the antenna resonances is of vital importance for the correct interpretation of measured data of radio experiments on spacecraft. Especially the even numbered resonances where the imaginary part of the impedance crosses the zero line from the positive to the negative area corresponds to a peak of the curve of the real part and in vicinity of this peak the effective length vectors computed by numerical means can not be considered as reliable. Therefore the inclusion of the plasma effect in numerical calibration can be considered as important, also at radio frequencies.\\
 
 
 \begin{figure}
@@ -717,37 +728,38 @@ Knowledge of the antenna resonances is of vital importance for the correct inter
 \label{fig:impedances_dipole_solver2_imag}
 \end{figure}
 
-The realistic case is more subtle. Figures \ref{fig:impedances_dipole_solver2_2_real} and \ref{fig:impedances_dipole_solver2_2_imag} show a similar calculation, but this time the plasma electron frequency was set to $10MHz$, a situation which could be realistic in some dense plasma environments in space, as in the ionosphere. The frequency range in these figures is from $10.1$ to $100MHz$. The differences between vacuum and plasma are smaller and decrease with higher frequency. The electron plasma frequency is a cutoff, where the imaginary part of the antenna impedance tends to minus infinity and no electromagnetic radio waves can propagate.
+The realistic case is more subtile. Figures \ref{fig:impedances_dipole_solver2_real2} and \ref{fig:impedances_dipole_solver2_imag2} show a similar calculation, but this time the plasma electron frequency was set to $10MHz$, a situation which could be realistic in some dense plasma environments in space, as in the ionosphere. The frequency range in these figures is from $10.1$ to $100MHz$. The differences between vacuum and plasma are smaller and decrease with higher frequency. The electron plasma frequency is a cutoff, where the imaginary part of the antenna impedance tends to minus infinity and no electromagnetic radio waves can propagate.
 
 \begin{figure}
   \noindent\includegraphics[width=20pc]{imps_dipole_solver2_real2.eps}
-\caption{Real part of antenna impedance, $10.1 - 100 MHz$, computed with solver 2. $f_p=10MHz$. The blue line shows the impedance in vacuum, whereas the red line is the plasma solution.}
-\label{fig:impedances_dipole_solver2_2_real}
+\caption{Real part of antenna impedance, $10.1 - 100 MHz$, computed with solver 2. $f_p=10MHz$.}
+\label{fig:impedances_dipole_solver2_real2}
 \end{figure}
 
 \begin{figure}
 \noindent\includegraphics[width=20pc]{imps_dipole_solver2_imag2.eps}
-\caption{Imaginary part of antenna impedance, $10.1 - 100 MHz$, computed with solver 2. $f_p=10MHz$. The blue line shows the impedance in vacuum, whereas the red line is the plasma solution.}
-\label{fig:impedances_dipole_solver2_2_imag}
+\caption{Imaginary part of antenna impedance, $10.1 - 100 MHz$, computed with solver 2. $f_p=10MHz$ was held constant at $0.5$.}
+\label{fig:impedances_dipole_solver2_imag2}
 \end{figure}
 
 \section{Application to a real spacecraft (STEREO)}
-In this section the effect of space plasma will be included in the calculation of antenna properties of actual spacecraft antennas. This is only performed for cold isotropic plasma, by using the Concept II solver and the method of encapsulating the plasma effects in the equivalent dielectric function as presented before. General purpose solvers being capable of handling magnetized plasma and complicated 3D spacecraft structures, are not available to the knowledge of the authors. \\
+In this section the effect of space plasma will be included in the calculation of antenna properties of actual spacecraft antennas. This is only performed for cold isotropic plasma, by using the Concept II solver and the method of encapsulating the plasma effects in the equivalent dielectric function as presented before. General purpose solvers being capable of handling magnetized plasma and complicated 3D spacecraft structures, are not available to the knowledge of the authors. A respective solver will be implemented by the authors in the near future and be presented in a subsequent publication. \\
 
-The spacecraft upon which the calculations are applied is the STEREO A spacecraft. The reason for this is that there exists a good wire and patch model as well as experimental results and actual measured data. Additionally the authors of this paper have some experience with regard to antenna calibration with this spacecraft (\cite{ossi09} and \cite{panchenko10}). The respective wire/patch grid model is shown in Figure \ref{fig:stereo}.\\
+The spacecraft upon which the calculations are applied is the STEREO A spacecraft. The reason for this is that there exists a good wire and patch model as well as experimental results and actual measured data. Additionally the authors of this paper have some experience with regard to antenna calibration with this spacecraft \cite{ossi09}. The respective wire/patch grid model is shown in Figure \ref{fig:stereo}.\\
 
 \subsection{The STEREO mission and the WAVES experiment}
-On October $25^{th}$, 2006, NASA launched the two STEREO spacecraft with a radio experiment on board, called STEREO-WAVES (S/WAVES), which is designed to observe solar radio emissions by using direction finding capabilities. The S/WAVES experiment is designed to track solar and interplanetary radio bursts and trace the generation and evolution of radio disturbances from the Sun to Earth orbit and beyond. Each spacecraft has three orthogonal antennas, capable of receiving electromagnetic waves in several frequency ranges. The main operational range of the receivers is between 10kHz and 16MHz. With this configuration, it is possible to perform goniopolarimetry at the lower end of the frequency range to determine the direction of incidence and the polarization of the received radiation. When both spacecraft receive radiation from the same source, the actual location of the source can be pinpointed by the method of triangulation.\\
+On October $25^{th}$, 2006, NASA launched the two STEREO spacecraft with a radio experiment on board, called STEREO-WAVES (S/WAVES), which is designed to observe solar radio emissions by using direction finding capabilities. The S/WAVES experiment is designed to track solar and interplanetary radio bursts and trace the generation and evolution of radio disturbances from the Sun to Earth orbit and beyond. Each spacecraft has three nearly orthogonal antennas, capable of receiving electromagnetic waves in several frequency ranges. The main operational range of the receivers is between 10kHz and 16MHz. With this configuration, it is possible to perform goniopolarimetry at the lower end of the frequency range to determine the direction of incidence and the polarization of the received radiation. When both spacecraft receive radiation from the same source, the actual location of the source can be pinpointed by the method of triangulation.\\
 
 For the correct interpretation of the data it is of vital importance to know the antenna properties with great accuracy. Numerical and experimental antenna calibration was performed by the Radio Group of the Space Research Institute of the Austrian Academy of Sciences, based in Graz. During these calibrations, which are published in \cite{ossi09} and \cite{macher07} a vacuum environment was postulated. In this section the effect of an isotropic plasma on the results of the numerical calibration will be discussed.\\
 
 \begin{figure*}
 \noindent\includegraphics[width=39pc]{stereo.eps}
-  \caption{The STEREO spacecraft wiregrid.}\label{fig:stereo}
+  \caption{The STEREO spacecraft wiregrid}\label{fig:stereo}
 \end{figure*}
 
 The STEREO/WAVES experiment works with three mutually orthogonal stacer
-monopole antennas. This paper applies to the HFR and band B and C of the LFR. The HFR operates in a range from 125 kHz to 16.025 MHz. The HFR provides all auto- and cross-correlation parameters. Two direction finding (DF) modes are implemented, one of which uses the antennas as dipoles. The other DF mode uses the antennas as monopoles. The HFR is a sweeping frequency receiver and each sweep takes approximately 15 seconds. Only the monopoles are treated in this article.\\
+monopole antennas. This paper applies to the HFR and band B and C of the LFR. The HFR operates in a range from 125 kHz to 16.025 MHz. The HFR provides all auto- and cross-correlation parameters. Two direction finding (DF) modes are implemented, one of which uses the antennas as dipoles. The other DF mode uses
+the antennas as monopoles. The HFR is a sweeping frequency receiver and each sweep takes approximately 15 seconds. Only the monopoles are treated in this article.\\
 
 Bands B and C provide auto- and cross-correlation parameters and can be used
 for DF.\\
@@ -759,17 +771,16 @@ for DF.\\
   \caption{The impedance of the S/WAVES antennas in vacuum (top) in relation to cold plasma with $\epsilon_r=0.1$ (bottom)}\label{fig:imp_stereo}
 \end{figure}
 
-
-Figure \ref{fig:imp_stereo} shows the results of these calculations, performed with a constant equivalent permittivity of $0.1$, again for demonstration purposes. The effect on the impedance curve shows the same behavior as for the dipole. The resonance is shifted to a higher frequency. The curves for the three antennas are so close together at some parts, that they appear as single line.\\
+Figure \ref{fig:imp_stereo} shows the results of these calculations, performed with a constant equivalent permittivity of $0.1$, again for demonstration purposes. The effect on the impedance curve shows the same behavior as for the dipole. The resonance is shifted to a higher frequency. The curves for the three antennas are so close together at some parts, that they appear as single line. Since Matlab draws one line after another, the final color of the line is blue, the color of the last curve to be drawn on top of the others. The same is true for the following figures.\\
 
 \begin{figure}
 \noindent\includegraphics[width=20pc]{impedance_stereo_pl_fix.eps}
-  \caption{The impedance of the S/WAVES antennas in cold plasma with $f_{pe}=10MHz$.}\label{fig:imp_stereo_fix}
+  \caption{The impedance of the S/WAVES antennas in cold plasma with $f_{pe}=10MHz$ (bottom)}\label{fig:imp_stereo_fix}
 \end{figure}
 
 Figures \ref{fig:imp_stereo_fix} show the same calculation with a fixed electron plasma frequency of 10MHz. Only the part of the graph above 10MHz is relevant. The calculation is not valid at the lower frequency range.\\
 
-One can see the shift of the second antenna resonance due to the influence of the plasma. Even on the realistic plot with the fixed plasma frequency, the peak of the real part of the impedance curve is shifted by more than 2 MHz. STEREO will not have to deal with conditions where such high plasma frequencies exist, but for other space missions taking measurements inside the ionosphere, or, although with lower resonance frequencies, in planetary magnetospheres, such shifts should be take into account.\\
+One can see the shift of the second antenna resonance due to the influence of the plasma. Even on the realistic plot with the fixed plasma frequency, the peak of the real part of the impedance curve is shifted by more than 2 MHz. STEREO will not have to deal with conditions where such high plasma frequencies exist, but for other space missions taking measurements inside the ionosphere, or, although with lower resonance frequencies, in planetary Magnetospheres, such shifts should be take into account.\\
 
 The plasma frequency is
 
@@ -782,29 +793,18 @@ At conditions where STEREO operates, i.e. at 1AU in interplanetary space, which 
 
 \begin{figure}
 \noindent\includegraphics[width=20pc]{impedance_stereo_pl_100khz.eps}
-  \caption{The impedance of the S/WAVES antennas in cold plasma with $f_{pe}=100kHz$.}\label{fig:imp_stereo_fix_100kHz}
+  \caption{The impedance of the S/WAVES antennas in cold plasma with $f_{pe}=100kHz$ (bottom)}\label{fig:imp_stereo_fix_100kHz}
 \end{figure}
 
 \subsection{The effect on the effective length vectors}
 Computing the effective length vectors using the cold plasma permittivity results in a slightly shorter effective length vector. The directions are not altered very much. As an example the quasistatic effective length vectors of the STEREO antennas are given in Tables \ref{tab:heff_vacuum_stereo} and \ref{tab:heff_cold_plasma_stereo}. In both cases a frequency of $300kHz$ is used, which is a typical value when investigating the behavior of an antenna in the quasistatic limit. At the first table, vacuum is used as the surrounding medium, while a cold isotropic plasma model is used for comparison (Table \ref{tab:heff_cold_plasma_stereo}), using again the realistic value of 100kHz as electron plasma frequency.\\
 
-Plasma frequency and wave frequency are close together in this example, so the difference in length of the effective length vectors is clearly visible (about 10cm) and should be considered for data processing of the measured S/WAVES data.
+Plasma frequency and wave frequency are close togeather in this example, so the difference in length of the effective length vectors is clearly visible (about 10cm) and should be considered for data processing of the measured S/WAVES data.
 
-The coordinate frame used for presenting the effective lengths vectors is a spherical polar coordinate frame with the principle axes point towards the x-axis, i.e. the direction of the sun. The coordinates of the physical antennas are shown in Table \ref{tab:phys_ant}. Details can be found in \cite{ossi09}. \\
+The coordinate frame used for presenting the effective lengths vectors is a spherical polar coordinate frame with the principal axes point towards the x-axis, i.e. the direction of the sun. The coordinates of the physical antennas are shown in Table \ref{tab:phys_ant}. Details can be found in \cite{ossi09} \\
 
 For the calculations, base capacitances of $70pF$ where used. The inclusion of base capacitances has also the effect of decreasing the lengths of the effective length vectors.\\
-\begin{table}
-\caption{Physical antennas}
-\label{tab:phys_ant}
-\begin{tabular}{|c|c|c|c|}
- \hline
- & $length/m$ & $\zeta/^\circ$ & $\xi/^\circ$ \\
-\hline
-$E_x$ & $6.00$ & $125.3$ & $-120.0$ \\
-$E_y$ & $6.00$ & $125.3$ & $120.0$ \\
-$E_z$ & $6.00$ & $125.3$ & $0.00$ \\
-\hline\end{tabular}
-\end{table}
+
 
 \begin{table}
 \caption{Effective length vectors in vacuum: $f=300kHz$}
@@ -834,7 +834,18 @@ $E_z$ & $1.02$ & $124.3$ & $15.2$ \\
 \hline\end{tabular}
 \end{table}
 
-
+\begin{table}
+\caption{Physical antennas}
+\label{tab:phys_ant}
+\begin{tabular}{|c|c|c|c|}
+ \hline
+ & $length/m$ & $\zeta/^\circ$ & $\xi/^\circ$ \\
+\hline
+$E_x$ & $6.00$ & $125.3$ & $-120.0$ \\
+$E_y$ & $6.00$ & $125.3$ & $120.0$ \\
+$E_z$ & $6.00$ & $125.3$ & $0.00$ \\
+\hline\end{tabular}
+\end{table}
 
 \begin{figure}
   \noindent\includegraphics[width=20pc]{heff_shortening_stereo.eps}
@@ -850,8 +861,6 @@ In this article, the effect of plasma on spacecraft antenna properties was inves
 Two simple solvers were implemented, using a boundary element method known as Method of Moments, to solve the electric field integral equation for computing the current distribution along a dipole. For validation, the results where compared to the results of 2 well proven solvers, one open source software called ASAP, and one proprietary program, called Concept II.\\
 
 Using these solvers, simple calculations of antennas in isotropic plasma where performed and studied. Then calculations where performed for antennas of a real space radio experiment, S/WAVES mounted on the STEREO spacecraft. It was shown that the effects of the plasma in interplanetary space at approximately 1AU, i.e. the regime where STEREO operates, are so small they can be neglected for certain applications. The effect of the the plasma on the effective length vectors in the quasistatic range is present, however (approximately 10cm) and should be considered for data interpretation. For space missions operating in different regimes, especially in the ionosphere, the effect of plasma on the antenna properties in the radio frequency range could be more dramatic, which make a careful analysis mandatory.\\
-
-
 %% ------------------------------------------------------------------------ %%
 %
 %  TEXT
@@ -914,7 +923,7 @@ Using these solvers, simple calculations of antennas in isotropic plasma where p
 %  ACKNOWLEDGMENTS
 
 \begin{acknowledgments}
-The authors want to thank the menbers of the STEREO/WAVES team for the support and for sharing the necessary data to perform the studies which led to this article.
+(Text here)
 \end{acknowledgments}
 
 %% ------------------------------------------------------------------------ %%
@@ -978,12 +987,6 @@ Oswald, T., W.~Macher, H.~Rucker, G.~Fischer, U.~Taubenschuss, J.~Bougeret,
   of the stereo/waves antennas, \textit{Adv. Space Res.},\textit{43},
   355--364.
 
-\bibitem[{\textit{Panchenko et~al.}(2010)\textit{Panchenko, Rucker, Macher,
-  Cecconi, Oswald, and Fischer}}]{panchenko10}
-Panchenko, M., H.~Rucker, W.~Macher, B.~Cecconi, T.~Oswald, and G.~Fischer
-  (2010), Stereo/waves antennas calibrated by akr, in \textit{European
-  Planetary Science Congress 2010}, vol.~5.
-
 \bibitem[{\textit{Richmond}(1966)}]{richmond66}
 Richmond, J. (1966), A wire-grid model for scattering by conducting bodies,
   \textit{IEEE Transactions on Antennes and Propagation}, \textit{14},
@@ -992,14 +995,275 @@ Richmond, J. (1966), A wire-grid model for scattering by conducting bodies,
 \bibitem[{\textit{Stix}(1992)}]{stix}
 Stix, T. (1992), \textit{Waves in Plasmas}, American Institute of Physics.
 
+\bibitem[{\textit{Weiglhofer}(1986)}]{weiglhofer}
+Weiglhofer, W. (1986), The representation of electromagnetic fields in
+  anisotropic media in terms of dyadic green's functions, Ph.D. thesis,
+  Technical University of Graz.
 
 
 \end{thebibliography}
 
+%Reference citation examples:
+
+%...as shown by \textit{Kilby} [2008].
+%...has been shown [\textit{Kilby et al.}, 2008].
+
+%...as shown by \cite{jskilby}.
+%...has been shown \citep{jskilbye}.
+
+
+%% ------------------------------------------------------------------------ %%
+%
+%  END ARTICLE
+%
+%% ------------------------------------------------------------------------ %%
 
 \end{article}
 
 
 
+%% Enter Figures and Tables here:
+
+% When submitting articles through the GEMS system:
+% COMMENT OUT ANY COMMANDS THAT INCLUDE GRAPHICS.
+
+% Figure captions go below this illustration; Table captions go above tables
+
+% ONE-COLUMN figure/table, including eps graphics
+%
+% \begin{figure}
+% \noindent\includegraphics[width=20pc]{samplefigure.eps}
+% \caption{Caption text here}
+% \end{figure}
+% \end{document}
+%
+% \begin{table}
+% \caption{}
+% \end{table}
+%
+% ---------------
+% TWO-COLUMN figure/table
+%
+% \begin{figure*}
+% \noindent\includegraphics[width=39pc]{samplefigure.eps}
+% \caption{Caption text here}
+% \end{figure*}
+%
+% \begin{table*}
+% \caption{Caption text here}
+% \end{table*}
+%
+% see below for how to make landscape figures or tables
+
+%%% End the article here:
+
 \end{document}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+More Information and Advice:
+
+%  SECTION HEADS
+
+ ---------------
+ Level 1 head
+
+ Use the \section{} command to identify level 1 heads;
+ type the appropriate head wording between the curly
+ brackets, as shown below.
+
+ Capitalize the first letter of each word (expect for
+ prepositions, conjunctions, and articles that are
+ three or fewer letters).
+
+ Do not hyphenate level 1 heads. To break lines,
+ type \protect\\ where you want the break to occur.
+ AGU prefers the inverted triangle, breaking before
+ prepositions, conjunctions, and articles, if possible.
+
+An example:
+\section{Level 1 Head: Introduction}
+
+ ---------------
+ Level 2 head
+
+ Use the \subsection{} command to identify level 2 heads.
+
+ Capitalize the first letter of each word (expect for
+ prepositions, conjunctions, and articles that are
+ three or fewer letters).
+
+ Do not hyphenate level 1 heads. To break lines,
+ type \protect\\ where you want the break to occur.
+ AGU prefers the inverted triangle, breaking before
+ prepositions, conjunctions, and articles, if possible.
+
+\subsection{Level 2 Head} An example.
+
+ ---------------
+ Level 3 head
+
+ Use the \subsubsection{} command to identify level 3 heads
+
+ Capitalize only the first letter of the first word, acronyms,
+ first letter of proper nouns, and first letter of first word
+ after a colon.
+
+ Hyphenation is permitted in level 3 heads, if needed.
+
+\subsubsection{Level 3 Head} An example.
+
+\subsubsubsection{Level 4 Head} An example.
+
+%% ------------------------------------------------------------------------ %%
+%
+%  IN-TEXT LISTS
+%
+%% ------------------------------------------------------------------------ %%
+
+% Do not use bulleted lists; enumerated lists are okay.
+ \begin{enumerate}
+ \item
+ \item
+ \item
+ \end{enumerate}
+
+%% ------------------------------------------------------------------------ %%
+%
+%  EQUATIONS
+%
+%% ------------------------------------------------------------------------ %%
+
+% Single-line equations are centered.
+
+ Math coded inside display math mode \[ ...\]
+ will not be numbered e.g.:
+ \[ x^2=y^2 + z^2\]
+
+ Math coded inside \begin{equation} and \end{equation} will
+ be automatically numbered e.g.:
+ \begin{equation}
+ x^2=y^2 + z^2
+ \end{equation}
+
+% IF YOU HAVE MULTI-LINE EQUATIONS, PLEASE
+% BREAK THE EQUATIONS INTO TWO OR MORE LINES
+% OF SINGLE COLUMN WIDTH (20 pc, 8.3 cm)
+% using double backslashes (\\).
+
+% To create multiline equations, use the
+% \begin{eqnarray} and \end{eqnarray} environment
+% as demonstrated below.
+\begin{eqnarray}
+  x_{1} & = & (x - x_{0}) \cos \Theta \nonumber \\
+        && + (y - y_{0}) \sin \Theta  \nonumber \\
+  y_{1} & = & -(x - x_{0}) \sin \Theta \nonumber \\
+        && + (y - y_{0}) \cos \Theta.
+\end{eqnarray}
+
+If you don't want an equation number, use the star form:
+\begin{eqnarray*}...\end{eqnarray*}
+
+% Break each line at a sign of operation
+% (+, -, etc.) if possible, with the sign of operation
+% on the new line.
+
+% Indent second and subsequent lines to align with
+% the first character following the equal sign on the
+% first line.
+
+% Use an \hspace{} command to insert horizontal space
+% into your equation if necessary. Place an appropriate
+% unit of measure between the curly braces, e.g.
+% \hspace{1in}; you may have to experiment to achieve
+% the correct amount of space.
+
+% There is another multiline equation environment:
+% \begin{aguleftmath}...\end{aguleftmath}
+% The equation is aligned left and the second line indents to
+% the width of a paragraph indent (AGU style)
+
+
+%% ------------------------------------------------------------------------ %%
+%
+%  EQUATION NUMBERING: COUNTER
+%
+%% ------------------------------------------------------------------------ %%
+
+% You may change equation numbering by resetting
+% the equation counter or by explicitly numbering
+% an equation.
+
+% To explicitly number an equation, type \eqnum{}
+% (with the desired number between the brackets)
+% after the \begin{equation} or \begin{eqnarray}
+% command.  The \eqnum{} command will affect only
+% the equation it appears with; LaTeX will number
+% any equations appearing later in the manuscript
+% according to the equation counter.
+%
+% To reset the equation counter, place the setcounter{equation}
+% command in front of your equation(s).
+%\setcounter{equation}{0}
+
+% Set the equation counter to 0 if the next
+% number needed is 1 or set it to 7 if the
+% next number needed is 8, etc.
+%
+% The \setcounter{equation} command does affect
+% equations appearing later in the manuscript.
+
+% If you have a multiline equation that needs only
+% one equation number, use a \nonumber command in
+% front of the double backslashes (\\) as shown in
+% the multiline equation above.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Landscape figure and table examples
+%
+% ---------------
+% Landscape (broadside) figure/table
+% (These objects will not display properly in draft mode, use galley.)
+%
+% ONE-COLUMN landscape figure and table
+%
+% \begin{landscapefigure}
+% \includegraphics[height=.75\mycolumnwidth,width=42pc]{samplefigure.eps}
+% \caption{Caption text here}
+% \end{landscapefigure}
+%
+% \begin{landscapetable}
+% \caption{Caption text here}
+% \begin{tabular*}{\hsize}{@{\extracolsep{\fill}}lcccc}
+% \tableline
+% ....
+% \tableline\\
+% \multicolumn5l{(a) Algorithms from Numerical Recipes}\\
+% \end{tabular*}
+% \tablenotetext{}{}
+% \tablecomments{}
+% \end{landscapetable}
+%
+% FULL-PAGE landscape figures and tables
+%
+% \begin{figure*}[p]
+% \begin{landscapefigure*}
+% illustration here
+% \caption{caption here}
+% \end{landscapefigure*}
+% \end{figure*}
+%
+% \begin{table}[p]
+% \begin{landscapetable*}
+% \caption{}
+% \begin{tabular*}{\textheight}{@{\extracolsep{\fill}}lccrrrcrrr}
+% ....
+% \end{tabular*}
+% \begin{tablenotes}
+% ...
+% \end{tablenotes}
+% \end{landscapetable*}
+% \end{table}
+%

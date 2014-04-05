@@ -18,9 +18,9 @@ Many spacecraft carry radio experiments. They use antennas to receive radiation 
 \section{Introduction and objectives}
 Many spacecraft carry antennas, often monopoles, to receive radiation and plasma waves created by natural processes. For a correct interpretation of the received data it is mandatory that the reception properties of the antenna are known with high accuracy. There are certain parameters which can be used to describe antenna behavior, like the effective length vectors, antenna impedances and radiation patterns. Unfortunately, the real behavior of the antennas is different than one would predict for the geometric configuration of the antennas. The reason is the influence of the body of the spacecraft as well as the influence of the surrounding space plasma.\\
 
-Here we focus on multi-monopole sytems mounted on spacecraft, which are usually part of scientific instruments for the investigation of radio and/or plasma waves. The spacecraft surface is made of conducting material, so it can, in principle, be regarded as part of the antennas. As a result, each antenna behaves as if it would point into a slightly different direction, with a slightly different length. The vector that describes the direction and length of this virtual antenna is called effective length vector. This effective length vector has to be determined, before any data analysis of the received EM waves can be conducted.\\
+The spacecraft surface is made of conducting material, so it can, in principle, be regarded as part of the antennas. As a result, each antenna behaves as if it would point into a slightly different direction, with a slightly different length. The vector that describes the direction and length of this virtual antenna is called effective length vector. This effective length vector has to be determined, before any data analysis of the received EM waves can be conducted.\\
 
-The procedure of finding the antenna parameters is called antenna calibration. There are four often applied methods to determine the effective length vectors of the antennas of a spacecraft:
+The procedure of finding the antenna parameters is called antenna calibration. There are four known methods to determine the effective length vectors of the antennas of a spacecraft:
 
 \begin{enumerate}
 \item The numerical approach.
@@ -34,17 +34,17 @@ All four methods complement each other and are necessary components of the proce
 There are several numerical methods to simulate a receiving or transmitting antenna. One of the most widely used is the Method of Moments
 (MoM), which is exclusively used in this paper. It is realized by computer programs and consists of two steps. In the first step, the distribution of the currents on the surface of hull and antennas is calculated. This distribution can be used to calculate the effective length vectors and other antenna properties, like antenna impedances. This procedure is the second step.\\
 
-The properties of antennas on spacecraft are also influenced by the space plasma which surrounds the spacecraft. Unlike in vacuum there exist many different wave modes which can propagate through plasma and are received by the antennas. Each wave travels with a different speed and polarization, which makes the analysis extremely difficult. The magnitude of the influence is highest at low frequencies and decreases above the characteristic plasma frequencies. At the typical frequencies of the receivers of radio experiments the influence is small, which is the reason that plasma effects are usually neglected in spacecraft antenna calibration. It will be shown in this paper that the effects should not be ignored when calibrating spacecraft antennas which operate under certain conditions. It should be said that MoM is probably least suitable for including plasma effects, in comparison with other numerical methods, where the electromagnetic equations are solved at multiple points inside the surrounding medium, but it is very common and suitable for calibration of spacecraft antennas.\\
+The properties of antennas on spacecraft are also influenced by the space plasma which surrounds the spacecraft. Unlike in vacuum there exist many different wave modes which can propagate through plasma and are received by the antennas. Each wave travels with a different speed and polarization, which makes the analysis extremely difficult. The magnitude of the influence is highest at low frequencies and decreases above the characteristic plasma frequencies. At the typical frequencies of the receivers of radio experiments the influence is small, which is the reason that plasma effects are usually neglected in spacecraft antenna calibration. It will be shown in this paper that the effects should not be ignored when calibrating spacecraft antennas which operate under certain conditions. It should be said that MoM is probably least suitable for including plasma effects, in comparison with other numerical methods, but it is very common and suitable for calibration of spacecraft antennas.\\
 
 The objective of this paper is to show how plasma effects can be included into the numerical calibration process. Only frequencies in the radio frequency range well above the plasma resonance frequencies are considered. This restricts the number of wave-modes which have to be taken into account considerably.\\
 
 First the theoretical framework is established and the necessary equations, which are used in the numerical computations, are shown or derived. Then a practical example is presented, analyzing a dipole in surrounding cold isotropic (which means unmagnetized in this context) plasma.\\
 
-In the following section the method is is directly applied to the calibration of the antennas of the NASA STEREO spacecraft. The original calibration of these spacecraft were presented in \cite{ossi09}.\\
+In the following section the method is is directly applied to the calibration of the antennas of the NASA STEREO spacecraft. The original calibration of these spacecraft were presented in \cite{ossi08}.\\
 
-A similar investigation for a dipole in cold magnetized plasma will be published in a subsequent article.\\
+A similar investigation for a dipole in cold magnetized plasma will be published in a subsequent article. This topic is so complex that a full 3D solver to analyze a whole spacecraft, does not exist at the time of writing this article.\\
 
-There exists a totally different method to include plasma effects in numerical calibration, to model the so-called plasma sheath, a boundary zone around the spacecraft which forms due to the interaction of the conducting surface of the spacecraft with the plasma. This method, where the plasma sheaths is modeled and included in the computation in form of a sheaths capacitance and sheaths resistivity, is not part of this paper.\\
+There exists a totally different method to include plasma effects in numerical calibration, to model the so-called plasma sheath, a boundary zone around the spacecraft which forms due to the interaction of the conducting surface of the spacecraft with the plasma. This method is not part of this paper.\\
 
 Finally, a conclusion and outlook are given where possible directions of future work on these topics are outlined.
 
@@ -66,9 +66,9 @@ The integral equation, which needs to be solved for the purpose of this paper is
  \mathbf{j}=\sum_{n} c_n j_n
 \end{equation}
 
-$j_n$ is called the basis function. Different kinds of functions can be used as basis functions in electromagnetic problems. The most simple function is the pulse function, which is used in one of the 1D solvers used for the computations in this paper. A very common choice is to use linear triangular functions, which converge faster during the solution process, while other solvers use a sum of a sine and a cosine function which have the advantage of being able to be integrated analytically over the wire-grid. The very well known open source software NEC 2 uses the sum of a sine, a cosine and a constant function. Other solutions are possible.\\
+$j_n$ is called the basis function. Different kinds of functions can be used as basis functions in electromagnetic problems. The most simple function is the pulse function, which is used in one of the 1D solvers used for the computations in this paper. A very common choice is to use linear triangular functions, which converge faster during the solution process, while other solvers use a sum of a sine and a cosine function which have the advantage of being able to be integrated analytically. The very well known open source software NEC 2 uses the sum of a sine, a cosine and a constant function. Other solutions are possible.\\
 
-The correct choice of the basis functions is vital for the successful computation of electromagnetic problems and depends also on the area of application. When the wavelength is much longer than the typical extension of one basis function, there is little difference between the solutions which are yielded when using the three possible basis functions (pulse, linear, sinusoidal).\\
+The correct choice of the basis functions is vital for the successful computation of electromagnetic problems and depends also on the area of application. When the wavelength is much longer than the typical extension of one basis function, there is little difference between the three possible basis functions (pulse, linear, sinusoidal) and, while sinusoidal functions are the proper choice if the dimension of the object approaches the same magnitude as the wavelength.\\
 
 $c_n$ are the constants which are to be determined in the solution process, often called amplitudes. Combining (\ref{eq:linear_operator}) and (\ref{eq:bas_funct_expans}) gives
 
@@ -97,6 +97,8 @@ The solution for the amplitude vector is
  c_n=l_{mn}^{-1}g_m
 \end{equation}
 
+while most solvers use more sophisticated methods than simple matrix inversion.\\
+
 When using the MoM for solving electromagnetic problems, the equation to be solved is often Pocklington's equation, the electric field integral equation or the reaction equation. The resulting matrix equation has then the form
 
 
@@ -109,13 +111,13 @@ where $Z=l_{mn}$ can be seen as an impedance. The unknown quantity is the curren
 The excitation of the antenna system is manifested in the shape of the excitation vector $\mathbf{V}$ which was denoted $g_m$ in the general case and has the physical unit volts. When the antenna is excited at a single feed, like in the case of the spacecraft antenna calibration, all elements of the vector are set to zero, except the element corresponding to the segment which is used as feeding point in the simulation. This element is set to the excitation voltage of the antenna.\\
 
 
-When the antenna system is excited by an incoming wave, the elements of the vector hold the values
+When the antenna system is excited by an incoming wave, the elements of the vector hold the value
 
 \begin{equation}
- V_i=\mathbf{E(r_\mathit{i})} \cdot \mathbf{s_\mathit{i}}
+ V_i=\mathbf{E_i(r_i)} \cdot \mathbf{s_i}
 \end{equation}
 
-where $\mathbf{s_\mathit{i}}$ is the corresponding segment \textit{i} and $\mathbf{E(r_\mathit{i})}$ is the incident electric field at location $\mathbf{r}_\mathit{i}$, the location of the midpoint of segment \textit{i}.
+where $\mathbf{s_i}$ is the corresponding segment i and $\mathbf{E_i(r_i)}$ is the incident electric field at location $\mathbf{r}_i$, the location of the midpoint of segment i.
 
 \subsection{Electrodynamics of plasma}
 \subsubsection{Maxwell's equations}
@@ -440,7 +442,7 @@ $\omega+\Omega$ corresponds to right handed polarization, while $\omega-\Omega$ 
 The kinetic theory describes many different kinds of waves. Since only radiation of frequencies which are above the characteristic plasma frequency are treated, it seems important to include two waves, the electrostatic Langmuir waves, and the electromagnetic waves. Only the influence of
 the electrons will be considered.\\
 
-Langmuir waves exist at frequencies slightly above the plasma frequency. Waves of this kind which are generated in the vicinity of the spacecraft are received by the antennas and used for quasithermal noise analysis. For remote sensing activities, scientific antennas are not usable in this frequency range. Langmuir waves at higher frequencies, possibly generated at some remote location will not be received because they will not reach the spacecraft, being heavily damped. Therefore Langmuire waves will not be considered in this article.\\
+Langmuir waves exist at frequencies slightly above the plasma frequency. Waves of this kind which are generated in the vicinity of the spacecraft are received by the antennas and used for quasithermal noise analysis. For remote sensing activities, scientific antennas are not usable in this frequency range. Langmuir waves at higher frequencies, possibly generated at some remote location will not be received because they will not reach the spacecraft, being heavilly damped. Therefore Langmuire waves will not be considered in this article.\\
 
 To derive the dielectric function of electromagnetic waves, using the kinetic plasma theory, one has to start with the equation of motion and use the method of perturbation to linearize the equation.
 
@@ -449,7 +451,7 @@ To derive the dielectric function of electromagnetic waves, using the kinetic pl
 \nabla_r f_1=\frac{e}{m_e}\left( \mathbf{E}_1+\mathbf{v} \times \mathbf{B}\right) \cdot \nabla_v f_0
 \end{equation}
 
-where $f_0$ and $f_1$ are the distribution functions of zeroth and first order, and $\mathbf{v}$ is the particle velocity. Additionally a Fourier transform is applied and Ohm's law in combination with the first moment of the distribution function. The equations can be manipulated to give
+where $f_0$ and $f_1$ are the distribution functions of zeroth anf first order, and $\mathbf{v}$ is the particle velocity. Additionally a Fourier transform is applied and Ohm's law in combination with the first moment of the distribution function. The equations can be manipulated to give
 
 
 
@@ -512,7 +514,7 @@ which is the distance between the source point on the wire and the observation p
 
 This electric field integral equation is built and multiplied by the length of a segment to get an equation in the form of Ohm's law (\ref{eq:mom}). As expansion function, the pulse function is utilized. Solving this equation yields the current distribution along the dipole.\\
 
-The impedance is used as criterion for convergence of the solution. During the solution process the number of segments is increased until the impedance remains stable, i.e. until the factor of the result of the last calculation and the result of the current is smaller than a criterion $\varepsilon$. Normally a value of $\varepsilon < 0.1$ is used as convergence criterion.\\
+The impedance is used as criterium for convergence of the solution. During the solution process the number of segments is increased until the impedance remains stable, i.e. until the factor of the result of the last calculation and the result of the current is smaller than a criterium $\varepsilon$. Normally a value of $\varepsilon < 0.1$ is used as convergence criterium.\\
 
  The thin wire approximation which is used in many MoM solvers, results in a behavior called relative stability. When segment size is reduced, and the solution becomes stable, the system is said to be in the area of stability. When the segment size is reduced further, the solution becomes unstable again. There exist systems where the area of stability does not exist. Therefore it is very important to check for stability when doing EMC calculations with MoM solvers. When the system has no stable region, the modeling process has to be revised.\\
 
@@ -764,11 +766,11 @@ Only the real part is presented here. Since the direction of the effective lengt
 
 As it can be seen, the effect of the plasma is a shortening of the effective length vectors. Although the effect is quite small in the presented data, as well as under most realistic conditions, it is generally true.\\
 
-In the stable frequency range, the relation between the equivalent permittivity and the length of the effective length vector is nearly linear for a dipole. For more complex structures, like real spacecraft, this is not generally true. The proportionality factor for the near-linear behavior depends on the frequency. Figure \ref{fig:relative_heff_shortening} shows the equivalent length of the effective length vector as a function of equivalent permittivity for 3 frequencies. The calculation was performed with solver 2 and Concept II. It can clearly be seen that the most prominent effect of the isotropic plasma on the effective length vector is at the highest frequency.\\
+In the stable frequency range, the relation between the equivalent permittivity and the length of the effective length vector is nearly linear. The proportionality factor depends on the frequency. Figure \ref{fig:relative_heff_shortening} shows the equivalent length of the effective length vector as a function of equivalent permittivity for 3 frequencies. The calculation was performed with solver 2 and Concept II. It can clearly be seen that the most prominent effect of the isotropic plasma on the effective length vector is at the highest frequency.\\
 
 \begin{figure}
   \includegraphics[width=12cm]{heff_shortening_dipole.eps}
-\caption{Equivalent length of the effective length vector in relation of vacuum case, as a function of equivalent permittivity.}
+\caption{Equivalent length of the effective length vactor in relation of vacuum case, as a function of equivalent permittivity.}
 \label{fig:relative_heff_shortening}
 \end{figure}
 
@@ -861,7 +863,7 @@ The plasma frequency is
     f_p=\sqrt{\frac{1}{2\pi}{\frac{n_e e^2}{ m \epsilon_0}}}
 \end{equation}
 
-At conditions where STEREO operates, i.e. at 1AU in interplanetary space, which corresponds roughly to an electron plasma frequency between 20kHz and 60kHz, we will set the electron plasma frequency to a rounded value of 100kHz. Figure \ref{fig:imp_stereo_fix_100kHz} shows the result. To the resolution of this figure, there is no visible difference to the vacuum computation. Hence, it seems that the plasma effect can be neglected for the calculation of the impedance curves and the estimation of the antenna resonances of the radio experiment of the STEREO spacecraft.
+At conditions where STEREO operates, i.e. at 1AU in interplanetary space, wich corresponds roughly to an electron plasma frequency between 20kHz and 60kHz, we will set the electron plasma frequency to a rounded value of 100kHz. Figure \ref{fig:imp_stereo_fix_100kHz} shows the result. To the resolution of this figure, there is no visible difference to the vacuum computation. Hence, it seems that the plasma effect can be neglected for the calculation of the imedance curves and the estimation of the antenna resonances of the radio experiment of the STEREO spacecraft.
 
 
 \begin{figure}
@@ -928,11 +930,9 @@ $E_z$ & $6.00$ & $125.3$ & $0.00$ \\
 \end{center}
 \end{table}
 
-Figure \ref{fig:relative_heff_shortening_stereo} shows the equivalent reduction of the length of the effective length vector in relation to the vacuum case as a function of the equivalent permittivity for all three STEREO/WAVES antennas at a frequency of 300kHz. It can be seen that the relative shortening is far more pronounced than for the dipole. This graph can be used to estimate the plasma effect on the effective length vectors for calibration purposes. Similar figures can easily be produced for a selection of frequencies.\\
-
 \begin{figure}
   \includegraphics[width=12cm]{heff_shortening_stereo.eps}
-\caption{Equivalent length of the effective length vector in relation of vacuum case, as a function of equivalent permittivity.}
+\caption{Equivalent length of the effective length vactor in relation of vacuum case, as a function of equivalent permittivity.}
 \label{fig:relative_heff_shortening_stereo}
 \end{figure}
 
@@ -942,7 +942,7 @@ In this article, the effect of plasma on spacecraft antenna properties was inves
 
 Two simple solvers were implemented, using a boundary element method known as Method of Moments, to solve the electric field integral equation for computing the current distribution along a dipole. For validation, the results where compared to the results of 2 well proven solvers, one open source software called ASAP, and one proprietary program, called Concept II.\\
 
-Using these solvers, simple calculations of antennas in isotropic plasma where performed and studied. Then calculations where performed for antennas of a real space radio experiment, S/WAVES mounted on the STEREO spacecraft. It was shown that the effects of the plasma in interplanetary space at approximately 1AU, i.e. the regime where STEREO operates, are so small they can be neglected for certain applications. The effect of the the plasma on the effective length vectors in the quasistatic range is present, however (approximately 10cm) and should be considered for data interpretation. For space missions operating in different regimes, especially in the ionosphere, the effect of plasma on the antenna properties in the radio frequency range could be more dramatic, which make a careful analysis mandatory.\\
+Using these solvers, simple calculations of antennas in isotropic plasma where performed and studied. Then calculations where performed for antennas of a real space radio experiment, S/WAVES mounted on the STEREO spacecraft. It was shown that the effects of the plasma in interplanetary space at approximately 1AU, i.e. the regime where STEREO operates, are so small they can be neglected for certain applications. The effect of the the plasma on the effective length vectors in the quasistatic range is present, however (approximately 10cm) and should be considered for data interpretation. For space missions operating in different regimes, especially in the inosphere, the effect of plasma on the antenna properties in the radio frequency range could be more dramatic, which make a careful analysis mandatory.\\
 
 
 

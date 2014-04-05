@@ -7,47 +7,47 @@ You're missing a field name---line 793 of file ../../Bibliography/MyBib2.bib
  :   %volume = {78},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "ossi08"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Warning--missing publisher in panchenko10
-You've used 10 entries,
+You've used 9 entries,
             3098 wiz_defined-function locations,
-            1118 strings with 10730 characters,
-and the built_in function-call counts, 6818 in all, are:
-= -- 606
-> -- 321
-< -- 8
-+ -- 156
-- -- 78
-* -- 451
-:= -- 733
-add.period$ -- 10
-call.type$ -- 10
-change.case$ -- 51
-chr.to.int$ -- 10
-cite$ -- 31
-duplicate$ -- 648
-empty$ -- 456
-format.name$ -- 94
-if$ -- 1384
+            1114 strings with 10553 characters,
+and the built_in function-call counts, 5946 in all, are:
+= -- 549
+> -- 244
+< -- 7
++ -- 122
+- -- 60
+* -- 376
+:= -- 635
+add.period$ -- 9
+call.type$ -- 9
+change.case$ -- 42
+chr.to.int$ -- 9
+cite$ -- 27
+duplicate$ -- 584
+empty$ -- 405
+format.name$ -- 73
+if$ -- 1205
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 98
-newline$ -- 37
-num.names$ -- 40
-pop$ -- 370
+missing$ -- 84
+newline$ -- 34
+num.names$ -- 36
+pop$ -- 317
 preamble$ -- 1
-purify$ -- 46
+purify$ -- 38
 quote$ -- 0
-skip$ -- 350
+skip$ -- 312
 stack$ -- 0
-substring$ -- 168
-swap$ -- 436
-text.length$ -- 1
+substring$ -- 165
+swap$ -- 402
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 75
-warning$ -- 1
-while$ -- 36
+type$ -- 66
+warning$ -- 0
+while$ -- 33
 width$ -- 0
-write$ -- 110
+write$ -- 100
 (There was 1 error message)

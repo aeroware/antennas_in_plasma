@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{9}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
@@ -34,12 +34,6 @@ Oswald, T., W.~Macher, H.~Rucker, G.~Fischer, U.~Taubenschuss, J.~Bougeret,
   A.~Lecacheux, M.~Kaiser, and K.~Goetz (2009), Various methods of calibration
   of the stereo/waves antennas, \textit{Adv. Space Res.}, \textit{43},
   355--364.
-
-\bibitem[{\textit{Panchenko et~al.}(2010)\textit{Panchenko, Rucker, Macher,
-  Cecconi, Oswald, and Fischer}}]{panchenko10}
-Panchenko, M., H.~Rucker, W.~Macher, B.~Cecconi, T.~Oswald, and G.~Fischer
-  (2010), Stereo/waves antennas calibrated by akr, in \textit{European
-  Planetary Science Congress 2010}, vol.~5.
 
 \bibitem[{\textit{Richmond}(1966)}]{richmond66}
 Richmond, J. (1966), A wire-grid model for scattering by conducting bodies,

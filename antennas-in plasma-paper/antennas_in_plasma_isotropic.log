@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2010.9.22)  21 APR 2011 22:01
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2010.9.22)  29 NOV 2010 20:15
 entering extended mode
  %&-line parsing enabled.
 **antennas_in_plasma_isotropic.tex
@@ -201,91 +201,51 @@ File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 \Gin@req@height=\dimen151
 \Gin@req@width=\dimen152
 )
+
+LaTeX Warning: Unused global option(s):
+    [two-column].
+
 (./antennas_in_plasma_isotropic.aux)
 \openout1 = `antennas_in_plasma_isotropic.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 219.
+(Font)              <9> on input line 224.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 219.
+(Font)              <6> on input line 224.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 219.
- [1
+(Font)              <5> on input line 224.
+\figandtabbox0=\box56
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 225.
 
-]
-Overfull \hbox (14.41286pt too wide) in paragraph at lines 219--219
-[]\OT1/cmr/m/n/12 Many space-craft carry ra-dio ex-per-i-ments. They use an-ten
--nas to re-ceive ra-
- []
-
-
-Overfull \hbox (31.22537pt too wide) in paragraph at lines 219--219
-\OT1/cmr/m/n/12 dicted with-out anal-y-sis. One ma-jor in-flu-ence is the ir-re
-g-u-lar shape of the space-
- []
-
-
-Overfull \hbox (17.2089pt too wide) in paragraph at lines 219--219
-\OT1/cmr/m/n/12 as part of the an-tenna it-self. The other ma-jor in-flu-ence c
-omes from the space
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 219--219
-\OT1/cmr/m/n/12 plasma. One pos-si-ble way to al-low for the first point is to 
-make a nu-mer-i-
- []
-
-
-Overfull \hbox (19.70041pt too wide) in paragraph at lines 219--219
-\OT1/cmr/m/n/12 cal anal-y-sis of the spacecraft-antenna sys-tem, us-ing a boun
-d-ary value method
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
-
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 234--235
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 236--237
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
-
- []
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 242--243
+Underfull \hbox (badness 10000) in paragraph at lines 241--243
 
  []
 
@@ -294,18 +254,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--245
 
  []
 
-[5]
+[1
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 246--247
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--259
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
 
  []
 
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 260--261
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 266--267
 
  []
 
@@ -315,151 +292,141 @@ Underfull \hbox (badness 10000) in paragraph at lines 268--269
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 270--271
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
 
  []
 
-[7]
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 278--279
 
  []
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 308--309
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--311
-
- []
-
-[9] [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 364--366
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 367--369
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
 
  []
 
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 385--386
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--319
 
  []
 
-[13]
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 372--374
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--377
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 393--394
 
  []
 
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 426--427
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 401--402
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 429--430
+Underfull \hbox (badness 10000) in paragraph at lines 434--435
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 430--431
-
- []
-
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 431--432
-
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 464--465
+Underfull \hbox (badness 10000) in paragraph at lines 437--438
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 467--468
-
- []
-
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 482--483
+Underfull \hbox (badness 10000) in paragraph at lines 438--439
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 484--485
+Underfull \hbox (badness 10000) in paragraph at lines 439--440
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 487--489
+Underfull \hbox (badness 10000) in paragraph at lines 472--473
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 475--476
+
+ []
+
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 490--491
 
  []
 
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 507--508
+
+Underfull \hbox (badness 10000) in paragraph at lines 492--493
 
  []
 
-[19]
+
+Underfull \hbox (badness 10000) in paragraph at lines 495--497
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 498--499
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 515--516
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 517--518
+Underfull \hbox (badness 10000) in paragraph at lines 523--524
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 519--520
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 527--528
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--523
-
- []
-
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 524--525
+Underfull \hbox (badness 10000) in paragraph at lines 530--531
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 544--545
-
- []
-
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 559--560
-
- []
-
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 561--562
+Underfull \hbox (badness 10000) in paragraph at lines 532--533
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 563--564
+Underfull \hbox (badness 10000) in paragraph at lines 552--553
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 565--566
-
- []
-
-[23]
 Underfull \hbox (badness 10000) in paragraph at lines 567--568
 
  []
@@ -475,79 +442,110 @@ Underfull \hbox (badness 10000) in paragraph at lines 571--572
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 573--574
+
+ []
+
+
+Overfull \vbox (1.0pt too high) has occurred while \output is active []
+
+ [7]
 Underfull \hbox (badness 10000) in paragraph at lines 575--576
 
  []
 
-[24]
+
 Underfull \hbox (badness 10000) in paragraph at lines 577--578
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 579--580
+Underfull \hbox (badness 10000) in paragraph at lines 582--583
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 626--627
-
- []
-
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 628--629
+Underfull \hbox (badness 10000) in paragraph at lines 584--585
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 630--631
+Underfull \hbox (badness 10000) in paragraph at lines 586--587
+
+ []
+
+\figandtabbox1=\box57
+File: dipol.eps Graphic file (type eps)
+<dipol.eps>
+Overfull \hbox (12.0pt too wide) in paragraph at lines 591--593
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 591--593
+
+ []
+
+\dblfigandtabbox1=\box58
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 599.
+\dblfigandtabbox2=\box59
+
+Underfull \hbox (badness 10000) in paragraph at lines 639--640
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 634--635
+Underfull \hbox (badness 10000) in paragraph at lines 641--642
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 643--644
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 647--648
+
+ []
+
+[8]
+\figandtabbox2=\box60
 File: ff_10mhz.eps Graphic file (type eps)
-<ff_10mhz.eps> [26]
-Underfull \hbox (badness 10000) in paragraph at lines 642--643
-
- []
-
-[27]
-Underfull \hbox (badness 10000) in paragraph at lines 653--654
-
+ <ff_10mhz.eps>
+Overfull \hbox (12.0pt too wide) in paragraph at lines 650--653
+[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 655--656
-
- []
-
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 686--687
+Underfull \hbox (badness 10000) in paragraph at lines 650--653
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 688--689
+Underfull \hbox (badness 10000) in paragraph at lines 664--665
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 690--691
+Underfull \hbox (badness 10000) in paragraph at lines 666--667
+
+ []
+
+\figandtabbox3=\box61
+\figandtabbox4=\box62
+
+Underfull \hbox (badness 10000) in paragraph at lines 697--698
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 699--700
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 692--693
-
- []
-
-[29]
-File: heff_shortening_dipole.eps Graphic file (type eps)
- <heff_shortening_dipole.eps>
 Underfull \hbox (badness 10000) in paragraph at lines 701--702
 
  []
@@ -557,133 +555,241 @@ Underfull \hbox (badness 10000) in paragraph at lines 703--704
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 705--706
-
- []
-
-[30]
-File: imps_dipole_solver2_real.eps Graphic file (type eps)
- <imps_dipole_solver2_real.eps>
-File: imps_dipole_solver2_imag.eps Graphic file (type eps)
- <imps_dipole_solver2_imag.eps>
-File: imps_dipole_solver2_real2.eps Graphic file (type eps)
-
-<imps_dipole_solver2_real2.eps>
-File: imps_dipole_solver2_imag2.eps Graphic file (type eps)
- <imps_dipole_solver2_imag2.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 735--736
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 737--738
-
- []
-
-[31]
-Underfull \hbox (badness 10000) in paragraph at lines 740--741
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 742--743
-
- []
-
-[32]
-File: stereo.eps Graphic file (type eps)
- <stereo.eps>
-Overfull \hbox (36.135pt too wide) in paragraph at lines 745--746
+\figandtabbox5=\box63
+File: heff_shortening_dipole.eps Graphic file (type eps)
+<heff_shortening_dipole.eps>
+Overfull \hbox (12.0pt too wide) in paragraph at lines 706--709
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 745--746
+Underfull \hbox (badness 10000) in paragraph at lines 706--709
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 749--751
+Underfull \hbox (badness 10000) in paragraph at lines 712--713
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 752--754
+Underfull \hbox (badness 10000) in paragraph at lines 714--715
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 716--717
+
+ []
+
+[10]
+\figandtabbox6=\box64
+File: imps_dipole_solver2_real.eps Graphic file (type eps)
+ <imps_dipole_solver2_real.eps>
+Overfull \hbox (12.0pt too wide) in paragraph at lines 720--723
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 720--723
+
+ []
+
+\figandtabbox7=\box65
+File: imps_dipole_solver2_imag.eps Graphic file (type eps)
+<imps_dipole_solver2_imag.eps>
+Overfull \hbox (12.0pt too wide) in paragraph at lines 726--729
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 726--729
+
+ []
+
+\figandtabbox8=\box66
+File: imps_dipole_solver2_real2.eps Graphic file (type eps)
+<imps_dipole_solver2_real2.eps>
+Overfull \hbox (12.0pt too wide) in paragraph at lines 734--737
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 734--737
+
+ []
+
+\figandtabbox9=\box67
+File: imps_dipole_solver2_imag2.eps Graphic file (type eps)
+<imps_dipole_solver2_imag2.eps>
+Overfull \hbox (12.0pt too wide) in paragraph at lines 740--743
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 740--743
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 746--747
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 748--749
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 751--752
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--754
+
+ []
+
+[11]
+\dblfigandtabbox3=\box68
+File: stereo.eps Graphic file (type eps)
+ <stereo.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 756--758
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 760--763
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 764--766
+
+ []
+
+\figandtabbox10=\box69
 File: impedance_stereo_vac.eps Graphic file (type eps)
 <impedance_stereo_vac.eps>
 File: impedance_stereo_pl.eps Graphic file (type eps)
  <impedance_stereo_pl.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 766--767
+Overfull \hbox (12.0pt too wide) in paragraph at lines 769--772
+[]
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 769--772
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 769--772
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 774--775
+
+ []
+
+\figandtabbox11=\box70
 File: impedance_stereo_pl_fix.eps Graphic file (type eps)
 <impedance_stereo_pl_fix.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 773--774
+Overfull \hbox (12.0pt too wide) in paragraph at lines 777--779
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 777--779
 
  []
 
-[33]
-Underfull \hbox (badness 10000) in paragraph at lines 775--776
+
+Underfull \hbox (badness 10000) in paragraph at lines 781--782
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 783--784
+
+ []
+
+\figandtabbox12=\box71
 File: impedance_stereo_pl_100khz.eps Graphic file (type eps)
 <impedance_stereo_pl_100khz.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 792--793
-
- []
-
-[34]
-Underfull \hbox (badness 10000) in paragraph at lines 796--797
-
+Overfull \hbox (12.0pt too wide) in paragraph at lines 795--797
+[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 798--799
+Underfull \hbox (badness 10000) in paragraph at lines 795--797
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--801
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 804--805
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 806--807
+
+ []
+
+\figandtabbox13=\box72
+\figandtabbox14=\box73
+\figandtabbox15=\box74
+\figandtabbox16=\box75
 File: heff_shortening_stereo.eps Graphic file (type eps)
 <heff_shortening_stereo.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 848--849
-
- []
-
-[35]
-Underfull \hbox (badness 10000) in paragraph at lines 851--852
-
+Overfull \hbox (12.0pt too wide) in paragraph at lines 851--854
+[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 853--854
+Underfull \hbox (badness 10000) in paragraph at lines 851--854
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 855--856
+Underfull \hbox (badness 10000) in paragraph at lines 856--857
 
  []
 
-[36]
-Overfull \hbox (22.69112pt too wide) in paragraph at lines 919--921
-[]\OT1/cmr/bx/n/12 Acknowledgments. \OT1/cmr/m/n/12 The au-thors want to thank 
-the men-bers of the STEREO/WAVES
+
+Underfull \hbox (badness 10000) in paragraph at lines 859--860
+
  []
 
-[37] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47]
-(./antennas_in_plasma_isotropic.aux) ) 
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 861--862
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 863--869
+
+ []
+
+[15]
+Underfull \hbox (badness 6675) in paragraph at lines 985--989
+\OT1/cmr/m/n/9 U. Tauben-schuss, J. Bougeret, A. Lecacheux,
+ []
+
+[16] (./antennas_in_plasma_isotropic.aux) ) 
 Here is how much of TeX's memory you used:
- 1477 strings out of 95087
- 18162 string characters out of 1183278
- 92518 words of memory out of 1500000
- 4685 multiletter control sequences out of 10000+50000
- 15292 words of font info for 52 fonts, out of 1200000 for 2000
+ 1662 strings out of 95087
+ 20452 string characters out of 1183278
+ 90675 words of memory out of 1500000
+ 4871 multiletter control sequences out of 10000+50000
+ 14135 words of font info for 48 fonts, out of 1200000 for 2000
  28 hyphenation exceptions out of 8191
- 25i,9n,24p,1193b,388s stack positions out of 5000i,500n,6000p,200000b,5000s
+ 25i,9n,24p,1034b,335s stack positions out of 5000i,500n,6000p,200000b,5000s
 
-Output written on antennas_in_plasma_isotropic.dvi (47 pages, 89740 bytes).
+Output written on antennas_in_plasma_isotropic.dvi (16 pages, 86296 bytes).

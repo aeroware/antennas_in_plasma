@@ -1,0 +1,568 @@
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2010.9.22)  21 APR 2011 22:02
+entering extended mode
+ %&-line parsing enabled.
+**plasma_antenna_paper1.tex
+(./plasma_antenna_paper1.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2005/09/16 v1.4f Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size11.clo
+File: size11.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: dvips.def on input line 90.
+
+(/usr/share/texmf-texlive/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(./plasma_antenna_paper1.aux)
+\openout1 = `plasma_antenna_paper1.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 12.
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+
+ []
+
+[1
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--36
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+
+ []
+
+
+Overfull \hbox (366.02272pt too wide) in paragraph at lines 43--44
+\OT1/cmr/m/n/10.95 tion of these space-craft were pre-sented in [[]]. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 55.
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 160--162
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 163--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 188--192
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--210
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 295--296
+
+ []
+
+[9]
+Overfull \hbox (9.05519pt too wide) in paragraph at lines 328--329
+\OT1/cmr/m/n/10.95 The di-elec-tric ten-sor, in gen-eral, has to ful-fill 3 pro
+p-er-ties (see. [[]]
+ []
+
+
+Overfull \hbox (9.36542pt too wide) in paragraph at lines 331--332
+\OT1/cmr/m/n/10.95 trans-posed con-ju-gated of the ma-trix is equal to itself:$
+\OML/cmm/m/it/10.95 M[] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 M[]\OT1/cmr/m/
+n/10.95 (\OMS/cmsy/m/n/10.95 ^^@\OT1/cmr/bx/n/10.95 k\OML/cmm/m/it/10.95 ; \OMS
+/cmsy/m/n/10.95 ^^@\OML/cmm/m/it/10.95 !\OT1/cmr/m/n/10.95 )$ 
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 369--370
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--386
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 434--435
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 440--442
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 443--444
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--461
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--469
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 475--476
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 477--478
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 497--498
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 511--512
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--514
+
+ []
+
+
+Overfull \hbox (14.03416pt too wide) in paragraph at lines 515--516
+\OT1/cmr/m/n/10.95 ing the so-lu-tion pro-cess the num-ber of seg-ments is in-c
+reased un-til the impedance
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 515--516
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 517--518
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 519--520
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 521--522
+
+ []
+
+
+Overfull \hbox (3.75757pt too wide) in paragraph at lines 539--540
+[]$[] \OT1/cmr/bx/n/10.95 G\OT1/cmr/m/n/10.95 (\OT1/cmr/bx/n/10.95 r\OML/cmm/m/
+it/10.95 ; []\OT1/cmr/m/n/10.95 )$ can be writ-ten as func-tional of its Fourie
+r
+ []
+
+
+Overfull \hbox (48.31456pt too wide) detected at line 543
+[] \OT1/cmr/bx/n/10.95 G\OT1/cmr/m/n/10.95 (\OT1/cmr/bx/n/10.95 r\OML/cmm/m/it/
+10.95 ; []\OT1/cmr/m/n/10.95 ) = [] [][] [] ^^@(\OT1/cmr/bx/n/10.95 k\OT1/cmr/m
+/n/10.95 )\OML/cmm/m/it/10.95 e[]d\OT1/cmr/bx/n/10.95 k
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 601--602
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 617--618
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 636--637
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 638--639
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 640--641
+
+ []
+
+File: dipol.eps Graphic file (type eps)
+<dipol.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 645--646
+
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 697--698
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--700
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 701--702
+
+ []
+
+[19] [20]
+Underfull \hbox (badness 10000) in paragraph at lines 705--706
+
+ []
+
+File: ff_10mhz.eps Graphic file (type eps)
+<ff_10mhz.eps> [21]
+Underfull \hbox (badness 10000) in paragraph at lines 722--723
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 724--725
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 761--762
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 763--764
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 765--766
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 767--768
+
+ []
+
+File: heff_shortening_dipole.eps Graphic file (type eps)
+<heff_shortening_dipole.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 776--777
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 778--779
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 780--781
+
+ []
+
+File: imps_dipole_solver2_real.eps Graphic file (type eps)
+<imps_dipole_solver2_real.eps>
+File: imps_dipole_solver2_imag.eps Graphic file (type eps)
+ <imps_dipole_solver2_imag.eps>
+File: imps_dipole_solver2_real2.eps Graphic file (type eps)
+
+<imps_dipole_solver2_real2.eps> [24] [25] [26]
+File: imps_dipole_solver2_imag2.eps Graphic file (type eps)
+ <imps_dipole_solver2_imag2.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 810--811
+
+ []
+
+
+Overfull \hbox (317.56897pt too wide) in paragraph at lines 812--813
+\OT1/cmr/m/n/10.95 cal-i-bra-tion with this space-craft [[]]
+ []
+
+
+Overfull \hbox (64.78897pt too wide) in paragraph at lines 812--813
+\OT1/cmr/m/n/10.95 and [[]].
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--813
+
+ []
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 815--816
+
+ []
+
+
+Overfull \hbox (337.8873pt too wide) in paragraph at lines 817--818
+\OT1/cmr/m/n/10.95 cal-i-bra-tions, which are pub-lished in [[]]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--818
+
+ []
+
+[28]
+File: stereo.eps Graphic file (type eps)
+ <stereo.eps>
+Overfull \hbox (38.33858pt too wide) in paragraph at lines 821--822
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 826--829
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 830--832
+
+ []
+
+File: impedance_stereo_vac.eps Graphic file (type eps)
+<impedance_stereo_vac.eps>
+File: impedance_stereo_pl.eps Graphic file (type eps)
+ <impedance_stereo_pl.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 845--846
+
+ []
+
+[29] [30]
+File: impedance_stereo_pl_fix.eps Graphic file (type eps)
+ <impedance_stereo_pl_fix.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 854--855
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 856--857
+
+ []
+
+[31]
+File: impedance_stereo_pl_100khz.eps Graphic file (type eps)
+ <impedance_stereo_pl_100khz.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 875--876
+
+ []
+
+[32]
+Overfull \hbox (381.76842pt too wide) in paragraph at lines 879--880
+\OT1/cmr/m/n/10.95 are shown in Ta-ble 7[]. De-tails can be found in [[]] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 879--880
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 881--882
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 931--932
+
+ []
+
+[33]
+File: heff_shortening_stereo.eps Graphic file (type eps)
+ <heff_shortening_stereo.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 941--942
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 943--944
+
+ []
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 945--946
+
+ []
+
+(./plasma_antenna_paper1.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 22--26
+[]\OT1/cmr/m/n/10.95 Macher, W.,
+ []
+
+
+Underfull \hbox (badness 2608) in paragraph at lines 22--26
+\OT1/cmr/m/n/10.95 space-born an-ten-nas in-clud-ing mu-tual an-tenna ca-pac-i-
+tances and
+ []
+
+
+Overfull \hbox (175.34044pt too wide) in paragraph at lines 33--37
+[]
+ []
+
+
+Overfull \hbox (47.14728pt too wide) in paragraph at lines 40--43
+[]
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 40--43
+\OT1/cmr/m/n/10.95 G. Fis-cher (2010), Stereo/waves an-ten-nas cal-i-brated by 
+akr, in
+ []
+
+[35]) [36] (./plasma_antenna_paper1.aux) ) 
+Here is how much of TeX's memory you used:
+ 641 strings out of 95087
+ 8372 string characters out of 1183278
+ 57504 words of memory out of 1500000
+ 3847 multiletter control sequences out of 10000+50000
+ 10787 words of font info for 37 fonts, out of 1200000 for 2000
+ 28 hyphenation exceptions out of 8191
+ 25i,12n,22p,1124b,281s stack positions out of 5000i,500n,6000p,200000b,5000s
+
+Output written on plasma_antenna_paper1.dvi (36 pages, 99724 bytes).
